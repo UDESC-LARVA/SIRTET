@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Arquivo_Parametros_Gerais xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EnvironmentParameters>
+    <Profundidade>1000</Profundidade>
+    <Discretizar>5</Discretizar>
+    <Tamanhos_Padrao_Modelos>100</Tamanhos_Padrao_Modelos>
+    <Base_L>400</Base_L>
+    <Base_D>80</Base_D>
+  </EnvironmentParameters>
+  <ObjectsParameters>
+    <Velocidade>10</Velocidade>
+    <Velocidade_Maxima>15</Velocidade_Maxima>
+    <Velocidade_Minima>10</Velocidade_Minima>
+  </ObjectsParameters>
+  <GameplayParameters>
+    <Quantidade_Objetos>20</Quantidade_Objetos>
+    <Quantidade_Niveis>3</Quantidade_Niveis>
+    <Tempo_Total>5</Tempo_Total>
+  </GameplayParameters>
+  <ChallengeParameters>
+    <Porcentagem_Acerto>50</Porcentagem_Acerto>
+    <Tempo_Intervalo_Maximo>4</Tempo_Intervalo_Maximo>
+    <Tempo_Intervalo_Minimo>2</Tempo_Intervalo_Minimo>
+  </ChallengeParameters>
+</Arquivo_Parametros_Gerais>

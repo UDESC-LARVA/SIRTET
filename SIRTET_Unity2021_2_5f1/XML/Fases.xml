@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arquivo_de_Fases xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Lista_Fases>
+    <Fase Indice="A">
+      <Inicio_do_Circuito>0</Inicio_do_Circuito>
+      <Termino_do_Circuito>0</Termino_do_Circuito>
+    </Fase>
+    <Fase Indice="B">
+      <Inicio_do_Circuito>0</Inicio_do_Circuito>
+      <Termino_do_Circuito>0</Termino_do_Circuito>
+    </Fase>
+    <Fase Indice="C">
+      <Inicio_do_Circuito>0</Inicio_do_Circuito>
+      <Termino_do_Circuito>0</Termino_do_Circuito>
+    </Fase>
+    <Fase Indice="D">
+      <Inicio_do_Circuito>0</Inicio_do_Circuito>
+      <Termino_do_Circuito>0</Termino_do_Circuito>
+    </Fase>
+    <Fase Indice="E">
+      <Inicio_do_Circuito>0</Inicio_do_Circuito>
+      <Termino_do_Circuito>0</Termino_do_Circuito>
+    </Fase>
+    <Fase Indice="F">
+      <Inicio_do_Circuito>0</Inicio_do_Circuito>
+      <Termino_do_Circuito>0</Termino_do_Circuito>
+    </Fase>
+  </Lista_Fases>
+</Arquivo_de_Fases>

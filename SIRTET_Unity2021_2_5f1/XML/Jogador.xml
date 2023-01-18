@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arquivo_de_Jogadores xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Lista_Jogadores>
+    <Jogador Nome="DEFAULT" Envergadura="1.2" Altura="1.15">
+      <Fase_Atual>A</Fase_Atual>
+      <Nivel_Atual>7</Nivel_Atual>
+      <Sessao>2</Sessao>
+    </Jogador>
+  </Lista_Jogadores>
+</Arquivo_de_Jogadores>
