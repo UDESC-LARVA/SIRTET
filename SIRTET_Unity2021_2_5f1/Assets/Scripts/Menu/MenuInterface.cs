@@ -9,7 +9,7 @@ public class MenuInterface : MonoBehaviour {
 	GameController game;
 	
 	GUIStyle styleText = new GUIStyle ();
-	GUIStyle button, opt ,others, small;
+	GUIStyle button, smallbutton, opt ,others, small;
 	
 	string stringToEdit = "Nome do Jogador";
 	
@@ -48,6 +48,11 @@ public class MenuInterface : MonoBehaviour {
 		button.normal.textColor = Color.white;
 		button.hover.textColor = Color.green;
 
+		smallbutton = new GUIStyle(GUI.skin.button);
+		smallbutton.fontSize = (int)(height - 25)/2;
+		smallbutton.normal.textColor = Color.white;
+		smallbutton.hover.textColor = Color.green;
+
 		small = new GUIStyle(GUI.skin.box);
 		small.fontSize = (int)height/4;
 		small.alignment = TextAnchor.UpperCenter;
@@ -72,11 +77,11 @@ public class MenuInterface : MonoBehaviour {
 		
 		if(GUI.Button(new Rect(0, 0, width, height), "Iniciar", button))
 			SceneManager.LoadScene("Game_Start");
-		if(GUI.Button(new Rect(0, height, width, height), "Opcoes", button))
+		if(GUI.Button(new Rect(0, height, width, height), "Opções", button))
 			showOpt = !showOpt;
 		if(GUI.Button(new Rect(0, height * 2, width, height), "Encerrar", button))
 			Application.Quit();
-		if(GUI.Button(new Rect(width/3*2, height * 3, width/3, height/2), "Créditos", button))
+		if(GUI.Button(new Rect(width/3*2, height * 3, width/3, height/2), "Créditos", smallbutton))
 			showCred = !showCred;
 				
 		GUI.EndGroup();

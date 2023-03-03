@@ -8,6 +8,44 @@
         <Objeto>
           <Tipo>Alvo</Tipo>
           <Posicao> <!-- normalizado de 100x100 -->
+            <x>0</x>
+            <y>50</y>
+          </Posicao>
+          <Tamanho> <!-- Não normalizado, quadrado normal -->
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>1</Numero>
+    </Desafio>
+	
+	<Desafio> <!-- A1D -->
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao> <!-- normalizado de 100x100 -->
+            <x>0</x>
+            <y>50</y>
+          </Posicao>
+          <Tamanho> <!-- Não normalizado, quadrado normal -->
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>1</Numero>
+    </Desafio>
+	
+	<Desafio> <!-- A1D -->
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao> <!-- normalizado de 100x100 -->
             <x>30</x>
             <y>50</y>
           </Posicao>
@@ -972,7 +1010,7 @@
           </Posicao>
           <Tamanho> <!-- Não normalizado, quadrado normal -->
             <Height>150</Height>
-            <Weight>150</Weight>
+            <Weight>400</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
@@ -1451,7 +1489,7 @@
           </Posicao>
           <Tamanho> <!-- Não normalizado, quadrado normal -->
             <Height>250</Height>
-            <Weight>600</Weight>
+            <Weight>1000</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>

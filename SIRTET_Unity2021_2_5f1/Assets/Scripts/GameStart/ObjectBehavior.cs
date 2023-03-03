@@ -6,6 +6,8 @@ public class ObjectBehavior : MonoBehaviour {
 	
 	int behaviorAnimation = 1;
 	
+	public static bool tipoElementoVisual = true;
+	
 	// Chache classes e metodos
 	BaseController controladora;
 	Interface gui;
@@ -46,6 +48,9 @@ public class ObjectBehavior : MonoBehaviour {
 
 		elementoGrafico = this.transform.Find("elementoGrafico").gameObject;		
 		fantasma = this.transform.Find("fantasma").gameObject;
+		
+		//fantasma.SetActive(false);
+		//Debug.Log("APAGAR LINHA ACIMA");
 
 		type = objeto.Type;
 
@@ -57,6 +62,9 @@ public class ObjectBehavior : MonoBehaviour {
 			posRand = new Vector3(0, 1000, this.transform.position.z);
 			InvokeRepeating("RandomizaPosicao", 0, 1.5f);
 		}
+
+		if(tipoElementoVisual==false)
+			SetElement();
 
 	}
 
@@ -290,7 +298,8 @@ public class ObjectBehavior : MonoBehaviour {
 			
 			if(fantasma!=null)
 			{
-				fantasma.transform.position = new Vector3(fantasma.transform.position.x, fantasma.transform.position.y, limits[0].transform.position.z);
+				//fantasma.transform.position = new Vector3(fantasma.transform.position.x, fantasma.transform.position.y, limits[0].transform.position.z);
+				fantasma.transform.position = new Vector3(fantasma.transform.position.x, fantasma.transform.position.y, controladora.auxBase.transform.position.z);
 			}
 			
 			break;
@@ -309,7 +318,10 @@ public class ObjectBehavior : MonoBehaviour {
 		}
 
 		if(Input.GetKeyDown(KeyCode.T))
+		{
+			tipoElementoVisual = !tipoElementoVisual;
 			SetElement();
+		}
 	}
 
 
