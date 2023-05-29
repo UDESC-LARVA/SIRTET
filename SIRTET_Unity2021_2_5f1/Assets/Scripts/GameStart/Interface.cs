@@ -29,6 +29,7 @@ public class Interface : MonoBehaviour
 	public bool showVariables = false;
 	// Use this for initialization
 
+	GUIStyle box;
 
 	///feedback score
 	public class ScoreFeedback
@@ -48,13 +49,14 @@ public class Interface : MonoBehaviour
 	{
 		controller = GameObject.Find ("Ambiente").GetComponent<BaseController> ();
 	
-		
-		styleText.fontSize = 20;
-		styleText.alignment = TextAnchor.UpperLeft;
+		int fontSize = 30;
+
+		styleText.fontSize = fontSize;
+		styleText.alignment = TextAnchor.MiddleCenter;
 		styleText.normal.textColor = Color.white;
 		
-		styleScore.fontSize = 20;
-		styleScore.alignment = TextAnchor.UpperLeft;
+		styleScore.fontSize = fontSize;
+		styleScore.alignment = TextAnchor.MiddleCenter;
 		styleScore.normal.textColor = Color.white;
 
 		styleScorePlus.fontSize = styleScore.fontSize;		
@@ -66,7 +68,7 @@ public class Interface : MonoBehaviour
 		styleScoreMinus.normal.textColor = Color.red;
 	
 		
-		styleAjuda.fontSize = 20;
+		styleAjuda.fontSize = fontSize;
 		styleAjuda.alignment = TextAnchor.UpperLeft;
 		styleAjuda.normal.textColor = Color.white;
 		
@@ -75,8 +77,7 @@ public class Interface : MonoBehaviour
 		auxBarra.Apply();
 		styleBarra.normal.background = auxBarra;
 		
-		performance = controller.challengeSequence.Count / controller.levelQuantity;
-		
+		performance = controller.challengeSequence.Count / controller.levelQuantity;		
 		
 		CreateScore();
 		
@@ -109,17 +110,33 @@ public class Interface : MonoBehaviour
 		
 		if(endTime <= 0)
 			controller.isPaused = true;
+
+			
+
+		//////
+
 		
-		GUI.BeginGroup(new Rect(Screen.width - 250, 1, 500, 500));
+
+		box = new GUIStyle(GUI.skin.box);
+		box.fontSize = 30;
+		box.alignment = TextAnchor.UpperCenter;
+		box.normal.textColor = Color.white;
+
+
+
+
+		GUI.BeginGroup(new Rect(Screen.width - 250, 1, 150, 150));
+		
+		GUI.Box(new Rect(0, 0, 150, 150), " ", box);
 		
 		// Timer
 		timerString = string.Format ("{0:00}:{1:00}", (minutes % 60).ToString ("00"), (seconds).ToString ("00"));
-		GUI.Label (new Rect (1, 1, 100, 100), timerString, styleText);
+		GUI.Label (new Rect (1, 1, 150, 100), timerString, styleText);
 		
 		// Pontuacao
 		styleScore.normal.textColor = Color.Lerp(styleScore.normal.textColor, Color.white, Time.deltaTime);
-		GUI.Label (new Rect (1, 30, 100, 100), "" + (scoreGUI*100).ToString("0"), styleScore);
-		GUI.Label (new Rect (1, 60, 100, 100), "" + starScoreStr, styleText);
+		GUI.Label (new Rect (1, 30, 150, 100), "" + (scoreGUI*100).ToString("0"), styleScore);
+		GUI.Label (new Rect (1, 60, 150, 100), "" + starScoreStr, styleText);
 		
 		GUI.EndGroup();		
 		// Niveis

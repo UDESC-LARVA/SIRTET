@@ -173,7 +173,7 @@ public class MenuInterface : MonoBehaviour {
 
 			string texto = "Game Design: \nGabriel Mesquita Rossito, \nMarcelo da Silva Hounsell, \nAntonio Vinicius Soares"+
 			"\n\nGame Dev, v1.0: \nGabriel Mesquita Rossito"+
-			"\n\nGame Dev, v2.0 (MediaPipe): \nDiego Filipe Tondorf";
+			"\n\nGame Dev, v2.0 (MediaPipe): \nDiego Fellipe Tondorf";
 		    	    
 			GUI.Box(new Rect(0, 0, Screen.width*.25f, Screen.height), texto, small);
 			
