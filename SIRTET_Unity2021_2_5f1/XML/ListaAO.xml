@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ListaAO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<ListaDesafios>
-	<!-- LISTA DE DESAFIOS CRIADOS PARA O UPA - 28/09/2022-->
-	
-	<Desafio> <!-- A1D -->
+<ListaAO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ListaDesafios>
+
+    <!-- NOVA LISTA DE DESAFIOS -->
+    <!-- D. F. TONDORF - 27/06/2023-->
+
+    <Desafio>
       <Objetos>
         <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>30</x>
-            <y>50</y>
+          <Posicao>
+            <x>44</x>
+            <y>42</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
@@ -21,16 +24,15 @@
       <Dificuldade>1</Dificuldade>
       <Numero>1</Numero>
     </Desafio>
-	
-	<Desafio> <!-- A1E -->
+    <Desafio>
       <Objetos>
         <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> 
-            <x>-30</x>
-            <y>50</y>
+          <Posicao>
+            <x>-44</x>
+            <y>42</y>
           </Posicao>
-          <Tamanho> 
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
@@ -40,132 +42,125 @@
       <Dificuldade>1</Dificuldade>
       <Numero>2</Numero>
     </Desafio>
-
-	<Desafio> <!-- A2D -->
+    <Desafio>
       <Objetos>
         <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>90</x>
-            <y>50</y>
+          <Posicao>
+            <x>44</x>
+            <y>56</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>3</Numero>
     </Desafio>
-	
-	<Desafio> <!-- A2E -->
+    <Desafio>
       <Objetos>
         <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> 
-            <x>-90</x>
-            <y>50</y>
+          <Posicao>
+            <x>-44</x>
+            <y>56</y>
           </Posicao>
-          <Tamanho> 
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>4</Numero>
     </Desafio>
-	
-	<Desafio> <!-- A3D -->
+    <Desafio>
       <Objetos>
         <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>30</x>
-            <y>80</y>
+          <Posicao>
+            <x>44</x>
+            <y>42</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>5</Numero>
     </Desafio>
-	
-	<Desafio> <!-- A3E -->
+    <Desafio>
       <Objetos>
         <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> 
-            <x>-30</x>
-            <y>80</y>
+          <Posicao>
+            <x>-44</x>
+            <y>42</y>
           </Posicao>
-          <Tamanho> 
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>6</Numero>
     </Desafio>
-	
-	<Desafio> <!-- A4D -->
+    <Desafio>
       <Objetos>
         <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>90</x>
-            <y>80</y>
+          <Posicao>
+            <x>44</x>
+            <y>70</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>3</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>7</Numero>
     </Desafio>
-	
-	<Desafio> <!-- A4E -->
+    <Desafio>
       <Objetos>
         <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> 
-            <x>-90</x>
-            <y>80</y>
+          <Posicao>
+            <x>-44</x>
+            <y>70</y>
           </Posicao>
-          <Tamanho> 
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>3</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>8</Numero>
     </Desafio>
-	
-	<Desafio> <!-- O5D -->
+    <Desafio>
       <Objetos>
         <Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>30</x>
-            <y>50</y>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>22</x>
+            <y>84</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>400</Weight>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
@@ -173,18 +168,17 @@
       <Dificuldade>1</Dificuldade>
       <Numero>9</Numero>
     </Desafio>
-	
-	<Desafio> <!-- O5E -->
+    <Desafio>
       <Objetos>
         <Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> 
-            <x>-30</x>
-            <y>50</y>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>-22</x>
+            <y>84</y>
           </Posicao>
-          <Tamanho> 
+          <Tamanho>
             <Height>150</Height>
-            <Weight>400</Weight>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
@@ -192,321 +186,195 @@
       <Dificuldade>1</Dificuldade>
       <Numero>10</Numero>
     </Desafio>
-	
-	<Desafio> <!-- O6D -->
+    <Desafio>
       <Objetos>
         <Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>20</x>
-            <y>80</y>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>22</x>
+            <y>98</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>400</Weight>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>11</Numero>
     </Desafio>
-	
-	<Desafio> <!-- O6E -->
+    <Desafio>
       <Objetos>
         <Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> 
-            <x>-20</x>
-            <y>80</y>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>-22</x>
+            <y>98</y>
           </Posicao>
-          <Tamanho> 
+          <Tamanho>
             <Height>150</Height>
-            <Weight>400</Weight>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>12</Numero>
     </Desafio>
-	
-	<Desafio> <!-- O7D -->
+    <Desafio>
       <Objetos>
         <Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>40</x>
-            <y>20</y>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>44</x>
+            <y>84</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>400</Weight>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>3</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>13</Numero>
     </Desafio>
-	
-	<Desafio> <!-- O7E -->
+    <Desafio>
       <Objetos>
         <Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> 
-            <x>-40</x>
-            <y>20</y>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>-44</x>
+            <y>84</y>
           </Posicao>
-          <Tamanho> 
+          <Tamanho>
             <Height>150</Height>
-            <Weight>400</Weight>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>3</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>14</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C8D -->
-	 <Objetos>
-         <Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>20</x>
-            <y>60</y>
+          <Posicao>
+            <x>66</x>
+            <y>56</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>150</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		 <Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>20</x>
-            <y>50</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>15</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C8E -->
-	 <Objetos>
-         <Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-20</x>
-            <y>60</y>
+          <Posicao>
+            <x>-66</x>
+            <y>56</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>150</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		 <Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-20</x>
-            <y>50</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>16</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C9D -->
-	 <Objetos>
-         <Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>90</x>
-            <y>60</y>
+          <Posicao>
+            <x>66</x>
+            <y>42</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>150</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		 <Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>50</x>
-            <y>50</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>3</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>17</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C9E -->
-	 <Objetos>
-         <Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-90</x>
-            <y>60</y>
+          <Posicao>
+            <x>-66</x>
+            <y>42</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>150</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		 <Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-50</x>
-            <y>50</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>3</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>18</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C10D -->
-	 <Objetos>
-         <Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>75</x>
-            <y>65</y>
+          <Posicao>
+            <x>66</x>
+            <y>70</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
-		 <Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>0</x>
-            <y>80</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>300</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>19</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C10E -->
-	 <Objetos>
-         <Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-75</x>
-            <y>65</y>
+          <Posicao>
+            <x>-66</x>
+            <y>70</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
-		 <Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>0</x>
-            <y>80</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>300</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>20</Numero>
     </Desafio>
-	
-	<Desafio> 
-	 <Objetos>
-         <Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>0</x>
-            <y>10</y>
+          <Posicao>
+            <x>66</x>
+            <y>84</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>350</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		 <Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>0</x>
-            <y>80</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>300</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-      </Objetos>
-      <Dificuldade>2</Dificuldade>
-      <Numero>57</Numero>
-    </Desafio>
-	
-	<Desafio> <!-- A11ED -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>60</x>
-            <y>35</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>150</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		<Objeto>
-          <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-60</x>
-            <y>35</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
@@ -516,347 +384,249 @@
       <Dificuldade>1</Dificuldade>
       <Numero>21</Numero>
     </Desafio>
-	
-	<Desafio> <!-- A12ED -->
-	 <Objetos>
-		<Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>50</x>
-            <y>80</y>
+          <Posicao>
+            <x>-66</x>
+            <y>84</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>150</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		<Objeto>
-          <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-50</x>
-            <y>80</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>22</Numero>
     </Desafio>
-	
-	<Desafio> <!-- A13ED -->
-	 <Objetos>
-		<Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>30</x>
-            <y>50</y>
+          <Posicao>
+            <x>88</x>
+            <y>84</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>150</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		<Objeto>
-          <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-30</x>
-            <y>80</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>23</Numero>
     </Desafio>
-	
-	<Desafio> <!-- A14ED -->
-	 <Objetos>
-		<Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>30</x>
-            <y>80</y>
+          <Posicao>
+            <x>-88</x>
+            <y>84</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>150</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		<Objeto>
-          <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-30</x>
-            <y>50</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>24</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C15D -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>10</x>
-            <y>75</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>350</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		<Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>55</x>
-            <y>75</y>
+          <Posicao>
+            <x>44</x>
+            <y>14</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>25</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C15E -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-10</x>
-            <y>75</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>350</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		<Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-55</x>
-            <y>75</y>
+          <Posicao>
+            <x>-44</x>
+            <y>14</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>26</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C16D -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>55</x>
-            <y>75</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>400</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		<Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>90</x>
-            <y>60</y>
+          <Posicao>
+            <x>44</x>
+            <y>28</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>27</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C16E -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-55</x>
-            <y>75</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>400</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		<Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-90</x>
-            <y>60</y>
+          <Posicao>
+            <x>-44</x>
+            <y>28</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>28</Numero>
     </Desafio>
-	
-	<Desafio> <!-- O17D -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-35</x>
-            <y>10</y>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>44</x>
+            <y>14</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>600</Weight>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>29</Numero>
     </Desafio>
-	
-	<Desafio> <!-- O17E -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>35</x>
-            <y>10</y>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>-44</x>
+            <y>14</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>600</Weight>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>30</Numero>
     </Desafio>
-	
-	<Desafio> <!-- O18D -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>35</x>
-            <y>40</y>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>66</x>
+            <y>28</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>300</Height>
-            <Weight>600</Weight>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>31</Numero>
     </Desafio>
-	
-	<Desafio> <!-- O18E -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-35</x>
-            <y>40</y>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>-66</x>
+            <y>28</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>300</Height>
-            <Weight>600</Weight>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>32</Numero>
     </Desafio>
-	
-	<Desafio> <!-- O19D -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>35</x>
-            <y>60</y>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>88</x>
+            <y>28</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>300</Height>
-            <Weight>600</Weight>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>3</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>33</Numero>
     </Desafio>
-	
-	<Desafio> <!-- O19E -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-35</x>
-            <y>60</y>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>-88</x>
+            <y>28</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>300</Height>
-            <Weight>600</Weight>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>3</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>34</Numero>
     </Desafio>
-	
-	<Desafio> <!-- A20D -->
-	 <Objetos>
-		<Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>15</x>
-            <y>10</y>
+          <Posicao>
+            <x>88</x>
+            <y>14</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
@@ -866,16 +636,15 @@
       <Dificuldade>1</Dificuldade>
       <Numero>35</Numero>
     </Desafio>
-	
-	<Desafio> <!-- A20E -->
-	 <Objetos>
-		<Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-15</x>
-            <y>10</y>
+          <Posicao>
+            <x>-88</x>
+            <y>14</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
@@ -885,485 +654,385 @@
       <Dificuldade>1</Dificuldade>
       <Numero>36</Numero>
     </Desafio>
-	
-	<Desafio> <!-- A21D -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>50</x>
-            <y>10</y>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>66</x>
+            <y>14</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>150</Weight>
+            <Weight>450</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>37</Numero>
     </Desafio>
-	
-	<Desafio> <!-- A21E -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-50</x>
-            <y>10</y>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>-66</x>
+            <y>14</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>150</Weight>
+            <Weight>450</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>38</Numero>
     </Desafio>
-	
-	<Desafio> <!-- A22D -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-90</x>
-            <y>10</y>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>44</x>
+            <y>42</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>3</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>39</Numero>
     </Desafio>
-	
-	<Desafio> <!-- A22E -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>90</x>
-            <y>10</y>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>-44</x>
+            <y>42</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>3</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>40</Numero>
     </Desafio>
-	
-	<Desafio> <!-- A22E -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>0</x>
-            <y>10</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>400</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-      </Objetos>
-      <Dificuldade>2</Dificuldade>
-      <Numero>58</Numero>
-    </Desafio>
-	
-	<Desafio> <!-- C23D -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>25</x>
-            <y>50</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>150</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		<Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-30</x>
-            <y>10</y>
+          <Posicao>
+            <x>33</x>
+            <y>14</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>600</Weight>
+            <Weight>300</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>41</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C23E -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-25</x>
-            <y>50</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>150</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		<Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>30</x>
-            <y>10</y>
+          <Posicao>
+            <x>-33</x>
+            <y>14</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>600</Weight>
+            <Weight>300</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>42</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C24D -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>25</x>
-            <y>70</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>150</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		<Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-30</x>
-            <y>10</y>
+          <Posicao>
+            <x>77</x>
+            <y>28</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>600</Weight>
+            <Weight>300</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>43</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C24E -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-25</x>
-            <y>70</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>150</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		<Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>30</x>
-            <y>10</y>
+          <Posicao>
+            <x>-77</x>
+            <y>28</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>600</Weight>
+            <Weight>300</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>44</Numero>
-	 </Desafio> 
-	
-	<Desafio> <!-- C25D -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>95</x>
-            <y>100</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>150</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		<Objeto>
+    </Desafio>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-30</x>
-            <y>10</y>
+          <Posicao>
+            <x>33</x>
+            <y>42</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>600</Weight>
+            <Weight>300</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>3</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>45</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C25E -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-95</x>
-            <y>100</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>150</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		<Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>30</x>
-            <y>10</y>
+          <Posicao>
+            <x>-33</x>
+            <y>42</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>600</Weight>
+            <Weight>300</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>3</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>46</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C26D -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>5</x>
-            <y>25</y>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>22</x>
+            <y>70</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
-		<Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>30</x>
-            <y>10</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>600</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>47</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C26E -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-5</x>
-            <y>25</y>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>-22</x>
+            <y>70</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
-		<Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-30</x>
-            <y>10</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>150</Height>
-            <Weight>600</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>48</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C27D -->
-	 <Objetos>
-		<Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-50</x>
-            <y>35</y>
+          <Posicao>
+            <x>44</x>
+            <y>42</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
-		<Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>49</Numero>
+      <Objetos>
+        <Objeto>
           <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-30</x>
-            <y>10</y>
+          <Posicao>
+            <x>44</x>
+            <y>28</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>600</Weight>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>3</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>49</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C27E -->
-	 <Objetos>
-		<Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>50</x>
-            <y>35</y>
+          <Posicao>
+            <x>-44</x>
+            <y>42</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
-		<Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>50</Numero>
+      <Objetos>
+        <Objeto>
           <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>30</x>
-            <y>10</y>
+          <Posicao>
+            <x>-44</x>
+            <y>28</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>600</Weight>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>3</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>50</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C28D -->
-	 <Objetos>
-		<Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>35</x>
-            <y>75</y>
+          <Posicao>
+            <x>44</x>
+            <y>28</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
-		<Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>51</Numero>
+      <Objetos>
+        <Objeto>
           <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>30</x>
-            <y>10</y>
+          <Posicao>
+            <x>44</x>
+            <y>14</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>600</Weight>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>3</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>51</Numero>
     </Desafio>
-	
-	<Desafio> <!-- C28E -->
-	 <Objetos>
-		<Objeto>
+    <Desafio>
+      <Objetos>
+        <Objeto>
           <Tipo>Alvo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-35</x>
-            <y>75</y>
+          <Posicao>
+            <x>-44</x>
+            <y>28</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
             <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
-		<Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>52</Numero>
+      <Objetos>
+        <Objeto>
           <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-30</x>
-            <y>10</y>
+          <Posicao>
+            <x>-44</x>
+            <y>14</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>600</Weight>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>3</Dificuldade>
+      <Dificuldade>1</Dificuldade>
       <Numero>52</Numero>
     </Desafio>
-	
-	<Desafio> <!-- O29ED -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>0</x>
-            <y>80</y>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>44</x>
+            <y>70</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>600</Weight>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>53</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>44</x>
+            <y>56</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
@@ -1371,94 +1040,652 @@
       <Dificuldade>1</Dificuldade>
       <Numero>53</Numero>
     </Desafio>
-	
-	<Desafio> <!-- O30ED -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>0</x>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>-44</x>
             <y>70</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>600</Weight>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
+      <Numero>54</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>-44</x>
+            <y>56</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
       <Numero>54</Numero>
     </Desafio>
-	
-	<Desafio> <!-- O31ED -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>0</x>
-            <y>60</y>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>22</x>
+            <y>28</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
+          <Tamanho>
             <Height>150</Height>
-            <Weight>600</Weight>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>3</Dificuldade>
+      <Dificuldade>1</Dificuldade>
+      <Numero>55</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>22</x>
+            <y>14</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
       <Numero>55</Numero>
     </Desafio>
-	
-	<Desafio> <!-- O32ED -->
-	 <Objetos>
-		<Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>80</x>
-            <y>10</y>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>-22</x>
+            <y>28</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>250</Height>
-            <Weight>550</Weight>
-            <Quantity>1</Quantity>
-          </Tamanho>
-        </Objeto>
-		<Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>-80</x>
-            <y>10</y>
-          </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>250</Height>
-            <Weight>550</Weight>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>3</Dificuldade>
+      <Dificuldade>1</Dificuldade>
+      <Numero>56</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>-22</x>
+            <y>14</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
       <Numero>56</Numero>
     </Desafio>
-	
-	<Desafio> 
-	 <Objetos>
-		<Objeto>
-          <Tipo>Obstaculo</Tipo>
-          <Posicao> <!-- normalizado de 100x100 -->
-            <x>0</x>
-            <y>10</y>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>44</x>
+            <y>70</y>
           </Posicao>
-          <Tamanho> <!-- Não normalizado, quadrado normal -->
-            <Height>250</Height>
-            <Weight>1000</Weight>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
             <Quantity>1</Quantity>
           </Tamanho>
         </Objeto>
       </Objetos>
-      <Dificuldade>2</Dificuldade>
+      <Dificuldade>1</Dificuldade>
+      <Numero>57</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>44</x>
+            <y>56</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>57</Numero>
+    </Desafio>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>-44</x>
+            <y>70</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>58</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>-44</x>
+            <y>56</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>58</Numero>
+    </Desafio>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>66</x>
+            <y>56</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>59</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>77</x>
+            <y>42</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>300</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
       <Numero>59</Numero>
     </Desafio>
-	
-	</ListaDesafios>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>-66</x>
+            <y>56</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>60</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>-77</x>
+            <y>42</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>300</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>60</Numero>
+    </Desafio>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>66</x>
+            <y>28</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>61</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>66</x>
+            <y>14</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>61</Numero>
+    </Desafio>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>-66</x>
+            <y>28</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>62</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>-66</x>
+            <y>14</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>62</Numero>
+    </Desafio>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>77</x>
+            <y>56</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>300</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>63</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>88</x>
+            <y>42</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>63</Numero>
+    </Desafio>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>-77</x>
+            <y>56</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>300</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>64</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>-88</x>
+            <y>42</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>64</Numero>
+    </Desafio>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>88</x>
+            <y>70</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>65</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>88</x>
+            <y>56</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>65</Numero>
+    </Desafio>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>-88</x>
+            <y>70</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>66</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>-88</x>
+            <y>56</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>66</Numero>
+    </Desafio>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>88</x>
+            <y>28</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>67</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>88</x>
+            <y>14</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>67</Numero>
+    </Desafio>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>-88</x>
+            <y>28</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>68</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>-88</x>
+            <y>14</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>68</Numero>
+    </Desafio>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>88</x>
+            <y>56</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>69</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>66</x>
+            <y>28</y>
+          </Posicao>
+          <Tamanho>
+            <Height>450</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>69</Numero>
+    </Desafio>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>-88</x>
+            <y>56</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>70</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>-66</x>
+            <y>28</y>
+          </Posicao>
+          <Tamanho>
+            <Height>450</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>70</Numero>
+    </Desafio>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>66</x>
+            <y>14</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>450</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>71</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>-66</x>
+            <y>14</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>450</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>71</Numero>
+    </Desafio>
+    <Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>66</x>
+            <y>56</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>450</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>72</Numero>
+      <Objetos>
+        <Objeto>
+          <Tipo>Obstaculo</Tipo>
+          <Posicao>
+            <x>-66</x>
+            <y>56</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>450</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>72</Numero>
+    </Desafio>
+
+  </ListaDesafios>
 </ListaAO>

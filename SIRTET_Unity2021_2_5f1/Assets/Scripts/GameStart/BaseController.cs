@@ -159,11 +159,11 @@ public class BaseController : MonoBehaviour
 		//
 		/*SOMENTE TESTES
 		Debug.Log(standardObjVelocity + " | " + standardChallengeInterval);
-		standardObjVelocity = 4;
-		standardChallengeInterval = 4f;
+		standardObjVelocity = 15;
+		standardChallengeInterval = 1f;
 		Debug.Log("APAGAR LINHAS ACIMA");
 		
-		*/
+		//*/
 		/////////
 	}
 

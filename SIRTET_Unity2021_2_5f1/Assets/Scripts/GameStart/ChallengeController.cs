@@ -45,6 +45,7 @@ public class ChallengeController : MonoBehaviour
 				// Pega desafio e lança invokeRepeating para cada objeto dentro dele
 				Desafio nextChallenge = controladora.challengeSequence [0];
 				controladora.challengeSequence.Remove(nextChallenge);
+				controladora.challengeSequence.Add(nextChallenge);//correção temporária para a v2
 				tracer.challengeInAction.Add(new Desafio(){ Dificulty = nextChallenge.Dificulty, SequenceNumber = nextChallenge.SequenceNumber , ListaObjeto = nextChallenge.ListaObjeto });
 				foreach (Objeto obj in nextChallenge.ListaObjeto) {
 					StartCoroutine (CreateObject (nextChallenge, obj, 0.15f));

@@ -2355,4 +2355,4 @@ ScriptsOnlyBuild:
   - Assets/Cenas/Initialization.unity
   - Assets/Cenas/Menu_Total.unity
   - Assets/Cenas/Game_Start.unity
-  playerPath: E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET.exe
+  playerPath: E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET.exe

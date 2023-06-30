@@ -1,529 +1,529 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1685364799862432, "dur":998, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364799863434, "dur":63, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1685364799863506, "dur":19, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1685364799863526, "dur":266, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1685364799863817, "dur":460, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364799864277, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701617, "dur":179, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701796, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701806, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701809, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701815, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701817, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701826, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701828, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701834, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701836, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701842, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701844, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701850, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701851, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701858, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701861, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701868, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701882, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800701887, "dur":1701, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1685364799864251, "dur":54, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364799864305, "dur":3726, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364799868031, "dur":382, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":1, "ts":1685364799868416, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364799893717, "dur":33383, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":1, "ts":1685364799927164, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":1, "ts":1685364799927296, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364799927579, "dur":47306, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":1, "ts":1685364799974929, "dur":218664, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":1, "ts":1685364800193596, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364800193601, "dur":11924, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":1, "ts":1685364800205579, "dur":314, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800205896, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364800205902, "dur":10303, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800216239, "dur":15713, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800231955, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364800231962, "dur":73182, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800305186, "dur":17541, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800322730, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364800322734, "dur":4816, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800327599, "dur":17669, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800345292, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364800345301, "dur":4209, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800349543, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800349663, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364800349673, "dur":656, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800350359, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800350493, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364800350514, "dur":10112, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800360661, "dur":178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800360842, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364800360852, "dur":685, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800361568, "dur":54687, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800416259, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364800416268, "dur":813, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800417109, "dur":18111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800435224, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364800435231, "dur":3564, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800438829, "dur":502, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800439333, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364800439337, "dur":10952, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800450318, "dur":368, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800450710, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364800450716, "dur":20789, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800471539, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.Burst.Unsafe.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800471649, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364800471657, "dur":878, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.Burst.Unsafe.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800472566, "dur":90745, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800563314, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364800563320, "dur":31965, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
-,{ "pid":12345, "tid":1, "ts":1685364800595323, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":1, "ts":1685364800595359, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364800595366, "dur":43356, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":1, "ts":1685364800638764, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/level1" }}
-,{ "pid":12345, "tid":1, "ts":1685364800638819, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364800638844, "dur":2373, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/level1" }}
-,{ "pid":12345, "tid":1, "ts":1685364800641258, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":1, "ts":1685364800641308, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1685364800641316, "dur":9393, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":1, "ts":1685364800650735, "dur":50881, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364799864238, "dur":58, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364799864296, "dur":3716, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364799868017, "dur":347, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1685364799868367, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364799893835, "dur":34834, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1685364799928768, "dur":78890, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1685364800007662, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800007962, "dur":28253, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1685364800036323, "dur":1066, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET.exe" }}
-,{ "pid":12345, "tid":2, "ts":1685364800037395, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800037406, "dur":1877, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET.exe" }}
-,{ "pid":12345, "tid":2, "ts":1685364800039333, "dur":194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":2, "ts":1685364800039532, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800060360, "dur":87458, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":2, "ts":1685364800147863, "dur":16711, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800164578, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800164585, "dur":749, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800165364, "dur":14805, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800180171, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800180176, "dur":708, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800180916, "dur":14189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800195109, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800195114, "dur":10223, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800205371, "dur":1161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800206535, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800206543, "dur":10382, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800216970, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800217098, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800217107, "dur":10212, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800227350, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800227484, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800227492, "dur":66292, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800293818, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800293954, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800293964, "dur":11620, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800305615, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800305769, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800305775, "dur":749, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800306557, "dur":15563, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800322123, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800322131, "dur":5380, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800327544, "dur":211, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800327758, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800327765, "dur":10525, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800338322, "dur":222, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800338547, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800338555, "dur":1057, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800339641, "dur":17697, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800357342, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800357349, "dur":3455, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800360836, "dur":16033, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800376874, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800376886, "dur":1088, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800378006, "dur":1098, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800379108, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800379117, "dur":4249, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800383388, "dur":17342, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800400735, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800400744, "dur":4607, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800405378, "dur":15206, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800420590, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800420623, "dur":7637, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800428296, "dur":170, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800428469, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800428476, "dur":971, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800429482, "dur":159, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.VisualEffectGraph.Runtime.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800429643, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800429651, "dur":8926, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.VisualEffectGraph.Runtime.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800438612, "dur":414, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800439029, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800439034, "dur":10958, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800450021, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800450122, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800450129, "dur":11030, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800461277, "dur":1004, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800462288, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800462299, "dur":10127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800472455, "dur":40943, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800513402, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800513408, "dur":14145, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800527587, "dur":327, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800527917, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800527926, "dur":10703, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800538665, "dur":204, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800538874, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800538880, "dur":11086, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800550026, "dur":209, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800550238, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800550248, "dur":11135, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800561412, "dur":223, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800561639, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800561670, "dur":22301, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800584012, "dur":203, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800584219, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800584232, "dur":847, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800585173, "dur":13055, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Plugins/x86_64/lib_burst_generated.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800598231, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800616250, "dur":825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Plugins/x86_64/lib_burst_generated.dll" }}
-,{ "pid":12345, "tid":2, "ts":1685364800617113, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1685364800617149, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1685364800617154, "dur":32559, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1685364800649741, "dur":51820, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685364799864197, "dur":90, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685364799864290, "dur":3714, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685364799868016, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":3, "ts":1685364799868019, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685364799868145, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/app.info" }}
-,{ "pid":12345, "tid":3, "ts":1685364799868158, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685364799868968, "dur":14463, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/app.info" }}
-,{ "pid":12345, "tid":3, "ts":1685364799883433, "dur":60970, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1685364799944406, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685364799944414, "dur":576, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1685364799945024, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":3, "ts":1685364799945108, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685364799945112, "dur":12564, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":3, "ts":1685364799957728, "dur":584903, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685364800542633, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685364800542702, "dur":9980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685364800552722, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685364800552825, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685364800552830, "dur":8490, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685364800561354, "dur":199, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685364800561556, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685364800561563, "dur":21447, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685364800583051, "dur":93389, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685364800676444, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1685364800676452, "dur":921, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":3, "ts":1685364800677394, "dur":24210, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685364799864627, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685364799864627, "dur":3445, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685364799868073, "dur":158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1685364799868234, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685364799893805, "dur":26427, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1685364799920275, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1685364799920365, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685364799920370, "dur":30170, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1685364799950624, "dur":568600, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":4, "ts":1685364800519238, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685364800519426, "dur":8686, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":4, "ts":1685364800528184, "dur":403, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":4, "ts":1685364800528590, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685364800528597, "dur":10378, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":4, "ts":1685364800539003, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":4, "ts":1685364800539190, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685364800539196, "dur":21834, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":4, "ts":1685364800561058, "dur":2112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":4, "ts":1685364800563173, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685364800563179, "dur":22030, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":4, "ts":1685364800585240, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":4, "ts":1685364800585275, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685364800585319, "dur":9574, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":4, "ts":1685364800594921, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":4, "ts":1685364800594953, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685364800594958, "dur":21886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":4, "ts":1685364800616872, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/resources.resource" }}
-,{ "pid":12345, "tid":4, "ts":1685364800616930, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685364800616937, "dur":22008, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/resources.resource" }}
-,{ "pid":12345, "tid":4, "ts":1685364800638977, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/level0" }}
-,{ "pid":12345, "tid":4, "ts":1685364800639010, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1685364800639014, "dur":10490, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/level0" }}
-,{ "pid":12345, "tid":4, "ts":1685364800649534, "dur":52065, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364799864364, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364799864365, "dur":3646, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364799868016, "dur":33005, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":5, "ts":1685364799901025, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364799905061, "dur":11239, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":5, "ts":1685364799916337, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":5, "ts":1685364799916419, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364799916454, "dur":22141, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":5, "ts":1685364799938700, "dur":167581, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":5, "ts":1685364800106289, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800106302, "dur":833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":5, "ts":1685364800107183, "dur":30751, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800137937, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800137941, "dur":11621, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800149591, "dur":15037, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800164630, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800164636, "dur":738, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800165401, "dur":14523, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800179929, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800179938, "dur":727, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800180693, "dur":47501, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800228197, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800228205, "dur":77026, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800305267, "dur":17236, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800322506, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800322513, "dur":5025, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800327573, "dur":250, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800327825, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800327831, "dur":10545, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800338404, "dur":26821, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800365230, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800365239, "dur":796, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800366065, "dur":22963, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800389033, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800389042, "dur":860, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800389938, "dur":18416, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800408359, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800408367, "dur":7928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800416325, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800416462, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800416468, "dur":660, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800417159, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800417278, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800417285, "dur":658, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800417972, "dur":565, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800418541, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800418548, "dur":9491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800428071, "dur":529, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800428603, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800428609, "dur":1107, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800429754, "dur":206, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800429963, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800429969, "dur":8843, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800438842, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800438960, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800438967, "dur":10955, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800449952, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.RenderPipelines.HighDefinition.Config.Runtime.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800450058, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800450067, "dur":11039, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.RenderPipelines.HighDefinition.Config.Runtime.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800461139, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800461273, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800461283, "dur":10606, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800471923, "dur":35929, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800507857, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800507865, "dur":19512, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800527426, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800527578, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800527587, "dur":10596, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800538216, "dur":805, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800539023, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800539030, "dur":21729, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800560794, "dur":501, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800561299, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800561309, "dur":10626, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800571969, "dur":310, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800572283, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800572291, "dur":12555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800584884, "dur":288, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800585193, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800585202, "dur":9647, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":5, "ts":1685364800594885, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":5, "ts":1685364800594925, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800594932, "dur":21854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":5, "ts":1685364800616827, "dur":7134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":5, "ts":1685364800623966, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800623972, "dur":25524, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":5, "ts":1685364800649527, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/boot.config" }}
-,{ "pid":12345, "tid":5, "ts":1685364800649637, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1685364800649644, "dur":684, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/boot.config" }}
-,{ "pid":12345, "tid":5, "ts":1685364800650355, "dur":51208, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685364799864324, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685364799864325, "dur":3709, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685364799868035, "dur":313, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1685364799868354, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685364799893717, "dur":52902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1685364799946663, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":6, "ts":1685364799946739, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685364799946744, "dur":20145, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":6, "ts":1685364799966943, "dur":709884, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":6, "ts":1685364800676829, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1685364800676834, "dur":24631, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":6, "ts":1685364800701536, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":6, "ts":1685364800701538, "dur":1, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364799864558, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364799864558, "dur":3472, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364799868031, "dur":33883, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1685364799901917, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364799915855, "dur":689, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1685364799916593, "dur":12040, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":7, "ts":1685364799928637, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364799928645, "dur":10417, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":7, "ts":1685364799939145, "dur":68564, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":7, "ts":1685364800007715, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800007921, "dur":55751, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":7, "ts":1685364800063750, "dur":31384, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800095141, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800095153, "dur":1317, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800096541, "dur":391, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800096938, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800096953, "dur":1452, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800098476, "dur":304, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800098786, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800098800, "dur":6286, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800105124, "dur":17954, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800123083, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800123093, "dur":811, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800123941, "dur":68537, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800192484, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800192492, "dur":714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800193234, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800193353, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800193359, "dur":11903, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800205297, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800205450, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800205458, "dur":692, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800206191, "dur":13668, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UaaLAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800219863, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800219872, "dur":7736, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UaaLAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800227639, "dur":13418, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800241061, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800241068, "dur":64109, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800305227, "dur":177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800305409, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800305446, "dur":996, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800306472, "dur":15647, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800322123, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800322131, "dur":5273, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800327437, "dur":17147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800344589, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800344598, "dur":849, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800345478, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800345603, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800345608, "dur":4023, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800349659, "dur":225, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800349889, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800349897, "dur":630, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800350561, "dur":16150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800366715, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800366724, "dur":5143, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800371968, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800372111, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800372118, "dur":642, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800372788, "dur":16382, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800389173, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800389181, "dur":712, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800389923, "dur":15729, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800405655, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800405684, "dur":571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800406290, "dur":223, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800406516, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800406524, "dur":704, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800407256, "dur":94470, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800501730, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800501739, "dur":3525, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800505296, "dur":338, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800505637, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800505645, "dur":913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800506588, "dur":12632, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800519226, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800519236, "dur":19047, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800538311, "dur":111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Runtime.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800538425, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800538433, "dur":850, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Runtime.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800539315, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800539421, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800539426, "dur":21542, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800561000, "dur":2290, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800563292, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800563298, "dur":21537, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800584868, "dur":345, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800585215, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800585220, "dur":9810, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":7, "ts":1685364800595062, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":7, "ts":1685364800595112, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800595117, "dur":32446, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":7, "ts":1685364800627597, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/level2" }}
-,{ "pid":12345, "tid":7, "ts":1685364800627632, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800627639, "dur":11613, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/level2" }}
-,{ "pid":12345, "tid":7, "ts":1685364800639281, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/globalgamemanagers.assets.resS" }}
-,{ "pid":12345, "tid":7, "ts":1685364800639313, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1685364800639319, "dur":10280, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/globalgamemanagers.assets.resS" }}
-,{ "pid":12345, "tid":7, "ts":1685364800649626, "dur":51951, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364799864452, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364799864452, "dur":3581, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364799868034, "dur":51592, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":8, "ts":1685364799919630, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364799919646, "dur":7767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":8, "ts":1685364799927470, "dur":112472, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1685364800039947, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800039981, "dur":21611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1685364800061687, "dur":402, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800062136, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800062473, "dur":9715, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800072237, "dur":184, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800072425, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800072497, "dur":1120, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800073690, "dur":47114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800120827, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800120849, "dur":963, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800121838, "dur":15955, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800137797, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800137804, "dur":11591, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800149427, "dur":18589, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800168022, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800168028, "dur":3647, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800171708, "dur":40749, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800212462, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800212471, "dur":3948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800216449, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800216581, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800216589, "dur":665, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800217282, "dur":194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800217534, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800217540, "dur":10116, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800227686, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800227850, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800227856, "dur":77071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800304988, "dur":40002, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800344994, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800345002, "dur":4147, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800349178, "dur":18111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800367293, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800367300, "dur":4577, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800371909, "dur":23973, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800395887, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800395996, "dur":953, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800396979, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800397132, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800397140, "dur":8096, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800405269, "dur":25668, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800430941, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800430948, "dur":7818, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800438796, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800438928, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800438936, "dur":10912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800449884, "dur":3510, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.RenderPipelines.HighDefinition.Runtime.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800453398, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800453405, "dur":18235, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.RenderPipelines.HighDefinition.Runtime.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800471674, "dur":407, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.Burst.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800472084, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800472090, "dur":925, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.Burst.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800473044, "dur":69098, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.Burst.Cecil.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800542146, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800542152, "dur":19195, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/Unity.Burst.Cecil.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800561374, "dur":1163, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800562542, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800562551, "dur":21969, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800584551, "dur":4023, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800588579, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800588587, "dur":8697, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":8, "ts":1685364800597313, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":8, "ts":1685364800597452, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800597460, "dur":30068, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":8, "ts":1685364800627564, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/resources.assets" }}
-,{ "pid":12345, "tid":8, "ts":1685364800627603, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800627610, "dur":14502, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/resources.assets" }}
-,{ "pid":12345, "tid":8, "ts":1685364800642147, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":8, "ts":1685364800642193, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1685364800642199, "dur":8148, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-05-29/SIRTET_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":8, "ts":1685364800650372, "dur":51191, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1685364800704753, "dur":1536, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1688084237244537, "dur":872, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084237245415, "dur":67, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1688084237245492, "dur":23, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1688084237245516, "dur":280, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1688084237245817, "dur":589, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084237246406, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238426915, "dur":209, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238427124, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238427135, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238427138, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238427144, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238427146, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238427153, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238427155, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238427161, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238427163, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238427172, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238427174, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238427180, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238427181, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238427188, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238427190, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238427197, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238427208, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238427235, "dur":1504, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1688084237246262, "dur":204, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237246466, "dur":3509, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237249978, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1688084237250105, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237251217, "dur":44814, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1688084237296097, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":1, "ts":1688084237296214, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237296222, "dur":144844, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":1, "ts":1688084237441108, "dur":21735, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237462856, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237462866, "dur":847, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237463748, "dur":17246, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237480997, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237481004, "dur":791, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237481825, "dur":17877, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237499706, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237499715, "dur":798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237500539, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237500662, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237500669, "dur":602, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237501299, "dur":182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237501484, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237501491, "dur":778, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237502301, "dur":1111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237503417, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237503424, "dur":1196, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237504648, "dur":297, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237504947, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237504954, "dur":771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237505755, "dur":18296, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UaaLAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237524055, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237524064, "dur":747, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UaaLAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237524839, "dur":24418, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237549262, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237549271, "dur":1873, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237551176, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237551315, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237551322, "dur":1469, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237552821, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237552956, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237552964, "dur":739, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237553742, "dur":24526, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237578274, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237578284, "dur":1482, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237579799, "dur":22290, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237602094, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237602103, "dur":1151, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237603289, "dur":71639, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237674931, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237674936, "dur":1063, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237676028, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237676132, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237676141, "dur":1380, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237677552, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237677671, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237677680, "dur":881, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237678598, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237678718, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237678725, "dur":635, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237679386, "dur":440, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237679830, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237679837, "dur":895, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237680759, "dur":31625, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237712390, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237712399, "dur":658, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237713077, "dur":181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237713261, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237713267, "dur":1025, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237714321, "dur":2868, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237717194, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237717203, "dur":2364, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237719597, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237719754, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237719761, "dur":687, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237720479, "dur":267, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237720749, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237720756, "dur":964, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237721751, "dur":343, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237722097, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237722104, "dur":827, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237722961, "dur":793, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237723779, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237723788, "dur":1260, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237725076, "dur":237, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237725316, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237725325, "dur":1154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237726508, "dur":190, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237726700, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237726706, "dur":798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237727532, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237727646, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237727654, "dur":1115, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237728801, "dur":220, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237729072, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237729080, "dur":1686, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237730798, "dur":2686, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237733488, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237733496, "dur":2243, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237735767, "dur":1070, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237736842, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237736851, "dur":1255, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237738171, "dur":125000, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237863175, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688084237863181, "dur":923, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":1, "ts":1688084237864163, "dur":562755, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688084237246221, "dur":234, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688084237246455, "dur":3558, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688084237250014, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1688084237250132, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688084237256296, "dur":13170, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1688084237269518, "dur":22217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1688084237291740, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688084237291751, "dur":828, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1688084237292632, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1688084237292776, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688084237292786, "dur":28182, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1688084237321009, "dur":203456, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":2, "ts":1688084237524468, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688084237524473, "dur":4572, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":2, "ts":1688084237529092, "dur":26788, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688084237555886, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688084237555897, "dur":696, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688084237556621, "dur":24740, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688084237581376, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688084237581386, "dur":768, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688084237582187, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688084237582357, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688084237582373, "dur":658, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688084237583060, "dur":21953, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688084237605019, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688084237605028, "dur":713, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688084237605770, "dur":25398, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688084237631173, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688084237631182, "dur":727, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688084237631937, "dur":19836, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688084237651778, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688084237651813, "dur":786, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688084237652630, "dur":240, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688084237652873, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688084237652882, "dur":877, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688084237653789, "dur":168824, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688084237822619, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688084237822628, "dur":1664, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688084237824324, "dur":602588, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688084237246471, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688084237246472, "dur":3447, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688084237249921, "dur":41818, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1688084237291742, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688084237291757, "dur":860, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1688084237292663, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1688084237292780, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688084237292812, "dur":14067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1688084237306938, "dur":713782, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688084238020725, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688084238020782, "dur":2808, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688084238023625, "dur":403305, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688084237246186, "dur":243, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688084237246429, "dur":3457, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688084237249895, "dur":26111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":4, "ts":1688084237276011, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688084237276263, "dur":811, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":4, "ts":1688084237277111, "dur":39371, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1688084237316485, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688084237316492, "dur":656, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1688084237317194, "dur":1098457, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688084238415656, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688084238415662, "dur":11180, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688084238426887, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":4, "ts":1688084238426889, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237246099, "dur":319, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237246422, "dur":3454, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237249895, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":5, "ts":1688084237249898, "dur":277, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237250179, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/app.info" }}
+,{ "pid":12345, "tid":5, "ts":1688084237250183, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237256255, "dur":560, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/app.info" }}
+,{ "pid":12345, "tid":5, "ts":1688084237256817, "dur":86822, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1688084237343643, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237343653, "dur":825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1688084237344536, "dur":164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237344703, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237344866, "dur":781, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237345670, "dur":13415, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237359091, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237359199, "dur":721, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237359952, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237360091, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237360099, "dur":685, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237360813, "dur":32336, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237393153, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237393160, "dur":661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237393851, "dur":164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237394017, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237394023, "dur":928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237394976, "dur":228, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237395207, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237395215, "dur":799, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237396052, "dur":15280, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237411337, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237411344, "dur":764, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237412139, "dur":15207, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237427353, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237427364, "dur":906, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237428302, "dur":95729, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237524036, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237524045, "dur":1306, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237525383, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237525539, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237525547, "dur":895, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237526500, "dur":147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237526650, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237526658, "dur":837, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237527530, "dur":298, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237527832, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237527840, "dur":978, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237528851, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237528993, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237529006, "dur":887, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237529931, "dur":198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237530131, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237530139, "dur":683, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237530851, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237530977, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237530984, "dur":919, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237531930, "dur":36457, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237568392, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237568401, "dur":784, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237569214, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237569425, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237569432, "dur":1191, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237570652, "dur":227, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237570882, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237570890, "dur":1038, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237571972, "dur":21731, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237593708, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237593718, "dur":884, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237594638, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237594762, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237594838, "dur":831, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237595699, "dur":19743, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237615447, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237615457, "dur":794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237616286, "dur":963, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237617253, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237617261, "dur":1267, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237618558, "dur":19980, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237638543, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237638552, "dur":779, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237639362, "dur":158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237639523, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237639529, "dur":680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237640240, "dur":22380, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237662626, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237662635, "dur":892, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237663560, "dur":146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237663709, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237663717, "dur":680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237664425, "dur":378, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237664806, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237664814, "dur":1449, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237666296, "dur":535, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237666834, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237666842, "dur":979, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237667853, "dur":182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237668037, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237668046, "dur":797, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237668873, "dur":155, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.VisualEffectGraph.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237669031, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237669038, "dur":661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.VisualEffectGraph.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237669728, "dur":209, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237669939, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237669946, "dur":724, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237670702, "dur":415, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237671120, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237671127, "dur":810, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237671968, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237672075, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237672083, "dur":726, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237672840, "dur":580, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237673453, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237673462, "dur":1149, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237674646, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237674763, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237674771, "dur":917, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237675747, "dur":4654, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.RenderPipelines.HighDefinition.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237680404, "dur":11, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237680422, "dur":3354, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.RenderPipelines.HighDefinition.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237683811, "dur":91902, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237775720, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237775729, "dur":943, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688084237776704, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":5, "ts":1688084237776804, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237776809, "dur":669, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":5, "ts":1688084237777506, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/resources.resource" }}
+,{ "pid":12345, "tid":5, "ts":1688084237777553, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237777579, "dur":17606, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/resources.resource" }}
+,{ "pid":12345, "tid":5, "ts":1688084237795216, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/resources.assets" }}
+,{ "pid":12345, "tid":5, "ts":1688084237795248, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237795255, "dur":994, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/resources.assets" }}
+,{ "pid":12345, "tid":5, "ts":1688084237796277, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/level1" }}
+,{ "pid":12345, "tid":5, "ts":1688084237796306, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237796311, "dur":742, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/level1" }}
+,{ "pid":12345, "tid":5, "ts":1688084237797080, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1688084237797110, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237797116, "dur":2278, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1688084237799423, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/boot.config" }}
+,{ "pid":12345, "tid":5, "ts":1688084237799548, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688084237799553, "dur":4105, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/boot.config" }}
+,{ "pid":12345, "tid":5, "ts":1688084237803687, "dur":623229, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237246327, "dur":148, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237246475, "dur":3434, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237249913, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1688084237250081, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237251196, "dur":22722, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1688084237273962, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1688084237274056, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237274077, "dur":17136, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1688084237291267, "dur":43120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1688084237334392, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237334400, "dur":664, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1688084237335108, "dur":517, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET.exe" }}
+,{ "pid":12345, "tid":6, "ts":1688084237335627, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237335632, "dur":767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET.exe" }}
+,{ "pid":12345, "tid":6, "ts":1688084237336419, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":6, "ts":1688084237336516, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237336653, "dur":125054, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":6, "ts":1688084237461757, "dur":19090, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237480856, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237480865, "dur":757, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237481652, "dur":70314, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237551971, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237551980, "dur":739, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237552750, "dur":21292, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237574047, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237574056, "dur":777, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237574864, "dur":237, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237575104, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237575111, "dur":867, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237576011, "dur":35133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237611149, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237611158, "dur":1161, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237612350, "dur":26530, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237638884, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237638891, "dur":655, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237639571, "dur":35329, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237674903, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237674909, "dur":983, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237675921, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.RenderPipelines.HighDefinition.Config.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237676039, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237676046, "dur":1064, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.RenderPipelines.HighDefinition.Config.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237677140, "dur":381, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237677543, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237677551, "dur":868, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237678454, "dur":732, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237679189, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237679194, "dur":1208, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237680430, "dur":46225, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237726659, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237726667, "dur":804, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237727501, "dur":192, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237727696, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237727702, "dur":1092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237728835, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237728977, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237728984, "dur":715, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237729726, "dur":428, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237730157, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237730164, "dur":1072, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237731265, "dur":2015, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237733284, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237733293, "dur":2424, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237735750, "dur":182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237735934, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237735942, "dur":756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237736725, "dur":200, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237736927, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237736933, "dur":905, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237737870, "dur":276, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237738149, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237738157, "dur":820, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237739006, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237739192, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237739200, "dur":935, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237740164, "dur":6659, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237746828, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237746837, "dur":3173, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237750036, "dur":302, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237750341, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237750349, "dur":854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237751234, "dur":172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237751409, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237751415, "dur":1188, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237752632, "dur":16739, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237769376, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237769726, "dur":732, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688084237770487, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":6, "ts":1688084237770540, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237770593, "dur":904, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":6, "ts":1688084237771528, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":6, "ts":1688084237771561, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237771569, "dur":711, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":6, "ts":1688084237772311, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":6, "ts":1688084237772347, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237772353, "dur":856, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":6, "ts":1688084237773236, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1688084237773338, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237773350, "dur":3070, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1688084237776454, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":6, "ts":1688084237776492, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237776499, "dur":940, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":6, "ts":1688084237777472, "dur":939, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":6, "ts":1688084237778416, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237778426, "dur":808, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":6, "ts":1688084237779264, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1688084237779301, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237779308, "dur":16068, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1688084237795406, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/level2" }}
+,{ "pid":12345, "tid":6, "ts":1688084237795440, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237795445, "dur":1129, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/level2" }}
+,{ "pid":12345, "tid":6, "ts":1688084237796617, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/level0" }}
+,{ "pid":12345, "tid":6, "ts":1688084237796647, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237796653, "dur":857, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/level0" }}
+,{ "pid":12345, "tid":6, "ts":1688084237797542, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1688084237797577, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237797659, "dur":1622, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1688084237799311, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":6, "ts":1688084237799343, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688084237799350, "dur":899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":6, "ts":1688084237800278, "dur":626651, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1688084237246370, "dur":113, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1688084237246483, "dur":3407, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1688084237249896, "dur":157, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1688084237250058, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1688084237251352, "dur":26610, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1688084237278022, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1688084237278150, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1688084237278199, "dur":23459, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1688084237301713, "dur":536263, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":7, "ts":1688084237837982, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1688084237838195, "dur":1106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":7, "ts":1688084237839354, "dur":587577, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237246505, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237246505, "dur":3395, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237249903, "dur":18183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1688084237268090, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237268167, "dur":634, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1688084237268848, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1688084237268966, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237269013, "dur":6601, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1688084237275664, "dur":161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1688084237275828, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237276154, "dur":131211, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1688084237407409, "dur":26594, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237434006, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237434013, "dur":581, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237434616, "dur":17860, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237452481, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237452490, "dur":740, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237453259, "dur":18946, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237472212, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237472245, "dur":755, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237473025, "dur":65392, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237538422, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237538443, "dur":716, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237539190, "dur":24592, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237563789, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237563799, "dur":1027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237564856, "dur":21323, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237586184, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237586193, "dur":771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237586993, "dur":147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237587142, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237587150, "dur":1089, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237588269, "dur":274, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237588546, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237588554, "dur":818, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237589404, "dur":235, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237589642, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237589649, "dur":658, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237590339, "dur":20905, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237611249, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237611256, "dur":829, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237612421, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237612552, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237612559, "dur":915, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237613503, "dur":19636, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237633144, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237633158, "dur":776, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237633962, "dur":21563, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237655530, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237655539, "dur":770, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237656338, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237656495, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237656502, "dur":685, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237657217, "dur":27651, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237684872, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237684905, "dur":746, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237685680, "dur":128438, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.Burst.Cecil.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237814123, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688084237814133, "dur":1053, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET_Data/Managed/Unity.Burst.Cecil.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688084237815218, "dur":611699, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688084238430071, "dur":1726, "ph":"X", "name": "ProfilerWriteOutput" }
 ,

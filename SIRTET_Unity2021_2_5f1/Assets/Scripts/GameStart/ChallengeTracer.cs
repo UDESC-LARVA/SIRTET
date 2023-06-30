@@ -40,6 +40,9 @@ public class ChallengeTracer : MonoBehaviour {
 	
 	public void GetNextChallengeInAction()
 	{
+		//A V1 retirava os desafios concluidos e repetia os que não foram
+		//A v2 vai repetir os desafios e terá uma sequencia difenrente de dificuldade
+		//Temporariamente repetirá todos os desafios novamente
 		challengeCurrent = challengeInAction[0];
 		challengeInAction.Remove(challengeCurrent);
 		challengeSize = 0;
@@ -68,16 +71,18 @@ public class ChallengeTracer : MonoBehaviour {
 
 
 		challengeSize --;
+
+		
 		if(goodHit)
 			totalHits ++;		
-		else{
+		/*else{
 			if(controller.challengeSequence.IndexOf(challengeCurrent)  != controller.challengeSequence.Count-1)
 				controller.challengeSequence.Add(challengeCurrent);
 			if(obj.Type == "Alvo")
 				obj.Type = "AlvoR";
 			else
 				obj.Type = "ObstaculoR";
-		}				
+		}*/				
 		
 		if(challengeSize == 0)
 		{
