@@ -35,6 +35,7 @@ public class MenuInterface : MonoBehaviour {
 
 		if(file.player.Name != null)
 			stringToEdit = file.player.Name;
+
 	}
 	
 	void OnGUI()
@@ -103,6 +104,7 @@ public class MenuInterface : MonoBehaviour {
 			player = new Player();
 			stringToEdit = stringToEdit.ToUpper();
 			player = file.GetPlayerByName(stringToEdit);
+	
 			if(player == null)
 			{
 				player = new Player {
@@ -179,6 +181,35 @@ public class MenuInterface : MonoBehaviour {
 			
 			GUI.EndGroup();
 		}		
+
+
+
+
+
+
+
+		////////////
+
+		player = new Player();
+		stringToEdit = "JOGADOR TESTE";
+		player = file.GetPlayerByName(stringToEdit);
+
+		if(player == null)
+		{
+			player = new Player {
+				Name = stringToEdit,
+				CurrentPhase = "A",
+				CurrentLevel = 7,
+				Session = 1
+			};
+			file.playerList.SaveOrUpdate(player);
+			file.playerList = file.playerList.Load();
+			file.GetPlayerByName(player.Name); //forçar pegar jogador novo
+		}
+
+		showStats = true;
 		
+		SceneManager.LoadScene("Game_Start");
+		Debug.LogWarning("apagar msg acima");		
 	}
 }

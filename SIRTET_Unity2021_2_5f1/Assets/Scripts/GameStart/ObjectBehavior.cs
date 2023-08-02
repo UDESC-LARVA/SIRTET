@@ -287,7 +287,7 @@ public class ObjectBehavior : MonoBehaviour {
 				transform.position = Vector3.Lerp(transform.position, transform.position - (Vector3.forward * (controladora.standardSize * 5)), Time.deltaTime * (controladora.standardObjVelocity));	
 			}else
 			{
-				transform.position = Vector3.Lerp(transform.position, transform.position - (Vector3.forward * (controladora.standardSize * 5)), Time.deltaTime * (controladora.standardObjVelocity) * 0.5f);	
+				transform.position = Vector3.Lerp(transform.position, transform.position - (Vector3.forward * (controladora.standardSize * 5)), Time.deltaTime * (controladora.standardObjVelocity));	
 							
 				Vector3 posicaoFinal = Vector3.Lerp(transform.position, posRand, Time.deltaTime * (controladora.standardObjVelocity)*0.2f);
 				posicaoFinal.z = this.transform.position.z;

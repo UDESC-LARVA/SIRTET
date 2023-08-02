@@ -377,7 +377,6 @@
 "Assets/Scripts/GameStart/Interface.cs"
 "Assets/Scripts/GameStart/LimitBehavior.cs"
 "Assets/Scripts/GameStart/ObjectBehavior.cs"
-"Assets/Scripts/Menu/Menu.cs"
 "Assets/Scripts/Menu/MenuInterface.cs"
 "Assets/Scripts/Menu/SoundBehavior.cs"
 "Assets/Scripts/Rastreio/AvatarBasico.cs"

@@ -4,7 +4,17 @@
     <Jogador Nome="DEFAULT" Envergadura="0" Altura="0">
       <Fase_Atual>A</Fase_Atual>
       <Nivel_Atual>7</Nivel_Atual>
-      <Sessao>2</Sessao>
+      <Sessao>3</Sessao>
+    </Jogador>
+    <Jogador Nome="NOME DO JOGADOR" Envergadura="0" Altura="0">
+      <Fase_Atual>A</Fase_Atual>
+      <Nivel_Atual>7</Nivel_Atual>
+      <Sessao>1</Sessao>
+    </Jogador>
+    <Jogador Nome="JOGADOR TESTE" Envergadura="0" Altura="0">
+      <Fase_Atual>F</Fase_Atual>
+      <Nivel_Atual>7</Nivel_Atual>
+      <Sessao>7</Sessao>
     </Jogador>
   </Lista_Jogadores>
 </Arquivo_de_Jogadores>

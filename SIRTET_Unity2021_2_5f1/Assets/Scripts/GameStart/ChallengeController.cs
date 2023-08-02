@@ -18,6 +18,11 @@ public class ChallengeController : MonoBehaviour
 	GameObject ghostPrefab;
 
 	
+	bool criaSecreto = false;
+	public int desaAtual;
+	public int desaIni, desaFin;
+
+	
 	// Use this for initialization
 	void Start ()
 	{
@@ -35,21 +40,39 @@ public class ChallengeController : MonoBehaviour
 		//InvokeRepeating("CriarObjeto", padrao.intervaloObj, padrao.intervaloObj);  // comecando depois de 2 seg
 		StartCoroutine (CreateSecretChallenge());
 		StartCoroutine (CreateChallenge());
+
+		CheckFase();
 	}
+
 
 	IEnumerator CreateChallenge ()
 	{
-		while (true) {			
-			if (controladora.challengeSequence.Count > 0) {
-				
+		while (true) {	
+			if (criaSecreto)
+			{
+				Objeto obj = new Objeto();
+				obj.Position = new Vector2(0,1000);
+				obj.Type = "Surpresa";
+				CustomObjectSize size = new CustomObjectSize();
+				size.Height = 120;
+				size.Weight = 120;
+				size.Quantity = 1;
+				obj.Size = size;
+				StartCoroutine (CreateObject (null, obj, 0.15f));				
+				criaSecreto = false; 
+			}
+			else if (controladora.challengeSequence.Count > 0) 
+			{				
 				// Pega desafio e lança invokeRepeating para cada objeto dentro dele
-				Desafio nextChallenge = controladora.challengeSequence [0];
-				controladora.challengeSequence.Remove(nextChallenge);
-				controladora.challengeSequence.Add(nextChallenge);//correção temporária para a v2
+				CheckFase();
+				desaAtual = desaAtual < desaIni ? desaIni : desaAtual;
+
+				Desafio nextChallenge = controladora.challengeSequence [desaAtual];
 				tracer.challengeInAction.Add(new Desafio(){ Dificulty = nextChallenge.Dificulty, SequenceNumber = nextChallenge.SequenceNumber , ListaObjeto = nextChallenge.ListaObjeto });
 				foreach (Objeto obj in nextChallenge.ListaObjeto) {
 					StartCoroutine (CreateObject (nextChallenge, obj, 0.15f));
 				}
+				desaAtual = desaAtual > desaFin ? desaIni : desaAtual+1;
 			}
 			yield return new WaitForSeconds(controladora.standardChallengeInterval);
 		}
@@ -59,22 +82,10 @@ public class ChallengeController : MonoBehaviour
 		int cont = 0;
 		while (cont < 3) 
 		{	
-			int rand = Random.Range(30,90);
+			int rand = Random.Range(5,10);
 			yield return new WaitForSeconds(rand);
-			
-			Objeto obj = new Objeto();
-			obj.Position = new Vector2(0,1000);
-			obj.Type = "Surpresa";
-
-			CustomObjectSize size = new CustomObjectSize();
-			size.Height = 120;
-			size.Weight = 120;
-			size.Quantity = 1;
-			obj.Size = size;
-
-			StartCoroutine (CreateObject (null, obj, 0.15f));
-
-			cont++;
+			criaSecreto = true;	
+			cont++;		
 		}
 	}
 	
@@ -126,6 +137,42 @@ public class ChallengeController : MonoBehaviour
 			
 			times --;
 			yield return new WaitForSeconds(timer);
+		}
+	}
+
+	void CheckFase()
+	{
+		switch (controladora.game.file.player.CurrentPhase[0])
+		{			
+			case 'A':
+				desaIni = 0;
+				desaFin = desaIni + 11;
+				break;
+			case 'B':
+				desaIni = 12;
+				desaFin = desaIni + 11;
+				break;
+			case 'C':
+				desaIni = 24;
+				desaFin = desaIni + 11;
+				break;
+			case 'D':
+				desaIni = 36;
+				desaFin = desaIni + 11;
+				break;
+			case 'E':
+				desaIni = 48;
+				desaFin = desaIni + 11;
+				break;
+			case 'F':
+				desaIni = 60;
+				desaFin = desaIni + 11;
+				break;
+			
+
+			default:
+				Debug.Log("erro check fase");
+				break;
 		}
 	}
 	private Color ChooseColor(string tipo)

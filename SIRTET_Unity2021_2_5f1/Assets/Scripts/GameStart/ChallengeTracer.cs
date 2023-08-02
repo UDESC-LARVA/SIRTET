@@ -10,7 +10,7 @@ public class ChallengeTracer : MonoBehaviour {
 	public List<Desafio> challengeInAction = new List<Desafio>();
 	
 	public int tamanhoDaLista;
-	Desafio challengeCurrent;
+	public Desafio challengeCurrent;
 	public int challengeSize = 0, totalHits = 0;
 	float challengeTotalPoints;
 	

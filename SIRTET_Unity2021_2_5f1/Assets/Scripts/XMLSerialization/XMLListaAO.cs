@@ -5,6 +5,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
 
+using System.Linq;
 
 public struct CustomObjectSize 
 {
@@ -118,6 +119,15 @@ public class ListaAO
 		StreamReader reader = new StreamReader("XML/ListaAO.xml");
 		listaAO = (ListaAO)serializer.Deserialize(reader);
 		reader.Close();
+
+
+		/*
+		Debug.Log(listaAO.ListaDesafios.Count);
+		for(int i = 0; i<listaAO.ListaDesafios.Count;i++)
+		{Debug.Log("I = " + i + "| Id =" + listaAO.ListaDesafios[i].SequenceNumber);}
+		Debug.Log(string.Join(", ", listaAO.ListaDesafios.Select(c => c.SequenceNumber).ToList()));
+		*/
+
 		return listaAO;
 	}
 }

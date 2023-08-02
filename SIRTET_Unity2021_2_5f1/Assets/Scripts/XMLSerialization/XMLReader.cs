@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class Level
 {
 	public int Id {get;set;}
-	public string Phase {get;set;}
 	public int Velocity {get;set;}
 	public int IntermissionTime {get;set;}
 	public int StayTime {get;set;}
@@ -63,7 +62,7 @@ public class XMLReader : MonoBehaviour {
 		playerList = playerList.Load();
 	}
 	
-	#region Tradução Fases
+	#region Traduï¿½ï¿½o Fases
 	List<Phase> TraduzirFases(List<PhaseInFiles> listaArquivo)
 	{
 		List<Phase> fasesTraduzidas = new List<Phase>();
@@ -78,7 +77,7 @@ public class XMLReader : MonoBehaviour {
 
 	#endregion
 	
-	#region Tradução Niveis
+	#region Traduï¿½ï¿½o Niveis
 	List<Level> TraduzirNiveis(List<LevelInFile> listaArquivo)
 	{
 		List<Level> niveisTraduzidos = new List<Level>();
@@ -86,7 +85,6 @@ public class XMLReader : MonoBehaviour {
 		{
 			niveisTraduzidos.Add(new Level{ 
 				Id = n.Id,
-				Phase = n.Phase,
 				Velocity = traduzirVelocidade(n.Velocity),
 				IntermissionTime = traduzirIntervalo(n.IntermissionTime)
 			});
@@ -135,7 +133,7 @@ public class XMLReader : MonoBehaviour {
 	public Level GetNivelByIndice(int indice, string fase)
 	{
 		foreach(Level n in gameLevels)
-			if(n.Id == indice && n.Phase == fase)
+			if(n.Id == indice)
 				return n;
 		return null;
 	}

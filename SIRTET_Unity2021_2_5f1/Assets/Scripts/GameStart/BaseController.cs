@@ -14,7 +14,7 @@ public class BaseController : MonoBehaviour
 //	UDP game.kinect;
 //	Report report;
 //	game.soundBehavior game.sound;
-	GameController game;
+	public GameController game;
 	AudioSource feedbackAudioSource;
 
 	// Variavel para identificar quanto o ambiente sera discreto
@@ -126,7 +126,6 @@ public class BaseController : MonoBehaviour
 		phaseCurrent = game.file.GetFaseByIndice (phaseCurrentId);
 		//Pegando apenas os niveis da fase corrente
 		levelSequence = new List<Level> (game.file.gameLevels);
-		levelSequence.RemoveAll (a => a.Phase != game.file.player.CurrentPhase);
 		levelQuantity = levelSequence.Count;
 		levelCurrent = game.file.GetNivelByIndice (game.file.player.CurrentLevel, game.file.player.CurrentPhase);
 		if (levelCurrent == null)
@@ -134,8 +133,7 @@ public class BaseController : MonoBehaviour
 			print ("Nivel ou Fase nao cadastrado em Arquivo.");
 			SceneManager.LoadScene("Menu_Partial");
 		}
-		
-		
+				
 		//Setando Variaveis dinamicas
 		
 		//Fases
@@ -173,13 +171,16 @@ public class BaseController : MonoBehaviour
 			StartCoroutine(StepBase());
 			blink = true;
 		}
-		
-			
-		/*if (Input.GetKeyDown ("up"))
+
+		if(Input.GetKeyDown(KeyCode.O))
+			AlterarFase(1);
+		if(Input.GetKeyDown(KeyCode.P))
+			AlterarFase(-1);
+		if(Input.GetKeyDown(KeyCode.I))
 			SubirNivel ();
-		if (Input.GetKeyDown ("down"))
-			DescerNivel ();*/
-		
+		if(Input.GetKeyDown(KeyCode.U))
+			DescerNivel ();
+				
 		//O trecho a seguir chama as funçoes de alteraçao de niveis
 		if(Input.GetKeyDown(KeyCode.Home))
 			SubirVelocidade();
@@ -295,6 +296,13 @@ public class BaseController : MonoBehaviour
 			return true;
 		
 		return false;
+	}
+
+	public void AlterarFase (int value)
+	{
+		char fase = game.file.player.CurrentPhase.ToCharArray()[0];
+		fase = (char)(fase + value);
+		game.file.player.CurrentPhase = fase.ToString();
 	}
 
 

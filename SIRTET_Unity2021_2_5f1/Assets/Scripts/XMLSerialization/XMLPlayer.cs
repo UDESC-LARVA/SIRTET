@@ -36,38 +36,7 @@ public class PlayerList
 
 	string arquivo = "XML/Jogador.xml";
 	
-	public void Create()
-	{
-		PlayerList lista = new PlayerList();
-		
-		lista.playerList.Add(
-			new Player{
-				Name = "Teste",
-				CurrentPhase = "A",
-				CurrentLevel = 1,
-				Session = 1,
-				Wingspan = 200,
-				Height = 180
-			}
-		);
-		
-		lista.playerList.Add(
-			new Player{
-				Name = "Outro",
-				CurrentPhase = "B",
-				CurrentLevel = 2,
-				Session = 3,
-				Wingspan = 150,
-				Height = 100
-			}
-		);
-		
-		XmlSerializer serializer = new XmlSerializer(lista.GetType());
-		using (StreamWriter writer = new StreamWriter(arquivo))
-		{
-		    serializer.Serialize(writer, lista);
-		}
-	}
+	
 	public PlayerList Load()
 	{
 		PlayerList jogador = new PlayerList();
