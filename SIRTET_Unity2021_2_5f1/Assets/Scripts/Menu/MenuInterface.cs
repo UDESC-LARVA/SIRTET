@@ -191,7 +191,7 @@ public class MenuInterface : MonoBehaviour {
 		////////////
 
 		player = new Player();
-		stringToEdit = "JOGADOR TESTE";
+		stringToEdit = "JOGADOR_TESTE";
 		player = file.GetPlayerByName(stringToEdit);
 
 		if(player == null)

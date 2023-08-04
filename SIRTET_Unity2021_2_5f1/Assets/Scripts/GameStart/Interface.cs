@@ -24,9 +24,10 @@ public class Interface : MonoBehaviour
 	public GUIStyle styleScore = new GUIStyle ();
 	public GUIStyle styleScorePlus = new GUIStyle ();	
 	public GUIStyle styleScoreMinus = new GUIStyle ();
-	public float vScrollbarValue;
+	public float vScrollbarValue, curBarValue = 0;
 	
 	
+	Texture2D textGreen, textRed, textOri;
 	Texture2D auxBarra;// = new Texture2D(1,1);
 	GUIStyle styleBarra;// = new GUIStyle();
 	GUIStyle box;
@@ -50,8 +51,13 @@ public class Interface : MonoBehaviour
 
 	private void Awake()
 	{
-		auxBarra = new Texture2D(1,1);
+		auxBarra = new Texture2D(1,1);		
+		textGreen = new Texture2D(1,1);
+		textRed = new Texture2D(1,1);
+		textOri = new Texture2D(1,1);
 		styleBarra = new GUIStyle();		
+			
+		
 	}
 	void Start ()
 	{
@@ -78,8 +84,7 @@ public class Interface : MonoBehaviour
 		
 		styleScoreMinus.fontSize = styleScore.fontSize;		
 		styleScoreMinus.alignment = styleScore.alignment;		
-		styleScoreMinus.normal.textColor = Color.red;
-	
+		styleScoreMinus.normal.textColor = Color.red;	
 		
 		styleAjuda.fontSize = fontSize;
 		styleAjuda.alignment = TextAnchor.UpperLeft;
@@ -89,6 +94,15 @@ public class Interface : MonoBehaviour
 		auxBarra.wrapMode = TextureWrapMode.Repeat;
 		auxBarra.Apply();
 		styleBarra.normal.background = auxBarra;
+
+
+		textGreen.SetPixel(1,1,Color.green);
+		textGreen.wrapMode = TextureWrapMode.Repeat;
+		textGreen.Apply();
+
+		textRed.SetPixel(1,1,Color.red);
+		textRed.wrapMode = TextureWrapMode.Repeat;
+		textRed.Apply();
 		
 		performance = controller.challengeSequence.Count / controller.levelQuantity;		
 		
@@ -107,6 +121,9 @@ public class Interface : MonoBehaviour
 		}else{
 			corBarra--;
 		}
+
+		
+		curBarValue = Mathf.Lerp(curBarValue, vScrollbarValue,  1*Time.deltaTime);
 	}
 	
 
@@ -126,10 +143,8 @@ public class Interface : MonoBehaviour
 
 		//////
 
-		box = new GUIStyle(GUI.skin.box);
-		box.fontSize = 30;
-		box.alignment = TextAnchor.UpperCenter;
-		box.normal.textColor = Color.white;
+		box = new GUIStyle(GUI.skin.box);	
+		textOri = box.normal.background;
 
 		GUI.BeginGroup(new Rect(Screen.width - 250, 1, 150, 150));
 		
@@ -165,11 +180,21 @@ public class Interface : MonoBehaviour
 		
 		GUI.EndGroup();	
 
+		// Niveis			
+		
+		//GUI.Label (new Rect (50, 10, 11, Screen.height - 25)," ",styleBarra);
+		int sliderWidth = 50;
+		int sliderHeight = Screen.height - 25;
+		GUI.BeginGroup(new Rect(50, 10, sliderWidth, sliderHeight));
 
-		// Niveis
-			
-		GUI.Label (new Rect (50, 10, 11, Screen.height - 25)," ",styleBarra);
-		GUI.VerticalSlider (new Rect (50, 10, 500, Screen.height - 25), vScrollbarValue, performance, -performance);
+		box.normal.background = textGreen;		
+		GUI.Box(new Rect(0, 0, sliderWidth, sliderHeight), " ", box);	
+
+
+		box.normal.background = textRed;
+		GUI.Box(new Rect(0, 0, sliderWidth, sliderHeight * (1-((curBarValue+performance)/(performance*2)))), " ", box);
+		GUI.EndGroup();	
+
 		
 		// Mensagem
 		GUIStyle FeedBack = new GUIStyle ();
@@ -252,8 +277,7 @@ public class Interface : MonoBehaviour
 		auxBarra.Apply();
 		corBarra = 15;
 	
-	}
-	
+	}	
 	public void barraVermelha(){
 		auxBarra.SetPixel(1,1,Color.red);
 		auxBarra.wrapMode = TextureWrapMode.Repeat;
@@ -288,6 +312,7 @@ public class Interface : MonoBehaviour
 				vScrollbarValue ++;
 				if (vScrollbarValue >= performance) {
 					controller.SubirNivel ();
+					curBarValue = -performance;
 				}
 			}
 		} else {
@@ -296,6 +321,7 @@ public class Interface : MonoBehaviour
 				vScrollbarValue --;
 				if (vScrollbarValue <= -performance) {
 					controller.DescerNivel ();
+					curBarValue = -performance;
 				}
 			}
 		}		
@@ -310,12 +336,10 @@ public class Interface : MonoBehaviour
 		//no caso do GUI a altura 0 não atrapalha para este feedback
 		sco.retangulo = new Rect(position.x-(largura/2), Screen.height-(position.y-(altura/2)), largura, altura);
 
-		//Debug.Log(position);
-		
+		//Debug.Log(position);		
 		scores.Add(sco);
 		StartCoroutine(ApagarFeedback(3));
 	}
-
 
 	IEnumerator ApagarFeedback(int seconds)
  	{       

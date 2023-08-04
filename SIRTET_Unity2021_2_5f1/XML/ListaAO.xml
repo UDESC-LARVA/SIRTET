@@ -3,6 +3,64 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ListaDesafios>
 
+ <!-- DESAFIOS PARA TESTE RETIRAR NO FINAL-->
+<Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>44</x>
+            <y>42</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>1</Numero>
+    </Desafio><Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>44</x>
+            <y>42</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>1</Numero>
+    </Desafio><Desafio>
+      <Objetos>
+        <Objeto>
+          <Tipo>Alvo</Tipo>
+          <Posicao>
+            <x>44</x>
+            <y>42</y>
+          </Posicao>
+          <Tamanho>
+            <Height>150</Height>
+            <Weight>150</Weight>
+            <Quantity>1</Quantity>
+          </Tamanho>
+        </Objeto>
+      </Objetos>
+      <Dificuldade>1</Dificuldade>
+      <Numero>1</Numero>
+    </Desafio>
+
+<!--FIM DESAFIOS TESTE -->
+
+
+
     <!-- NOVA LISTA DE DESAFIOS -->
     <!-- D. F. TONDORF - 27/06/2023-->
 

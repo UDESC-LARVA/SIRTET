@@ -44,7 +44,7 @@ public class UDP: MonoBehaviour
 
 		//*
 		status = !status;
-		Debug.Log("APAGAR LINHAS ACIMA");
+		Debug.LogWarning("APAGAR LINHAS ACIMA");
 		//*/
 	}
 	

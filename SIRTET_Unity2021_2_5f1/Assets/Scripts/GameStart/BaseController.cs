@@ -155,7 +155,7 @@ public class BaseController : MonoBehaviour
 		
 
 		//
-		/*SOMENTE TESTES
+		//*SOMENTE TESTES
 		Debug.Log(standardObjVelocity + " | " + standardChallengeInterval);
 		standardObjVelocity = 15;
 		standardChallengeInterval = 1f;
@@ -305,17 +305,64 @@ public class BaseController : MonoBehaviour
 		game.file.player.CurrentPhase = fase.ToString();
 	}
 
-
-	public void SubirNivel ()
+	public void AlteraNível (int value)
 	{
-		if (game.file.player.CurrentLevel < levelQuantity) {
+
+		Debug.Log(levelQuantity + "!!!");
+
+		if(value > 0)
+		{
+			if(game.file.player.CurrentLevel == 9)
+			{ 
+				game.file.player.CurrentLevel = 0;
+				AlterarFase(+1);
+			}
+			else if (game.file.player.CurrentLevel < levelQuantity) 
+			{
+				game.file.player.CurrentLevel ++;
+				levelCurrent = game.file.GetNivelByIndice (game.file.player.CurrentLevel, game.file.player.CurrentPhase);
+				standardObjVelocity = levelCurrent.Velocity;
+				standardChallengeInterval = levelCurrent.IntermissionTime;
+				gui.vScrollbarValue = 0;
+				gui.barraVerde();
+				print ("Subiu Nivel " + game.file.player.CurrentLevel);
+			}
+
+		}
+
+		if(game.file.player.CurrentLevel == 9)
+		{ 
+			game.file.player.CurrentLevel = 0;
+			AlterarFase(+1);
+		}else if (game.file.player.CurrentLevel < levelQuantity) 
+		{
 			game.file.player.CurrentLevel ++;
 			levelCurrent = game.file.GetNivelByIndice (game.file.player.CurrentLevel, game.file.player.CurrentPhase);
 			standardObjVelocity = levelCurrent.Velocity;
 			standardChallengeInterval = levelCurrent.IntermissionTime;
 			gui.vScrollbarValue = 0;
 			gui.barraVerde();
-			print ("Subiu Nivel" + game.file.player.CurrentLevel);
+			print ("Subiu Nivel " + game.file.player.CurrentLevel);
+		}
+	}
+
+
+	public void SubirNivel ()
+	{
+		Debug.Log(levelQuantity + "!!!");
+		if(game.file.player.CurrentLevel == 9)
+		{ 
+			game.file.player.CurrentLevel = 0;
+			AlterarFase(+1);
+		}else if (game.file.player.CurrentLevel < levelQuantity) 
+		{
+			game.file.player.CurrentLevel ++;
+			levelCurrent = game.file.GetNivelByIndice (game.file.player.CurrentLevel, game.file.player.CurrentPhase);
+			standardObjVelocity = levelCurrent.Velocity;
+			standardChallengeInterval = levelCurrent.IntermissionTime;
+			gui.vScrollbarValue = 0;
+			gui.barraVerde();
+			print ("Subiu Nivel " + game.file.player.CurrentLevel);
 		}
 	}
 	
@@ -328,7 +375,7 @@ public class BaseController : MonoBehaviour
 			standardChallengeInterval = levelCurrent.IntermissionTime;
 			gui.vScrollbarValue = 0;
 			gui.barraVermelha();
-			print ("Desceu Nivel" + game.file.player.CurrentLevel);
+			print ("Desceu Nivel " + game.file.player.CurrentLevel);
 		}
 	}
 	

@@ -1,93 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Arquivo_de_Niveis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Lista_Niveis>
-    <Nivel Indice="1">
-      <Fase>A</Fase>
+    <Nivel Indice="1"> 
       <Velocidade>MIN</Velocidade>
       <Tempo_Intervalo>MIN</Tempo_Intervalo>
     </Nivel>
-    <Nivel Indice="2">
-      <Fase>A</Fase>
+    <Nivel Indice="2"> 
       <Velocidade>MED</Velocidade>
       <Tempo_Intervalo>MIN</Tempo_Intervalo>
     </Nivel>
-    <Nivel Indice="3">
-      <Fase>A</Fase>
+    <Nivel Indice="3"> 
       <Velocidade>MAX</Velocidade>
       <Tempo_Intervalo>MIN</Tempo_Intervalo>
     </Nivel>
-    <Nivel Indice="4">
-      <Fase>A</Fase>
+    <Nivel Indice="4"> 
       <Velocidade>MIN</Velocidade>
       <Tempo_Intervalo>MED</Tempo_Intervalo>
     </Nivel>
-    <Nivel Indice="5">
-      <Fase>A</Fase>
+    <Nivel Indice="5"> 
       <Velocidade>MED</Velocidade>
       <Tempo_Intervalo>MED</Tempo_Intervalo>
     </Nivel>
-    <Nivel Indice="6">
-      <Fase>A</Fase>
+    <Nivel Indice="6"> 
       <Velocidade>MAX</Velocidade>
       <Tempo_Intervalo>MED</Tempo_Intervalo>
     </Nivel>
-    <Nivel Indice="7">
-      <Fase>A</Fase>
+    <Nivel Indice="7"> 
       <Velocidade>MIN</Velocidade>
       <Tempo_Intervalo>MAX</Tempo_Intervalo>
     </Nivel>
-    <Nivel Indice="8">
-      <Fase>A</Fase>
+    <Nivel Indice="8"> 
       <Velocidade>MED</Velocidade>
       <Tempo_Intervalo>MAX</Tempo_Intervalo>
     </Nivel>
-    <Nivel Indice="9">
-      <Fase>A</Fase>
-      <Velocidade>MAX</Velocidade>
-      <Tempo_Intervalo>MAX</Tempo_Intervalo>
-    </Nivel>
-    <Nivel Indice="1">
-      <Fase>B</Fase>
-      <Velocidade>MIN</Velocidade>
-      <Tempo_Intervalo>MIN</Tempo_Intervalo>
-    </Nivel>
-    <Nivel Indice="2">
-      <Fase>B</Fase>
-      <Velocidade>MED</Velocidade>
-      <Tempo_Intervalo>MIN</Tempo_Intervalo>
-    </Nivel>
-    <Nivel Indice="3">
-      <Fase>B</Fase>
-      <Velocidade>MAX</Velocidade>
-      <Tempo_Intervalo>MIN</Tempo_Intervalo>
-    </Nivel>
-    <Nivel Indice="4">
-      <Fase>B</Fase>
-      <Velocidade>MIN</Velocidade>
-      <Tempo_Intervalo>MED</Tempo_Intervalo>
-    </Nivel>
-    <Nivel Indice="5">
-      <Fase>B</Fase>
-      <Velocidade>MED</Velocidade>
-      <Tempo_Intervalo>MED</Tempo_Intervalo>
-    </Nivel>
-    <Nivel Indice="6">
-      <Fase>B</Fase>
-      <Velocidade>MAX</Velocidade>
-      <Tempo_Intervalo>MED</Tempo_Intervalo>
-    </Nivel>
-    <Nivel Indice="7">
-      <Fase>B</Fase>
-      <Velocidade>MIN</Velocidade>
-      <Tempo_Intervalo>MAX</Tempo_Intervalo>
-    </Nivel>
-    <Nivel Indice="8">
-      <Fase>B</Fase>
-      <Velocidade>MED</Velocidade>
-      <Tempo_Intervalo>MAX</Tempo_Intervalo>
-    </Nivel>
-    <Nivel Indice="9">
-      <Fase>B</Fase>
+    <Nivel Indice="9"> 
       <Velocidade>MAX</Velocidade>
       <Tempo_Intervalo>MAX</Tempo_Intervalo>
     </Nivel>

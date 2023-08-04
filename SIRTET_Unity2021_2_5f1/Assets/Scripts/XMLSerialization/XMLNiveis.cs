@@ -10,8 +10,6 @@ public class LevelInFile
 {
 	[XmlAttribute("Indice")]
 	public int Id {get;set;}
-	[XmlElement("Fase")]
-	public string Phase {get;set;}
 	[XmlElement("Velocidade")]
 	public string Velocity {get;set;}
 	[XmlElement("Tempo_Intervalo")]
@@ -42,115 +40,49 @@ public class ListaNiveis
 		
 		// A - ItermissinTime = MIN
 		niveis.listaNiveis.Add(new LevelInFile{ 
-			Id = 1,
-			Phase = "A",
+			Id = 1,		
 			Velocity = "MIN",
 			IntermissionTime = "MIN"
 		});
 		niveis.listaNiveis.Add(new LevelInFile{ 
-			Id = 2,
-			Phase = "A",
+			Id = 2,		
 			Velocity = "MED",
 			IntermissionTime = "MIN"
 		});
 		niveis.listaNiveis.Add(new LevelInFile{ 
-			Id = 3,
-			Phase = "A",
+			Id = 3,		
 			Velocity = "MAX",
 			IntermissionTime = "MIN"
 		});
 		// A - ItermissinTime = MED
 		niveis.listaNiveis.Add(new LevelInFile{ 
-			Id = 4,
-			Phase = "A",
+			Id = 4,		
 			Velocity = "MIN",
 			IntermissionTime = "MED"
 		});
 		niveis.listaNiveis.Add(new LevelInFile{ 
-			Id = 5,
-			Phase = "A",
+			Id = 5,		
 			Velocity = "MED",
 			IntermissionTime = "MED"
 		});
 		niveis.listaNiveis.Add(new LevelInFile{ 
-			Id = 6,
-			Phase = "A",
+			Id = 6,		
 			Velocity = "MAX",
 			IntermissionTime = "MED"
 		});
 		// A - ItermissinTime = MAX
 		niveis.listaNiveis.Add(new LevelInFile{ 
-			Id = 7,
-			Phase = "A",
+			Id = 7,		
 			Velocity = "MIN",
 			IntermissionTime = "MAX"
 		});
 		niveis.listaNiveis.Add(new LevelInFile{ 
-			Id = 8,
-			Phase = "A",
+			Id = 8,		
 			Velocity = "MED",
 			IntermissionTime = "MAX"
 		});
 		niveis.listaNiveis.Add(new LevelInFile{ 
-			Id = 9,
-			Phase = "A",
-			Velocity = "MAX",
-			IntermissionTime = "MAX"
-		});
-		// B - ItermissinTime = MIN
-		niveis.listaNiveis.Add(new LevelInFile{ 
-			Id = 1,
-			Phase = "B",
-			Velocity = "MIN",
-			IntermissionTime = "MIN"
-		});
-		niveis.listaNiveis.Add(new LevelInFile{ 
-			Id = 2,
-			Phase = "B",
-			Velocity = "MED",
-			IntermissionTime = "MIN"
-		});
-		niveis.listaNiveis.Add(new LevelInFile{ 
-			Id = 3,
-			Phase = "B",
-			Velocity = "MAX",
-			IntermissionTime = "MIN"
-		});
-		// B - ItermissinTime = MED
-		niveis.listaNiveis.Add(new LevelInFile{ 
-			Id = 4,
-			Phase = "B",
-			Velocity = "MIN",
-			IntermissionTime = "MED"
-		});
-		niveis.listaNiveis.Add(new LevelInFile{ 
-			Id = 5,
-			Phase = "B",
-			Velocity = "MED",
-			IntermissionTime = "MED"
-		});
-		niveis.listaNiveis.Add(new LevelInFile{ 
-			Id = 6,
-			Phase = "B",
-			Velocity = "MAX",
-			IntermissionTime = "MED"
-		});
-		// B - ItermissinTime = MAX
-		niveis.listaNiveis.Add(new LevelInFile{ 
-			Id = 7,
-			Phase = "B",
-			Velocity = "MIN",
-			IntermissionTime = "MAX"
-		});
-		niveis.listaNiveis.Add(new LevelInFile{ 
-			Id = 8,
-			Phase = "B",
-			Velocity = "MED",
-			IntermissionTime = "MAX"
-		});
-		niveis.listaNiveis.Add(new LevelInFile{ 
-			Id = 9,
-			Phase = "B",
+			Id = 9,		
 			Velocity = "MAX",
 			IntermissionTime = "MAX"
 		});

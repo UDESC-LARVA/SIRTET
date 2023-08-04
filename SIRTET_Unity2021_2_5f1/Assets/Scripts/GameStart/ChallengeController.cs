@@ -82,7 +82,7 @@ public class ChallengeController : MonoBehaviour
 		int cont = 0;
 		while (cont < 3) 
 		{	
-			int rand = Random.Range(5,10);
+			int rand = Random.Range(90,120);
 			yield return new WaitForSeconds(rand);
 			criaSecreto = true;	
 			cont++;		
@@ -167,6 +167,11 @@ public class ChallengeController : MonoBehaviour
 			case 'F':
 				desaIni = 60;
 				desaFin = desaIni + 11;
+				break;
+			case 'G':
+				desaIni = 0;
+				desaFin = controladora.challengeSequence.Count;
+				Debug.Log("AAAAAA");
 				break;
 			
 
