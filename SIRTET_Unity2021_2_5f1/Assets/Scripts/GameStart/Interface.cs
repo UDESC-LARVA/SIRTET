@@ -27,7 +27,7 @@ public class Interface : MonoBehaviour
 	public float vScrollbarValue, curBarValue = 0;
 	
 	
-	Texture2D textGreen, textRed, textOri;
+	Texture2D textGreen, textRed;
 	Texture2D auxBarra;// = new Texture2D(1,1);
 	GUIStyle styleBarra;// = new GUIStyle();
 	GUIStyle box;
@@ -54,7 +54,6 @@ public class Interface : MonoBehaviour
 		auxBarra = new Texture2D(1,1);		
 		textGreen = new Texture2D(1,1);
 		textRed = new Texture2D(1,1);
-		textOri = new Texture2D(1,1);
 		styleBarra = new GUIStyle();		
 			
 		
@@ -105,6 +104,8 @@ public class Interface : MonoBehaviour
 		textRed.Apply();
 		
 		performance = controller.challengeSequence.Count / controller.levelQuantity;		
+
+		Debug.Log("A performance é delimitada pelo numero de desafios (72) dividido pelo numero de níveis (9) = 8");
 		
 		CreateScore();
 		
@@ -144,7 +145,6 @@ public class Interface : MonoBehaviour
 		//////
 
 		box = new GUIStyle(GUI.skin.box);	
-		textOri = box.normal.background;
 
 		GUI.BeginGroup(new Rect(Screen.width - 250, 1, 150, 150));
 		
@@ -227,15 +227,29 @@ public class Interface : MonoBehaviour
 			}
 		}
 		if(controller.isHelp){
-				GUI.Label(new Rect(Screen.width*0.4f, Screen.height*0.1f, Screen.width*0.5f, Screen.height*0.5f), "Ajuda", styleText);
-				GUI.Label(new Rect(Screen.width*0.3f, Screen.height*0.3f, Screen.width*0.5f, Screen.height*0.5f), "up - Aumentar Tempo", styleAjuda);
-				GUI.Label(new Rect(Screen.width*0.3f, Screen.height*0.4f, Screen.width*0.5f, Screen.height*0.5f), "down - Diminuir Tempo", styleAjuda);
-				GUI.Label(new Rect(Screen.width*0.3f, Screen.height*0.5f, Screen.width*0.5f, Screen.height*0.5f), "right - Aumentar Velocidade", styleAjuda);
-				GUI.Label(new Rect(Screen.width*0.3f, Screen.height*0.6f, Screen.width*0.5f, Screen.height*0.5f), "left - Diminuir Velocidade", styleAjuda);
-				GUI.Label(new Rect(Screen.width*0.3f, Screen.height*0.7f, Screen.width*0.5f, Screen.height*0.5f), "Pg up - Aumentar Itervalo de Desafios", styleAjuda);
-				GUI.Label(new Rect(Screen.width*0.3f, Screen.height*0.8f, Screen.width*0.5f, Screen.height*0.5f), "Pg Down - Diminuir Intervalo de Desafios", styleAjuda);
-				GUI.Label(new Rect(Screen.width*0.3f, Screen.height*0.9f, Screen.width*0.5f, Screen.height*0.5f), "Space - Pause", styleAjuda);
-			
+			float distancia = 0.20f;
+			float x,y,w,h;
+
+			x = Screen.width * 0.28f;
+			y = Screen.height * 0.30f;
+
+			w = Screen.width * 0.5f;
+			h = Screen.height * 0.5f;
+
+			GUI.Label(new Rect(x,y*(distancia*1 ),w,h), "Ajuda", styleAjuda);
+			GUI.Label(new Rect(x,y*(distancia*2 ),w,h), "Num 7  \t- Aumentar Fase", styleAjuda);
+			GUI.Label(new Rect(x,y*(distancia*3 ),w,h), "Num 4  \t- Diminuir Fase", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*4 ),w,h), "Num 8  \t- Aumentar Nível", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*5 ),w,h), "Num 5  \t- Diminuir Nível", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*6 ),w,h), "Num 9  \t- Aumentar Tempo", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*7 ),w,h), "Num 6  \t- Diminuir Tempo", styleAjuda);	
+
+			GUI.Label(new Rect(x,y*(distancia*8 ),w,h), "Home   \t- Aumentar Velocidade", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*9 ),w,h), "End    \t- Diminuir Velocidade", styleAjuda);						
+			GUI.Label(new Rect(x,y*(distancia*10),w,h), "Pg Up  \t- Aumentar Intervalo", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*11),w,h), "Pg Down\t- Diminuir Intervalo", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*12),w,h), "Space  \t- Pause", styleAjuda);
+		
 		}		
 
 
@@ -311,7 +325,7 @@ public class Interface : MonoBehaviour
 			if (vScrollbarValue < performance) {
 				vScrollbarValue ++;
 				if (vScrollbarValue >= performance) {
-					controller.SubirNivel ();
+					controller.AlterarNivel (1);
 					curBarValue = -performance;
 				}
 			}
@@ -320,7 +334,7 @@ public class Interface : MonoBehaviour
 			if (vScrollbarValue > -performance) {	
 				vScrollbarValue --;
 				if (vScrollbarValue <= -performance) {
-					controller.DescerNivel ();
+					controller.AlterarNivel (-1);
 					curBarValue = -performance;
 				}
 			}

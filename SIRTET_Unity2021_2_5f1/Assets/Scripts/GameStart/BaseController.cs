@@ -58,8 +58,7 @@ public class BaseController : MonoBehaviour
 	#region Start - Update
 	
 	void Awake ()
-	{		
-		
+	{			
 		//Evitar carregar mutas vezes
 		//game.file = GameObject.Find ("XML").GetComponent<XMLReader> ();
 		
@@ -127,7 +126,7 @@ public class BaseController : MonoBehaviour
 		//Pegando apenas os niveis da fase corrente
 		levelSequence = new List<Level> (game.file.gameLevels);
 		levelQuantity = levelSequence.Count;
-		levelCurrent = game.file.GetNivelByIndice (game.file.player.CurrentLevel, game.file.player.CurrentPhase);
+		levelCurrent = game.file.GetNivelByIndice (game.file.player.CurrentLevel);
 		if (levelCurrent == null)
 		{
 			print ("Nivel ou Fase nao cadastrado em Arquivo.");
@@ -155,11 +154,10 @@ public class BaseController : MonoBehaviour
 		
 
 		//
-		//*SOMENTE TESTES
-		Debug.Log(standardObjVelocity + " | " + standardChallengeInterval);
+		/*SOMENTE TESTES
 		standardObjVelocity = 15;
 		standardChallengeInterval = 1f;
-		Debug.Log("APAGAR LINHAS ACIMA");
+		Debug.LogWarning("APAGAR LINHAS ACIMA");
 		
 		//*/
 		/////////
@@ -167,61 +165,50 @@ public class BaseController : MonoBehaviour
 
 	void Update ()
 	{
-		if(!blink && StepOut()){
-			StartCoroutine(StepBase());
-			blink = true;
-		}
-
-		if(Input.GetKeyDown(KeyCode.O))
+	
+		if(Input.GetKeyDown(KeyCode.Keypad7))
 			AlterarFase(1);
-		if(Input.GetKeyDown(KeyCode.P))
+		if(Input.GetKeyDown(KeyCode.Keypad4))
 			AlterarFase(-1);
-		if(Input.GetKeyDown(KeyCode.I))
-			SubirNivel ();
-		if(Input.GetKeyDown(KeyCode.U))
-			DescerNivel ();
+		if(Input.GetKeyDown(KeyCode.Keypad8))
+			AlterarNivel (1);
+		if(Input.GetKeyDown(KeyCode.Keypad5))
+			AlterarNivel (-1);
+
+		//TEMPO
+		if(Input.GetKeyDown(KeyCode.Keypad9))
+			AlterarTempo(1);
+		if(Input.GetKeyDown(KeyCode.Keypad6))
+			AlterarTempo(-1);
 				
 		//O trecho a seguir chama as funçoes de alteraçao de niveis
 		if(Input.GetKeyDown(KeyCode.Home))
-			SubirVelocidade();
+			AlterarVelocidade(1);
 		if(Input.GetKeyDown(KeyCode.End))
-			DescerVelocidade();
+			AlterarVelocidade(-1);
 		if(Input.GetKeyDown(KeyCode.PageUp))
-			SubirIntervaloDesafios();
+			AlterarIntervalo(1);
 		if(Input.GetKeyDown(KeyCode.PageDown))
-			DescerIntervaloDesafios();
+			AlterarIntervalo(-1);
 		
-		//TEMPO
-		if(Input.GetKeyDown(KeyCode.UpArrow)){
-			gameTime += incrementoTempo;
-		}
 		
-		if (Input.GetKeyDown(KeyCode.DownArrow)){
-			//if(gameTime > 60)
-				gameTime -= incrementoTempo;
-		}
-		//AJUDA
+
 		
-		if(Input.GetKeyDown(KeyCode.F1) && isPaused==false){
+		//AJUDA		
+		if(Input.GetKeyDown(KeyCode.F1) && isPaused==false)
+		{
 			isHelp = !isHelp;
 			isPaused = !isPaused;
-		}else if(Input.GetKeyDown(KeyCode.F1) && isHelp==true){
+		}else if(Input.GetKeyDown(KeyCode.F1) && isHelp==true)
+		{
 			isHelp = !isHelp;
 			isPaused = !isPaused;
 		}
+
 		// Pause
-		if (Input.GetKeyDown ("space")&&isHelp==false)
+		if (Input.GetKeyDown("space")&&isHelp==false)
 			isPaused = !isPaused;
-		if (isPaused)
-		{
-			Time.timeScale = 0;
-			game.sound.pause = true;
-		}
-		else
-		{
-			Time.timeScale = 1;
-			game.sound.pause = false;
-		}
+		
 		
 		if(Input.GetKeyDown(KeyCode.D)){
 			if(baseD - (float)5/100 > 0 && baseL - (float)5/100 > 0 ){
@@ -237,12 +224,32 @@ public class BaseController : MonoBehaviour
 		}
 		if (Input.GetKeyDown (KeyCode.Backspace) && game.kinect.status)
 			isPaused = !isPaused;
+
+
+
+		if(!blink && StepOut())
+		{
+			StartCoroutine(StepBase());
+			blink = true;
+		}
+
+
+		if (isPaused)
+		{
+			Time.timeScale = 0;
+			game.sound.pause = true;
+		}else
+		{
+			Time.timeScale = 1;
+			game.sound.pause = false;
+		}
+
 		if (!game.kinect.status)
 			isPaused = true; 
 		
-		if (Input.GetKeyDown (KeyCode.Escape)) {
+		if (Input.GetKeyDown (KeyCode.Escape))
 			EndSession ();
-		}
+		
 		
 		GetComponent<AudioSource>().volume = game.feedbackVolume;
 		
@@ -300,142 +307,68 @@ public class BaseController : MonoBehaviour
 
 	public void AlterarFase (int value)
 	{
+		if(value < 0 && game.file.player.CurrentPhase=="A")
+			return;
+
 		char fase = game.file.player.CurrentPhase.ToCharArray()[0];
 		fase = (char)(fase + value);
 		game.file.player.CurrentPhase = fase.ToString();
 	}
 
-	public void AlteraNível (int value)
+	public void AlterarNivel (int value)
 	{
-
-		Debug.Log(levelQuantity + "!!!");
-
 		if(value > 0)
 		{
-			if(game.file.player.CurrentLevel == 9)
+			if(game.file.player.CurrentLevel == levelQuantity)
 			{ 
-				game.file.player.CurrentLevel = 0;
-				AlterarFase(+1);
+				game.file.player.CurrentLevel = 1;
+				AlterarFase(1);				
 			}
-			else if (game.file.player.CurrentLevel < levelQuantity) 
-			{
-				game.file.player.CurrentLevel ++;
-				levelCurrent = game.file.GetNivelByIndice (game.file.player.CurrentLevel, game.file.player.CurrentPhase);
-				standardObjVelocity = levelCurrent.Velocity;
-				standardChallengeInterval = levelCurrent.IntermissionTime;
-				gui.vScrollbarValue = 0;
-				gui.barraVerde();
-				print ("Subiu Nivel " + game.file.player.CurrentLevel);
-			}
-
-		}
-
-		if(game.file.player.CurrentLevel == 9)
-		{ 
-			game.file.player.CurrentLevel = 0;
-			AlterarFase(+1);
-		}else if (game.file.player.CurrentLevel < levelQuantity) 
-		{
-			game.file.player.CurrentLevel ++;
-			levelCurrent = game.file.GetNivelByIndice (game.file.player.CurrentLevel, game.file.player.CurrentPhase);
-			standardObjVelocity = levelCurrent.Velocity;
-			standardChallengeInterval = levelCurrent.IntermissionTime;
-			gui.vScrollbarValue = 0;
 			gui.barraVerde();
 			print ("Subiu Nivel " + game.file.player.CurrentLevel);
-		}
-	}
-
-
-	public void SubirNivel ()
-	{
-		Debug.Log(levelQuantity + "!!!");
-		if(game.file.player.CurrentLevel == 9)
-		{ 
-			game.file.player.CurrentLevel = 0;
-			AlterarFase(+1);
-		}else if (game.file.player.CurrentLevel < levelQuantity) 
+		}else if(value < 0)
 		{
-			game.file.player.CurrentLevel ++;
-			levelCurrent = game.file.GetNivelByIndice (game.file.player.CurrentLevel, game.file.player.CurrentPhase);
-			standardObjVelocity = levelCurrent.Velocity;
-			standardChallengeInterval = levelCurrent.IntermissionTime;
-			gui.vScrollbarValue = 0;
-			gui.barraVerde();
-			print ("Subiu Nivel " + game.file.player.CurrentLevel);
-		}
-	}
-	
-	public void DescerNivel ()
-	{
-		if (game.file.player.CurrentLevel > 1) {
-			game.file.player.CurrentLevel --;
-			levelCurrent = game.file.GetNivelByIndice (game.file.player.CurrentLevel, game.file.player.CurrentPhase);
-			standardObjVelocity = levelCurrent.Velocity;
-			standardChallengeInterval = levelCurrent.IntermissionTime;
-			gui.vScrollbarValue = 0;
+			if(game.file.player.CurrentLevel == 1)
+			{ 
+				game.file.player.CurrentLevel = (int)(levelQuantity/2)+1;
+				AlterarFase(-1);				
+			}
 			gui.barraVermelha();
 			print ("Desceu Nivel " + game.file.player.CurrentLevel);
-		}
+		}		
+
+		game.file.player.CurrentLevel += value;
+
+		gui.vScrollbarValue = 0;
+
+		levelCurrent = game.file.GetNivelByIndice (game.file.player.CurrentLevel);
+		standardObjVelocity = levelCurrent.Velocity;
+		standardChallengeInterval = levelCurrent.IntermissionTime;
 	}
 	
-	/*A funçao SubirVelocidade ira permitir que o jogador aumente apenas a velocidade do objeto. Baseando-se em a lista de niveis 
-	 * estar ordenada corretamente, a funçao incrementa uma unidade na id do jogo caso a velociade atual nao seje a maxima.*/
-	public void SubirVelocidade ()
-	{
-		if (game.file.player.CurrentLevel < levelQuantity) {
-			if(game.file.player.CurrentLevel%3!=0){
-				game.file.player.CurrentLevel ++;
-				levelCurrent = game.file.GetNivelByIndice (game.file.player.CurrentLevel, game.file.player.CurrentPhase);
-				standardObjVelocity = levelCurrent.Velocity;
-				standardChallengeInterval = levelCurrent.IntermissionTime;
-				gui.vScrollbarValue = 0;
-				gui.barraVerde();
-			}
-		}
-	}
 	
-	/*A funçao DescerVelocidade ira apenas decrementar o id do nivel, caso a velocidade atual nao seja a minima*/
-	public void DescerVelocidade ()
+	public void AlterarVelocidade(int value)
 	{
-		if (game.file.player.CurrentLevel%3!=1) {
-			game.file.player.CurrentLevel --;
-			levelCurrent = game.file.GetNivelByIndice (game.file.player.CurrentLevel, game.file.player.CurrentPhase);
-			standardObjVelocity = levelCurrent.Velocity;
-			standardChallengeInterval = levelCurrent.IntermissionTime;
-			gui.vScrollbarValue = 0;
-			gui.barraVermelha();
-		
-		}
+		if(standardObjVelocity+value < 1)
+			return;
+
+		standardObjVelocity += value;
 	}
-	/*A funçao SubirIntervaloDesafios , modifica o intervalo com que os objetos aparecem ao usuario. Neste caso, a funçao ira 
-	 * incrementar o id do nivel em 3, caso o valor atual naoo seja o maximo.(o incremento e de 3 pois a lista de niveis esta organizada
-	 * de maneira a comutar a velocidade com o intervalo de desafios, neste caso o valor 3 refere-se a MIN,MED,MAX da velocidade*/
-	public void SubirIntervaloDesafios ()
+
+	public void AlterarIntervalo(int value)
 	{
-		if (game.file.player.CurrentLevel < levelQuantity) {
-			if(game.file.player.CurrentLevel < 7){
-				game.file.player.CurrentLevel += 3;
-				levelCurrent = game.file.GetNivelByIndice (game.file.player.CurrentLevel, game.file.player.CurrentPhase);
-				standardObjVelocity = levelCurrent.Velocity;
-				standardChallengeInterval = levelCurrent.IntermissionTime;
-				gui.vScrollbarValue = 0;
-				gui.barraVerde();
-			}
-		}
+		if(standardChallengeInterval+value < 1)
+			return;
+
+		standardChallengeInterval += value;
 	}
-	/*A funçao DescerIntervaloDesafios, decrementa em tres o id do nivel*/
-	public void DescerIntervaloDesafios ()
+
+	public void AlterarTempo(int value)
 	{
-		if (game.file.player.CurrentLevel > 3) {
-			game.file.player.CurrentLevel -= 3;
-			levelCurrent = game.file.GetNivelByIndice (game.file.player.CurrentLevel, game.file.player.CurrentPhase);
-			standardObjVelocity = levelCurrent.Velocity;
-			standardChallengeInterval = levelCurrent.IntermissionTime;
-			gui.vScrollbarValue = 0;
-			gui.barraVermelha();
-		}
+		gameTime += (incrementoTempo * value);
 	}
+
+
 
 
 	#endregion

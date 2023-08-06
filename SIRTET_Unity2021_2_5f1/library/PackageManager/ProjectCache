@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637936836439831568
-    m_Hash: 3681148025
+      ticks: 638267727536985816
+    m_Hash: 1367706854
   m_LockFileStatus:
     m_FilePath: E:/_Mestrado/FUNSG/SIRTET/SIRTET/SIRTET_Unity2021_2_5f1/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637936836439941546
-    m_Hash: 4271315917
+      ticks: 638267727537065819
+    m_Hash: 3268060864
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -105,6 +105,11 @@ m_ResolvedPackages:
     - 2.0.0-preview.21
     - 2.0.0-preview.22
     - 2.0.0
+    - 2.0.1
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    - 2.0.7
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
@@ -131,6 +136,11 @@ m_ResolvedPackages:
     - 2.0.0-preview.21
     - 2.0.0-preview.22
     - 2.0.0
+    - 2.0.1
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    - 2.0.7
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
@@ -237,6 +247,10 @@ m_ResolvedPackages:
     - 3.0.16
     - 3.0.17
     - 3.0.18
+    - 3.0.20
+    - 3.0.21
+    - 3.0.22
+    - 3.0.24
     compatible:
     - 3.0.7
     - 3.0.9
@@ -248,7 +262,11 @@ m_ResolvedPackages:
     - 3.0.16
     - 3.0.17
     - 3.0.18
-    verified: 3.0.18
+    - 3.0.20
+    - 3.0.21
+    - 3.0.22
+    - 3.0.24
+    verified: 3.0.24
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -276,12 +294,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 3.0.7
     nextVersion: 
-- packageId: com.unity.ide.visualstudio@2.0.12
+- packageId: com.unity.ide.visualstudio@2.0.20
   testable: 0
   isDirectDependency: 1
-  version: 2.0.12
+  version: 2.0.20
   source: 1
-  resolvedPath: E:\_Mestrado\FUNSG\SIRTET\SIRTET\SIRTET_Unity2021_2_5f1\Library\PackageCache\com.unity.ide.visualstudio@2.0.12
+  resolvedPath: E:\_Mestrado\FUNSG\SIRTET\SIRTET\SIRTET_Unity2021_2_5f1\Library\PackageCache\com.unity.ide.visualstudio@2.0.20
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -290,7 +308,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: assets
   description: Code editor integration for supporting Visual Studio as code editor
     for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
@@ -318,13 +336,17 @@ m_ResolvedPackages:
     - 2.0.15
     - 2.0.16
     - 2.0.17
+    - 2.0.18
+    - 2.0.20
     compatible:
     - 2.0.12
     - 2.0.14
     - 2.0.15
     - 2.0.16
     - 2.0.17
-    verified: 2.0.17
+    - 2.0.18
+    - 2.0.20
+    verified: 2.0.20
   dependencies:
   - name: com.unity.test-framework
     version: 1.1.9
@@ -347,13 +369,13 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637720564750000000
-  documentationUrl: 
+  datePublishedTicks: 638265007710000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-    revision: 8d436ff053b9c59677b5e9799208143553cd02d9
+    revision: b7bf23d23806ac75645bfa12acadcfc11468a383
     path: 
   unityLifecycle:
     version: 2.0.12
@@ -982,6 +1004,11 @@ m_ResolvedPackages:
     - 1.3.0
     - 1.3.1
     - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    - 1.3.5
+    - 1.3.7
+    - 1.3.8
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -994,6 +1021,11 @@ m_ResolvedPackages:
     - 1.3.0
     - 1.3.1
     - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    - 1.3.5
+    - 1.3.7
+    - 1.3.8
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -1159,13 +1191,16 @@ m_ResolvedPackages:
     - 3.2.0-pre.2
     - 3.2.0-pre.3
     - 3.2.0-pre.4
+    - 3.2.0-pre.5
     - 4.0.0-pre.1
+    - 4.0.0-pre.2
     compatible:
     - 3.0.6
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
     - 3.2.0-pre.4
+    - 3.2.0-pre.5
     verified: 3.0.6
   dependencies:
   - name: com.unity.ugui
@@ -1292,23 +1327,39 @@ m_ResolvedPackages:
     - 1.6.2
     - 1.6.3
     - 1.6.4
+    - 1.6.5
     - 1.7.0-pre.1
     - 1.7.0-pre.2
     - 1.7.0
     - 1.7.1
     - 1.7.2
+    - 1.7.3
+    - 1.7.4
+    - 1.7.5
     - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.8.3
+    - 1.8.4
     compatible:
     - 1.6.2
     - 1.6.3
     - 1.6.4
+    - 1.6.5
     - 1.7.0-pre.1
     - 1.7.0-pre.2
     - 1.7.0
     - 1.7.1
     - 1.7.2
+    - 1.7.3
+    - 1.7.4
+    - 1.7.5
     - 1.8.0
-    verified: 1.6.4
+    - 1.8.1
+    - 1.8.2
+    - 1.8.3
+    - 1.8.4
+    verified: 1.6.5
   dependencies:
   - name: com.unity.modules.director
     version: 1.0.0
@@ -1377,6 +1428,8 @@ m_ResolvedPackages:
   versions:
     all:
     - 1.0.0
+    - 3.0.0-exp.1
+    - 3.0.0-exp.3
     compatible:
     - 1.0.0
     verified: 1.0.0
@@ -1463,6 +1516,7 @@ m_ResolvedPackages:
     - 1.7.8
     - 1.8.0-pre.1
     - 1.8.0
+    - 1.9.0
     compatible:
     - 1.7.5
     - 1.7.6
@@ -3258,7 +3312,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Libraries
-  type: 
+  type: asset
   description: Custom version of the nunit package build to work with Unity. Used
     by the Unity Test Framework.
   status: 4
@@ -3273,10 +3327,14 @@ m_ResolvedPackages:
     - 1.0.6
     - 2.0.2
     - 2.0.3
+    - 2.0.4
+    - 2.0.5
     compatible:
     - 1.0.6
     - 2.0.2
     - 2.0.3
+    - 2.0.4
+    - 2.0.5
     verified: 1.0.6
   dependencies: []
   resolvedDependencies: []
@@ -3291,7 +3349,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637429759280000000
   documentationUrl: 
@@ -3551,7 +3609,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: Unity's C# SIMD math library providing vector types and math functions
     with a shader like syntax.
   status: 4
@@ -3575,9 +3633,11 @@ m_ResolvedPackages:
     - 1.2.4
     - 1.2.5
     - 1.2.6
+    - 1.3.1
     compatible:
     - 1.2.5
     - 1.2.6
+    - 1.3.1
     verified: 1.2.6
   dependencies: []
   resolvedDependencies: []
@@ -3590,7 +3650,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637719892670000000
   documentationUrl: 
@@ -3743,6 +3803,9 @@ m_ResolvedPackages:
     - 1.8.0
     - 1.8.1
     - 1.8.2
+    - 1.8.3
+    - 1.8.4
+    - 1.8.7
     compatible:
     - 1.6.0
     - 1.6.1
@@ -3762,6 +3825,9 @@ m_ResolvedPackages:
     - 1.8.0
     - 1.8.1
     - 1.8.2
+    - 1.8.3
+    - 1.8.4
+    - 1.8.7
     verified: 1.6.6
   dependencies:
   - name: com.unity.mathematics
@@ -3996,6 +4062,7 @@ m_ResolvedPackages:
     - 10.8.1
     - 10.9.0
     - 10.10.0
+    - 10.10.1
     - 12.1.2
     compatible:
     - 12.1.2
@@ -4051,7 +4118,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: library
   description: 'Newtonsoft Json for use in Unity projects and Unity packages. Currently
     synced to version 12.0.2.
 
@@ -4079,12 +4146,18 @@ m_ResolvedPackages:
     - 2.0.2
     - 3.0.1
     - 3.0.2
+    - 3.1.0
+    - 3.2.0
+    - 3.2.1
     compatible:
     - 2.0.0
     - 2.0.1-preview.1
     - 2.0.2
     - 3.0.1
     - 3.0.2
+    - 3.1.0
+    - 3.2.0
+    - 3.2.1
     verified: 2.0.2
   dependencies: []
   resolvedDependencies: []
@@ -4123,7 +4196,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: 'This package defines common components used by multiple Game Service
     packages.
 
@@ -4147,6 +4220,15 @@ m_ResolvedPackages:
     - 1.4.0
     - 1.4.1
     - 1.4.2
+    - 1.4.3
+    - 1.5.2
+    - 1.6.0
+    - 1.7.0
+    - 1.7.1
+    - 1.8.1
+    - 1.8.2
+    - 1.9.0
+    - 1.10.1
     compatible:
     - 1.0.1
     - 1.1.0-pre.7
@@ -4162,6 +4244,15 @@ m_ResolvedPackages:
     - 1.4.0
     - 1.4.1
     - 1.4.2
+    - 1.4.3
+    - 1.5.2
+    - 1.6.0
+    - 1.7.0
+    - 1.7.1
+    - 1.8.1
+    - 1.8.2
+    - 1.9.0
+    - 1.10.1
     verified: 1.0.1
   dependencies:
   - name: com.unity.modules.unitywebrequest
@@ -4177,7 +4268,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637604883250000000
   documentationUrl: 

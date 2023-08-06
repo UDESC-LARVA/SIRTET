@@ -130,7 +130,7 @@ public class XMLReader : MonoBehaviour {
 		return null;
 	}
 	
-	public Level GetNivelByIndice(int indice, string fase)
+	public Level GetNivelByIndice(int indice)
 	{
 		foreach(Level n in gameLevels)
 			if(n.Id == indice)

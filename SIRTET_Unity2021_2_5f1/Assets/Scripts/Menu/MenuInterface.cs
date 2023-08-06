@@ -12,6 +12,8 @@ public class MenuInterface : MonoBehaviour {
 	GUIStyle button, smallbutton, opt ,others, small;
 	
 	string stringToEdit = "Nome do Jogador";
+
+	public Texture2D logoUdesc, logoLarva;
 	
 	bool showStats = false, showTitle = true, showOpt = false, showCred = false;
 	Player player;
@@ -28,6 +30,9 @@ public class MenuInterface : MonoBehaviour {
 		file = GameObject.Find ("XML").GetComponent<XMLReader>();
 		sound = GameObject.Find ("Audio").GetComponent<SoundBehavior>();
 		game = GameObject.Find ("Game Controller").GetComponent<GameController>();
+
+		logoUdesc = Resources.Load<Texture2D>("Imagens/LogoUdesc");
+		logoLarva = Resources.Load<Texture2D>("Imagens/LogoLarva");
 		
 		styleText.fontSize = 50;
 		styleText.alignment = TextAnchor.UpperCenter;
@@ -36,6 +41,13 @@ public class MenuInterface : MonoBehaviour {
 		if(file.player.Name != null)
 			stringToEdit = file.player.Name;
 
+		//Invoke("Inicia", 0.2f);
+	}
+
+	void Inicia()
+	{		
+		SceneManager.LoadScene("Game_Start");
+		Debug.LogWarning("apagar msg acima 1");		
 	}
 	
 	void OnGUI()
@@ -87,7 +99,18 @@ public class MenuInterface : MonoBehaviour {
 				
 		GUI.EndGroup();
 
-		
+
+		// Imagens
+		float logoX, logoY, logoHeight, logoRatio;
+		logoX = Screen.width*0.1f;		
+		logoY = Screen.height*0.1f;
+		logoHeight = Screen.height*0.15f;
+
+		logoRatio = logoHeight/logoUdesc.height;
+		GUI.DrawTexture(new Rect(logoX, logoY*8, logoUdesc.width * logoRatio, logoUdesc.height * logoRatio), logoUdesc);
+
+		logoRatio = logoHeight/logoLarva.height;
+		GUI.DrawTexture(new Rect(logoX+25+(logoLarva.width * logoRatio * 2), logoY*8, logoLarva.width * logoRatio, logoLarva.height * logoRatio), logoLarva);
         
 		
 		// Carregar Jogador
@@ -125,7 +148,7 @@ public class MenuInterface : MonoBehaviour {
 				"Jogador: " + player.Name + "\n" +
 				"Fase: " +    player.CurrentPhase + "\n" +
 				"Nivel: " +   player.CurrentLevel + "\n" +
-				"Sessao: " +  player.Session);
+				"Sessao: " +  player.Session, small);
 		GUI.EndGroup();
         
 		
@@ -209,7 +232,5 @@ public class MenuInterface : MonoBehaviour {
 
 		showStats = true;
 		
-		SceneManager.LoadScene("Game_Start");
-		Debug.LogWarning("apagar msg acima");		
 	}
 }

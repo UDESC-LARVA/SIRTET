@@ -43,8 +43,8 @@ public class UDP: MonoBehaviour
 		DontDestroyOnLoad (transform.gameObject);
 
 		//*
-		status = !status;
-		Debug.LogWarning("APAGAR LINHAS ACIMA");
+		//status = !status;
+		//Debug.LogWarning("APAGAR LINHAS ACIMA");
 		//*/
 	}
 	
@@ -385,7 +385,8 @@ public class UDP: MonoBehaviour
 			}
  
 		} catch (Exception e) {
-			status = false;			
+			status = false;
+			//Debug.LogWarning("Erro na conexão, corrigir de continuar acontecendo, descomentar linha acima");			
 			print (e);
 		}
 	} 

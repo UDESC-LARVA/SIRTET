@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class HandShadowController : MonoBehaviour
 {
-   int behaviorAnimation = 1;
-	
+   
 	// Chache classes e metodos
 
     Transform chao, teto, esq, dir;
