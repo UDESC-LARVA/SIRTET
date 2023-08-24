@@ -166,31 +166,30 @@ public class BaseController : MonoBehaviour
 	void Update ()
 	{
 	
-		if(Input.GetKeyDown(KeyCode.Keypad7))
+		if(Input.GetKeyDown(KeyCode.UpArrow))
 			AlterarFase(1);
-		if(Input.GetKeyDown(KeyCode.Keypad4))
+		if(Input.GetKeyDown(KeyCode.DownArrow))
 			AlterarFase(-1);
-		if(Input.GetKeyDown(KeyCode.Keypad8))
+		if(Input.GetKeyDown(KeyCode.Alpha5))
 			AlterarNivel (1);
-		if(Input.GetKeyDown(KeyCode.Keypad5))
+		if(Input.GetKeyDown(KeyCode.Alpha4))
 			AlterarNivel (-1);
 
 		//TEMPO
-		if(Input.GetKeyDown(KeyCode.Keypad9))
+		if(Input.GetKeyDown(KeyCode.Alpha9))
 			AlterarTempo(1);
-		if(Input.GetKeyDown(KeyCode.Keypad6))
+		if(Input.GetKeyDown(KeyCode.Alpha8))
 			AlterarTempo(-1);
 				
 		//O trecho a seguir chama as funçoes de alteraçao de niveis
-		if(Input.GetKeyDown(KeyCode.Home))
+		if(Input.GetKeyDown(KeyCode.V))
 			AlterarVelocidade(1);
-		if(Input.GetKeyDown(KeyCode.End))
+		if(Input.GetKeyDown(KeyCode.F))
 			AlterarVelocidade(-1);
 		if(Input.GetKeyDown(KeyCode.PageUp))
 			AlterarIntervalo(1);
 		if(Input.GetKeyDown(KeyCode.PageDown))
-			AlterarIntervalo(-1);
-		
+			AlterarIntervalo(-1);		
 		
 
 		
@@ -210,6 +209,7 @@ public class BaseController : MonoBehaviour
 			isPaused = !isPaused;
 		
 		
+		/*
 		if(Input.GetKeyDown(KeyCode.D)){
 			if(baseD - (float)5/100 > 0 && baseL - (float)5/100 > 0 ){
 				baseD = baseD - incrementoBaseD;
@@ -222,6 +222,8 @@ public class BaseController : MonoBehaviour
 			baseL = baseL + incrementoBaseL;
 			auxBase.transform.localScale = new Vector3 (baseL, 0, baseD);
 		}
+		*/
+
 		if (Input.GetKeyDown (KeyCode.Backspace) && game.kinect.status)
 			isPaused = !isPaused;
 

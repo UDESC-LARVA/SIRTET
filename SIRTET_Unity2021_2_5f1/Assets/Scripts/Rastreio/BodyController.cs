@@ -19,7 +19,7 @@ public class BodyController : MonoBehaviour {
 		if(gameStart)
 			enable(bodyType);
 		
-		if(Input.GetKeyDown("1"))
+		/*if(Input.GetKeyDown("1"))
 		{
 			destroyAll();
 			disableAll();
@@ -36,7 +36,7 @@ public class BodyController : MonoBehaviour {
 			destroyAll();
 			disableAll();
 			enable(3);
-		}
+		}*/
 		
 	}
 	

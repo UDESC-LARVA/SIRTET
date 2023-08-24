@@ -124,7 +124,7 @@ public class UDP: MonoBehaviour
 	
 	public void Update ()
 	{
-		if (Input.GetKeyDown("n"))
+		if (Input.GetKeyDown("d"))
 			showSizes = !showSizes;
 	
 		if (Input.GetKeyDown ("k"))

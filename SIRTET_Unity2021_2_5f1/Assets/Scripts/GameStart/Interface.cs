@@ -146,6 +146,52 @@ public class Interface : MonoBehaviour
 
 		box = new GUIStyle(GUI.skin.box);	
 
+		
+		
+		if(!controller.isHelp)
+		{
+			if(controller.isPaused)
+			{
+				if(endTime > 0)
+					GUI.Label(new Rect(Screen.width*0.35f, Screen.height*0.25f, Screen.width*0.5f, Screen.height*0.5f), "Pause", styleText);
+				else
+					GUI.Label(new Rect(Screen.width*0.35f, Screen.height*0.25f, Screen.width*0.5f, Screen.height*0.5f), "Fim de Jogo", styleText);
+			}
+		}
+		
+		if(controller.isHelp)
+		{
+			float distancia = 0.20f;
+			float x,y,w,h;
+
+			x = Screen.width * 0.28f;
+			y = Screen.height * 0.30f;
+
+			w = Screen.width * 0.5f;
+			h = Screen.height * 0.5f;
+			
+			GUI.Box(new Rect(Screen.width * 0.25f, 0, w/1.5f, h*(distancia*15)), " ", box);	
+			GUI.Label(new Rect(x,y*(distancia*1 ),w,h), "F1 \t - Ajuda", styleAjuda);
+			GUI.Label(new Rect(x,y*(distancia*2 ),w,h), "↑  \t - Aumentar Fase", styleAjuda);
+			GUI.Label(new Rect(x,y*(distancia*3 ),w,h), "↓  \t - Diminuir Fase", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*4 ),w,h), "5  \t - Aumentar Nível", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*5 ),w,h), "4  \t - Diminuir Nível", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*6 ),w,h), "9  \t - Aumentar Tempo", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*7 ),w,h), "8  \t - Diminuir Tempo", styleAjuda);	
+
+			GUI.Label(new Rect(x,y*(distancia*8 ),w,h), "V   \t - Aumentar Velocidade", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*9 ),w,h), "F    \t - Diminuir Velocidade", styleAjuda);						
+			GUI.Label(new Rect(x,y*(distancia*10),w,h), "Pg Up  \t - Aumentar Intervalo", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*11),w,h), "Pg Down\t - Diminuir Intervalo", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*12),w,h), "Space  \t - Pause", styleAjuda);
+
+			GUI.Label(new Rect(x,y*(distancia*13),w,h), "T  \t - Tipo de Objeto", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*14),w,h), "S  \t - Sexo do Personagem", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*15),w,h), "H  \t - Humanoide", styleAjuda);
+		}		
+
+
+
 		GUI.BeginGroup(new Rect(Screen.width - 250, 1, 150, 150));
 		
 		GUI.Box(new Rect(0, 0, 150, 150), " ", box);
@@ -160,7 +206,6 @@ public class Interface : MonoBehaviour
 		GUI.Label (new Rect (1, 60, 150, 100), "" + starScoreStr, styleText);
 		
 		GUI.EndGroup();		
-
 
 		///Feedback de níveis
 
@@ -217,40 +262,6 @@ public class Interface : MonoBehaviour
 			GUI.EndGroup();
 		}
 		
-		
-		if(!controller.isHelp){
-			if(controller.isPaused){
-				if(endTime > 0)
-					GUI.Label(new Rect(Screen.width*0.35f, Screen.height*0.25f, Screen.width*0.5f, Screen.height*0.5f), "Pause", styleText);
-				else
-					GUI.Label(new Rect(Screen.width*0.35f, Screen.height*0.25f, Screen.width*0.5f, Screen.height*0.5f), "Fim de Jogo", styleText);
-			}
-		}
-		if(controller.isHelp){
-			float distancia = 0.20f;
-			float x,y,w,h;
-
-			x = Screen.width * 0.28f;
-			y = Screen.height * 0.30f;
-
-			w = Screen.width * 0.5f;
-			h = Screen.height * 0.5f;
-
-			GUI.Label(new Rect(x,y*(distancia*1 ),w,h), "Ajuda", styleAjuda);
-			GUI.Label(new Rect(x,y*(distancia*2 ),w,h), "Num 7  \t- Aumentar Fase", styleAjuda);
-			GUI.Label(new Rect(x,y*(distancia*3 ),w,h), "Num 4  \t- Diminuir Fase", styleAjuda);			
-			GUI.Label(new Rect(x,y*(distancia*4 ),w,h), "Num 8  \t- Aumentar Nível", styleAjuda);			
-			GUI.Label(new Rect(x,y*(distancia*5 ),w,h), "Num 5  \t- Diminuir Nível", styleAjuda);			
-			GUI.Label(new Rect(x,y*(distancia*6 ),w,h), "Num 9  \t- Aumentar Tempo", styleAjuda);			
-			GUI.Label(new Rect(x,y*(distancia*7 ),w,h), "Num 6  \t- Diminuir Tempo", styleAjuda);	
-
-			GUI.Label(new Rect(x,y*(distancia*8 ),w,h), "Home   \t- Aumentar Velocidade", styleAjuda);			
-			GUI.Label(new Rect(x,y*(distancia*9 ),w,h), "End    \t- Diminuir Velocidade", styleAjuda);						
-			GUI.Label(new Rect(x,y*(distancia*10),w,h), "Pg Up  \t- Aumentar Intervalo", styleAjuda);			
-			GUI.Label(new Rect(x,y*(distancia*11),w,h), "Pg Down\t- Diminuir Intervalo", styleAjuda);			
-			GUI.Label(new Rect(x,y*(distancia*12),w,h), "Space  \t- Pause", styleAjuda);
-		
-		}		
 
 
 

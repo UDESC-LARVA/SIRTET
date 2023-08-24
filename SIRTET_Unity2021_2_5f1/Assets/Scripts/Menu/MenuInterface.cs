@@ -212,7 +212,7 @@ public class MenuInterface : MonoBehaviour {
 
 
 		////////////
-
+		/*
 		player = new Player();
 		stringToEdit = "JOGADOR_TESTE";
 		player = file.GetPlayerByName(stringToEdit);
@@ -231,6 +231,7 @@ public class MenuInterface : MonoBehaviour {
 		}
 
 		showStats = true;
+		*/
 		
 	}
 }

@@ -17,7 +17,6 @@ ScriptsOnlyBuild:
     - GameController
     - Interface
     - LimitBehavior
-    - Menu
     - MenuInterface
     - ObjectBehavior
     - PlayerCharacterController
@@ -126,17 +125,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2232}
     - Class: 114
-      Script: {instanceID: 4082}
+      Script: {instanceID: 4084}
     - Class: 114
-      Script: {instanceID: 4936}
+      Script: {instanceID: 4938}
     - Class: 114
-      Script: {instanceID: 6550}
+      Script: {instanceID: 6552}
     - Class: 114
-      Script: {instanceID: 7240}
+      Script: {instanceID: 7242}
     - Class: 114
-      Script: {instanceID: 9878}
+      Script: {instanceID: 9882}
     - Class: 114
-      Script: {instanceID: 11902}
+      Script: {instanceID: 11908}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -203,23 +202,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2696}
     - Class: 114
-      Script: {instanceID: 2838}
+      Script: {instanceID: 2840}
     - Class: 114
-      Script: {instanceID: 3432}
+      Script: {instanceID: 3436}
     - Class: 114
-      Script: {instanceID: 3568}
+      Script: {instanceID: 3572}
     - Class: 114
-      Script: {instanceID: 3640}
+      Script: {instanceID: 3644}
     - Class: 114
-      Script: {instanceID: 3794}
+      Script: {instanceID: 3798}
     - Class: 114
-      Script: {instanceID: 4038}
+      Script: {instanceID: 4040}
     - Class: 114
-      Script: {instanceID: 4204}
+      Script: {instanceID: 4206}
     - Class: 114
-      Script: {instanceID: 4388}
-    - Class: 114
-      Script: {instanceID: 5038}
+      Script: {instanceID: 4390}
     - Class: 114
       Script: {instanceID: 5246}
     - Class: 114
@@ -237,79 +234,81 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6168}
     - Class: 114
-      Script: {instanceID: 6250}
+      Script: {instanceID: 6252}
     - Class: 114
-      Script: {instanceID: 6654}
+      Script: {instanceID: 6656}
     - Class: 114
-      Script: {instanceID: 7592}
+      Script: {instanceID: 7594}
     - Class: 114
-      Script: {instanceID: 7680}
+      Script: {instanceID: 7682}
     - Class: 114
-      Script: {instanceID: 8616}
+      Script: {instanceID: 8618}
     - Class: 114
-      Script: {instanceID: 8770}
+      Script: {instanceID: 8772}
     - Class: 114
-      Script: {instanceID: 9334}
+      Script: {instanceID: 9338}
     - Class: 114
-      Script: {instanceID: 9500}
+      Script: {instanceID: 9504}
     - Class: 114
-      Script: {instanceID: 9582}
+      Script: {instanceID: 9586}
     - Class: 114
-      Script: {instanceID: 9588}
+      Script: {instanceID: 9592}
     - Class: 114
-      Script: {instanceID: 9846}
+      Script: {instanceID: 9850}
     - Class: 114
-      Script: {instanceID: 9914}
+      Script: {instanceID: 9918}
     - Class: 114
-      Script: {instanceID: 10192}
+      Script: {instanceID: 10196}
     - Class: 114
-      Script: {instanceID: 10294}
+      Script: {instanceID: 10298}
     - Class: 114
-      Script: {instanceID: 10586}
+      Script: {instanceID: 10592}
     - Class: 114
-      Script: {instanceID: 11286}
+      Script: {instanceID: 11292}
     - Class: 114
-      Script: {instanceID: 11370}
+      Script: {instanceID: 11376}
     - Class: 114
-      Script: {instanceID: 11536}
+      Script: {instanceID: 11542}
     - Class: 114
-      Script: {instanceID: 11776}
+      Script: {instanceID: 11782}
     - Class: 114
-      Script: {instanceID: 11778}
+      Script: {instanceID: 11784}
     - Class: 114
-      Script: {instanceID: 11876}
+      Script: {instanceID: 11882}
     - Class: 114
-      Script: {instanceID: 11900}
+      Script: {instanceID: 11906}
     - Class: 114
-      Script: {instanceID: 11986}
+      Script: {instanceID: 11992}
     - Class: 114
-      Script: {instanceID: 12100}
+      Script: {instanceID: 12106}
     - Class: 114
-      Script: {instanceID: 12200}
+      Script: {instanceID: 12206}
     - Class: 114
-      Script: {instanceID: 12240}
+      Script: {instanceID: 12246}
     - Class: 114
-      Script: {instanceID: 12342}
+      Script: {instanceID: 12348}
     - Class: 114
-      Script: {instanceID: 12378}
+      Script: {instanceID: 12384}
     - Class: 114
-      Script: {instanceID: 12432}
+      Script: {instanceID: 12438}
     - Class: 114
-      Script: {instanceID: 12518}
+      Script: {instanceID: 12524}
     - Class: 114
-      Script: {instanceID: 12558}
+      Script: {instanceID: 12564}
     - Class: 114
-      Script: {instanceID: 12844}
+      Script: {instanceID: 12850}
     - Class: 114
-      Script: {instanceID: 12996}
+      Script: {instanceID: 13002}
     - Class: 114
-      Script: {instanceID: 13252}
+      Script: {instanceID: 13260}
     - Class: 114
-      Script: {instanceID: 13324}
+      Script: {instanceID: 13332}
     - Class: 114
-      Script: {instanceID: 13420}
+      Script: {instanceID: 13428}
     - Class: 114
-      Script: {instanceID: 13822}
+      Script: {instanceID: 13830}
+    - Class: 114
+      Script: {instanceID: 39998}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -356,7 +355,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 7240}
+      Script: {instanceID: 7242}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -762,7 +761,7 @@ ScriptsOnlyBuild:
     className: ColorAdjustments
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: c187c13159dc522e2e91b73f38568ac5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuInterface
@@ -882,7 +881,7 @@ ScriptsOnlyBuild:
     className: Exposure
   - hash:
       serializedVersion: 2
-      Hash: 427a99effef66d7e392859beae9f436e
+      Hash: 8e5bf6ac2f68f75b020963240ff262a2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ChallengeController
@@ -898,12 +897,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
-  - hash:
-      serializedVersion: 2
-      Hash: ed948c654ddd190e590c9c250ec1af27
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Menu
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1116,7 +1109,7 @@ ScriptsOnlyBuild:
     className: ReflectionProxyVolumeComponent
   - hash:
       serializedVersion: 2
-      Hash: 39469cd6b5493ab0c4be5589815539fd
+      Hash: 76e443fd25223eb22426fcc7d0e9c74c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BaseController
@@ -2022,7 +2015,7 @@ ScriptsOnlyBuild:
     className: ChangeOutlineColor
   - hash:
       serializedVersion: 2
-      Hash: d2e61ffd6c67982397e540a72c396bea
+      Hash: 0d4c8a5c69b353961817f19b8d435d7c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Interface
@@ -2355,4 +2348,4 @@ ScriptsOnlyBuild:
   - Assets/Cenas/Initialization.unity
   - Assets/Cenas/Menu_Total.unity
   - Assets/Cenas/Game_Start.unity
-  playerPath: E:/_Mestrado/FUNSG/SIRTET/Builds/23-06-29/SIRTET.exe
+  playerPath: E:/_Mestrado/FUNSG/SIRTET/Builds/Build 2.2 - 23-08-18/SIRTET.exe
