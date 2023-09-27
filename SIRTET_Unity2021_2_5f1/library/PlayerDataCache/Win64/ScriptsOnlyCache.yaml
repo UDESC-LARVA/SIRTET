@@ -308,7 +308,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13830}
     - Class: 114
-      Script: {instanceID: 39998}
+      Script: {instanceID: 30442}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -2348,4 +2348,4 @@ ScriptsOnlyBuild:
   - Assets/Cenas/Initialization.unity
   - Assets/Cenas/Menu_Total.unity
   - Assets/Cenas/Game_Start.unity
-  playerPath: E:/_Mestrado/FUNSG/SIRTET/Builds/Build 2.2 - 23-08-18/SIRTET.exe
+  playerPath: E:/_Mestrado/FUNSG/SIRTET/Builds/Build 2.2 - 23-08-28/SIRTET.exe

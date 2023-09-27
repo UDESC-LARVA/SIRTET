@@ -52,6 +52,8 @@ public class BaseController : MonoBehaviour
 	public float standardSize, standardObjSize, standardObjVelocity, standardChallengeInterval = 2;
 	public List<Desafio> challengeSequence;
 
+	public bool modoAleatorio = false;
+
 	
 	#endregion
 	
@@ -93,6 +95,7 @@ public class BaseController : MonoBehaviour
 		incrementoBaseD = baseD/20;
 		incrementoBaseL = baseL/20;
 		auxBase = GameObject.Find("Base").GetComponent<Transform>().transform;
+
 		
 		//Objeto
 		standardSize = (float)game.file.parameters.EnvironmentParameters.Size;
@@ -151,7 +154,7 @@ public class BaseController : MonoBehaviour
 
 		col = auxBase.GetComponent<MeshCollider>();
 
-		
+		modoAleatorio = game.file.player.Name == "MODOALEATORIO";
 
 		//
 		/*SOMENTE TESTES
@@ -165,31 +168,46 @@ public class BaseController : MonoBehaviour
 
 	void Update ()
 	{
-	
+		//Controles do profissional
+		//Altera Fase
 		if(Input.GetKeyDown(KeyCode.UpArrow))
 			AlterarFase(1);
 		if(Input.GetKeyDown(KeyCode.DownArrow))
 			AlterarFase(-1);
+		
+		//Altera Nível
 		if(Input.GetKeyDown(KeyCode.Alpha5))
 			AlterarNivel (1);
 		if(Input.GetKeyDown(KeyCode.Alpha4))
 			AlterarNivel (-1);
 
-		//TEMPO
+		//Altera Tempo
 		if(Input.GetKeyDown(KeyCode.Alpha9))
 			AlterarTempo(1);
 		if(Input.GetKeyDown(KeyCode.Alpha8))
 			AlterarTempo(-1);
-				
-		//O trecho a seguir chama as funçoes de alteraçao de niveis
+		
+		//Altera velocidade
 		if(Input.GetKeyDown(KeyCode.V))
 			AlterarVelocidade(1);
 		if(Input.GetKeyDown(KeyCode.F))
 			AlterarVelocidade(-1);
+		
+		//Altera Bntervalo
 		if(Input.GetKeyDown(KeyCode.PageUp))
 			AlterarIntervalo(1);
 		if(Input.GetKeyDown(KeyCode.PageDown))
-			AlterarIntervalo(-1);		
+			AlterarIntervalo(-1);
+
+		//Altera Base
+		if(Input.GetKeyDown(KeyCode.B))
+			AlterarBase(0);
+		if(Input.GetKeyDown(KeyCode.LeftArrow))
+			AlterarBase(-1);
+		if(Input.GetKeyDown(KeyCode.RightArrow))
+			AlterarBase(1);
+
+		
 		
 
 		
@@ -209,21 +227,7 @@ public class BaseController : MonoBehaviour
 			isPaused = !isPaused;
 		
 		
-		/*
-		if(Input.GetKeyDown(KeyCode.D)){
-			if(baseD - (float)5/100 > 0 && baseL - (float)5/100 > 0 ){
-				baseD = baseD - incrementoBaseD;
-				baseL = baseL - incrementoBaseL;
-			}
-			auxBase.transform.localScale = new Vector3 (baseL, 0, baseD);
-		}
-		if(Input.GetKeyDown(KeyCode.L)){
-			baseD = baseD + incrementoBaseD;
-			baseL = baseL + incrementoBaseL;
-			auxBase.transform.localScale = new Vector3 (baseL, 0, baseD);
-		}
-		*/
-
+		
 		if (Input.GetKeyDown (KeyCode.Backspace) && game.kinect.status)
 			isPaused = !isPaused;
 
@@ -283,8 +287,9 @@ public class BaseController : MonoBehaviour
 	public IEnumerator StepBase(){
 		
 		auxBase.GetComponent<Renderer>().enabled = false;
-		yield return new WaitForSeconds(0.8f);
+		yield return new WaitForSeconds(1.0f);
 		auxBase.GetComponent<Renderer>().enabled = true;
+		yield return new WaitForSeconds(1.0f);
 		blink = false;
 	}
 	
@@ -368,6 +373,26 @@ public class BaseController : MonoBehaviour
 	public void AlterarTempo(int value)
 	{
 		gameTime += (incrementoTempo * value);
+	}
+
+	public void AlterarBase(int value)
+	{		
+		if(value == 0)
+		{
+			auxBase.GetComponent<Renderer>().enabled = !auxBase.GetComponent<Renderer>().enabled;
+		}else if(value < 0)
+		{		
+			if(baseD - incrementoBaseD > 0.01f && baseL - incrementoBaseL > 0.01f ){
+				baseD = baseD - incrementoBaseD;
+				baseL = baseL - incrementoBaseL;
+			}
+			auxBase.transform.localScale = new Vector3 (baseL, 1, baseD);
+		}else if(value>0)
+		{
+			baseD = baseD + incrementoBaseD;
+			baseL = baseL + incrementoBaseL;
+			auxBase.transform.localScale = new Vector3 (baseL, 1, baseD);
+		}			
 	}
 
 

@@ -161,7 +161,7 @@ public class Interface : MonoBehaviour
 		
 		if(controller.isHelp)
 		{
-			float distancia = 0.20f;
+			float distancia = 0.14f;
 			float x,y,w,h;
 
 			x = Screen.width * 0.28f;
@@ -172,25 +172,27 @@ public class Interface : MonoBehaviour
 			
 			GUI.Box(new Rect(Screen.width * 0.25f, 0, w/1.5f, h*(distancia*15)), " ", box);	
 			GUI.Label(new Rect(x,y*(distancia*1 ),w,h), "F1 \t - Ajuda", styleAjuda);
-			GUI.Label(new Rect(x,y*(distancia*2 ),w,h), "↑  \t - Aumentar Fase", styleAjuda);
-			GUI.Label(new Rect(x,y*(distancia*3 ),w,h), "↓  \t - Diminuir Fase", styleAjuda);			
-			GUI.Label(new Rect(x,y*(distancia*4 ),w,h), "5  \t - Aumentar Nível", styleAjuda);			
-			GUI.Label(new Rect(x,y*(distancia*5 ),w,h), "4  \t - Diminuir Nível", styleAjuda);			
-			GUI.Label(new Rect(x,y*(distancia*6 ),w,h), "9  \t - Aumentar Tempo", styleAjuda);			
-			GUI.Label(new Rect(x,y*(distancia*7 ),w,h), "8  \t - Diminuir Tempo", styleAjuda);	
 
-			GUI.Label(new Rect(x,y*(distancia*8 ),w,h), "V   \t - Aumentar Velocidade", styleAjuda);			
-			GUI.Label(new Rect(x,y*(distancia*9 ),w,h), "F    \t - Diminuir Velocidade", styleAjuda);						
-			GUI.Label(new Rect(x,y*(distancia*10),w,h), "Pg Up  \t - Aumentar Intervalo", styleAjuda);			
-			GUI.Label(new Rect(x,y*(distancia*11),w,h), "Pg Down\t - Diminuir Intervalo", styleAjuda);			
-			GUI.Label(new Rect(x,y*(distancia*12),w,h), "Space  \t - Pause", styleAjuda);
+			GUI.Label(new Rect(x,y*(distancia*3 ),w,h), "↑  \t - Aumentar Fase", styleAjuda);
+			GUI.Label(new Rect(x,y*(distancia*4 ),w,h), "↓  \t - Diminuir Fase", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*5 ),w,h), "5  \t - Aumentar Nível", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*6 ),w,h), "4  \t - Diminuir Nível", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*7 ),w,h), "9  \t - Aumentar Tempo", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*8 ),w,h), "8  \t - Diminuir Tempo", styleAjuda);	
 
-			GUI.Label(new Rect(x,y*(distancia*13),w,h), "T  \t - Tipo de Objeto", styleAjuda);			
-			GUI.Label(new Rect(x,y*(distancia*14),w,h), "S  \t - Sexo do Personagem", styleAjuda);			
-			GUI.Label(new Rect(x,y*(distancia*15),w,h), "H  \t - Humanoide", styleAjuda);
+			GUI.Label(new Rect(x,y*(distancia*10 ),w,h), "V   \t - Aumentar Velocidade", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*11),w,h), "F    \t - Diminuir Velocidade", styleAjuda);						
+			GUI.Label(new Rect(x,y*(distancia*12),w,h), "Pg Up  \t - Aumentar Intervalo", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*13),w,h), "Pg Down\t - Diminuir Intervalo", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*14),w,h), "→  \t - Aumentar Base", styleAjuda);
+			GUI.Label(new Rect(x,y*(distancia*15),w,h), "←  \t - Diminuir Base", styleAjuda);	
+			GUI.Label(new Rect(x,y*(distancia*16),w,h), "B  \t - Desligar Base", styleAjuda);		
+			GUI.Label(new Rect(x,y*(distancia*17),w,h), "Space  \t - Pause", styleAjuda);
+
+			GUI.Label(new Rect(x,y*(distancia*19),w,h), "T  \t - Tipo de Objeto", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*20),w,h), "S  \t - Sexo do Personagem", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*21),w,h), "H  \t - Humanoide", styleAjuda);
 		}		
-
-
 
 		GUI.BeginGroup(new Rect(Screen.width - 250, 1, 150, 150));
 		

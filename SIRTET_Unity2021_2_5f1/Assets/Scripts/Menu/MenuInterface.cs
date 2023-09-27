@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuInterface : MonoBehaviour {
 	
+	
+
 	XMLReader file;
 	SoundBehavior sound;
 	GameController game;
@@ -22,6 +24,8 @@ public class MenuInterface : MonoBehaviour {
 	float width, height;
 	
 	float indexMusic;
+
+	public bool modoAleatorio = false;
 	
 	
 	// Use this for initialization
@@ -41,13 +45,12 @@ public class MenuInterface : MonoBehaviour {
 		if(file.player.Name != null)
 			stringToEdit = file.player.Name;
 
-		//Invoke("Inicia", 0.2f);
+		if(GameController.testMode) Invoke("Inicia", 0.2f);
 	}
 
 	void Inicia()
 	{		
-		SceneManager.LoadScene("Game_Start");
-		Debug.LogWarning("apagar msg acima 1");		
+		SceneManager.LoadScene("Game_Start");	
 	}
 	
 	void OnGUI()
@@ -96,6 +99,29 @@ public class MenuInterface : MonoBehaviour {
 			Application.Quit();
 		if(GUI.Button(new Rect(width/3*2, height * 3, width/3, height/2), "Créditos", smallbutton))
 			showCred = !showCred;
+
+		if(GUI.Button(new Rect(0, height * 3, width/3, height/2), "Modo Aleatório", smallbutton))
+		{
+			stringToEdit = "ModoAleatorio";
+			player = new Player();
+			stringToEdit = stringToEdit.ToUpper();
+			player = file.GetPlayerByName(stringToEdit);	
+			if(player == null)
+			{
+				player = new Player {
+					Name = stringToEdit,
+					CurrentPhase = "A",
+					CurrentLevel = 7,
+					Session = 1
+				};
+				file.playerList.SaveOrUpdate(player);
+				file.playerList = file.playerList.Load();
+				file.GetPlayerByName(player.Name); //forçar pegar jogador novo
+			}
+
+			modoAleatorio = true;
+			SceneManager.LoadScene("Game_Start");
+		}
 				
 		GUI.EndGroup();
 
@@ -115,7 +141,7 @@ public class MenuInterface : MonoBehaviour {
 		
 		// Carregar Jogador
 
-        GUI.BeginGroup(new Rect(Screen.width*0.25f, Screen.height*0.6f, Screen.width*.5f, height*2));
+        GUI.BeginGroup(new Rect(Screen.width*0.25f, Screen.height*0.65f, Screen.width*.5f, height*2));
 		others = new GUIStyle(GUI.skin.textField);
 		others.fontSize = button.fontSize/3;
 		others.alignment = TextAnchor.MiddleCenter;
@@ -142,6 +168,11 @@ public class MenuInterface : MonoBehaviour {
 			}
 			showStats = true;
 		}
+
+
+
+
+
 		if(showStats)
 			GUI.Box(
 				new Rect(Screen.width*.25f,0,Screen.width*.25f,height*1.25f),
@@ -196,7 +227,7 @@ public class MenuInterface : MonoBehaviour {
 		{			
 			GUI.BeginGroup(new Rect(0, 0, Screen.width*.25f, Screen.height/3));
 
-			string texto = "Game Design: \nGabriel Mesquita Rossito, \nMarcelo da Silva Hounsell, \nAntonio Vinicius Soares"+
+			string texto = "Game Design: \nGabriel Mesquita Rossito, \nMarcelo da Silva Hounsell, \nAntonio Vinicius Soares, \nDiego Fellipe Tondorf"+
 			"\n\nGame Dev, v1.0: \nGabriel Mesquita Rossito"+
 			"\n\nGame Dev, v2.0 (MediaPipe): \nDiego Fellipe Tondorf";
 		    	    
@@ -210,28 +241,26 @@ public class MenuInterface : MonoBehaviour {
 
 
 
-
-		////////////
-		/*
-		player = new Player();
-		stringToEdit = "JOGADOR_TESTE";
-		player = file.GetPlayerByName(stringToEdit);
-
-		if(player == null)
+		if(GameController.testMode)
 		{
-			player = new Player {
-				Name = stringToEdit,
-				CurrentPhase = "A",
-				CurrentLevel = 7,
-				Session = 1
-			};
-			file.playerList.SaveOrUpdate(player);
-			file.playerList = file.playerList.Load();
-			file.GetPlayerByName(player.Name); //forçar pegar jogador novo
-		}
+			player = new Player();
+			stringToEdit = "JOGADOR_TESTE";
+			player = file.GetPlayerByName(stringToEdit);
 
-		showStats = true;
-		*/
-		
+			if(player == null)
+			{
+				player = new Player {
+					Name = stringToEdit,
+					CurrentPhase = "A",
+					CurrentLevel = 7,
+					Session = 1
+				};
+				file.playerList.SaveOrUpdate(player);
+				file.playerList = file.playerList.Load();
+				file.GetPlayerByName(player.Name); //forçar pegar jogador novo
+			}
+
+			showStats = true;
+		}
 	}
 }

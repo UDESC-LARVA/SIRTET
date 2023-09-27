@@ -42,10 +42,7 @@ public class UDP: MonoBehaviour
 		init ();
 		DontDestroyOnLoad (transform.gameObject);
 
-		//*
-		//status = !status;
-		//Debug.LogWarning("APAGAR LINHAS ACIMA");
-		//*/
+		if(GameController.testMode) status = !status;
 	}
 	
 	public void Start ()

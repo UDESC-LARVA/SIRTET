@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 	
+	public static bool testMode = false;
+
 	public bool showVar = false;
 	
 	//Global Scripts
@@ -12,6 +14,7 @@ public class GameController : MonoBehaviour {
 	public UDP kinect;
 	public Report report;
 	public SoundBehavior sound;
+	
 	
 	
 	//Global Variables between scenes

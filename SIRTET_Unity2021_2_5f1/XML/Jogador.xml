@@ -17,9 +17,9 @@
       <Sessao>7</Sessao>
     </Jogador>
     <Jogador Nome="JOGADOR_TESTE" Envergadura="0" Altura="0">
-      <Fase_Atual>B</Fase_Atual>
-      <Nivel_Atual>2</Nivel_Atual>
-      <Sessao>13</Sessao>
+      <Fase_Atual>A</Fase_Atual>
+      <Nivel_Atual>5</Nivel_Atual>
+      <Sessao>2</Sessao>
     </Jogador>
     <Jogador Nome="TESTENOME DO JOGADOR" Envergadura="0" Altura="0">
       <Fase_Atual>A</Fase_Atual>
@@ -27,6 +27,11 @@
       <Sessao>1</Sessao>
     </Jogador>
     <Jogador Nome="TESTETT " Envergadura="0" Altura="0">
+      <Fase_Atual>A</Fase_Atual>
+      <Nivel_Atual>7</Nivel_Atual>
+      <Sessao>1</Sessao>
+    </Jogador>
+    <Jogador Nome="MODOALEATORIO" Envergadura="0" Altura="0">
       <Fase_Atual>A</Fase_Atual>
       <Nivel_Atual>7</Nivel_Atual>
       <Sessao>1</Sessao>

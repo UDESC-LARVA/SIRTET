@@ -21,11 +21,15 @@ public class ChallengeController : MonoBehaviour
 	bool criaSecreto = false;
 	public int desaAtual;
 	public int desaIni, desaFin;
+	int DesaPorFase;
+
 
 	
 	// Use this for initialization
 	void Start ()
 	{
+
+
 		controladora = GameObject.Find("Ambiente").GetComponent<BaseController>();
 		gui = GameObject.Find("Interface").GetComponent<Interface>();
 		tracer = gameObject.GetComponent<ChallengeTracer>();
@@ -36,6 +40,8 @@ public class ChallengeController : MonoBehaviour
 		obstaculoPrefab = Resources.Load ("Objs/Fireball") as GameObject;		
 		surpresaPrefab = Resources.Load ("Objs/Star") as GameObject;
 		ghostPrefab = Resources.Load ("Objs/Ghost") as GameObject;
+
+		DesaPorFase = controladora.game.file.parameters.EnvironmentParameters.DesaPorFase;
 		
 		//InvokeRepeating("CriarObjeto", padrao.intervaloObj, padrao.intervaloObj);  // comecando depois de 2 seg
 		StartCoroutine (CreateSecretChallenge());
@@ -73,6 +79,12 @@ public class ChallengeController : MonoBehaviour
 					StartCoroutine (CreateObject (nextChallenge, obj, 0.15f));
 				}
 				desaAtual = desaAtual > desaFin ? desaIni : desaAtual+1;
+
+				if(controladora.modoAleatorio)
+				{
+					desaAtual = Random.Range(desaIni,desaFin);
+				}
+
 			}
 			yield return new WaitForSeconds(controladora.standardChallengeInterval);
 		}
@@ -142,43 +154,18 @@ public class ChallengeController : MonoBehaviour
 
 	void CheckFase()
 	{
-		switch (controladora.game.file.player.CurrentPhase[0])
-		{			
-			case 'A':
-				desaIni = 0;
-				desaFin = desaIni + 11;
-				break;
-			case 'B':
-				desaIni = 12;
-				desaFin = desaIni + 11;
-				break;
-			case 'C':
-				desaIni = 24;
-				desaFin = desaIni + 11;
-				break;
-			case 'D':
-				desaIni = 36;
-				desaFin = desaIni + 11;
-				break;
-			case 'E':
-				desaIni = 48;
-				desaFin = desaIni + 11;
-				break;
-			case 'F':
-				desaIni = 60;
-				desaFin = desaIni + 11;
-				break;
-			case 'G':
-				desaIni = 0;
-				desaFin = controladora.challengeSequence.Count;
-				Debug.Log("AAAAAA");
-				break;
-			
+		//65 == A
+		int phaseInt = (int)controladora.game.file.player.CurrentPhase[0]-65;
 
-			default:
-				Debug.Log("erro check fase");
-				break;
+		desaIni = phaseInt * DesaPorFase;		
+		desaFin = desaIni + DesaPorFase;
+
+		if(desaFin > controladora.challengeSequence.Count)
+		{
+			desaIni = 0;
+			desaFin = controladora.challengeSequence.Count;
 		}
+
 	}
 	private Color ChooseColor(string tipo)
 	{

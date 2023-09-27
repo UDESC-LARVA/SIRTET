@@ -38,7 +38,7 @@ public class XMLReader : MonoBehaviour {
 	
 	void Start()
 	{
-//		CreateAllFiles();
+		//CreateAllFiles();
 		LoadAllFiles();
 	}
 

@@ -18,6 +18,8 @@ public class Environment
 	public int BaseL { get; set; }
 	[XmlElement("XML_Base_D")]
 	public int BaseD { get; set; }
+	[XmlElement("XML_DesaPorFase")]
+	public int DesaPorFase { get; set; }
 }
 
 [XmlRoot("Objetos")]
@@ -71,6 +73,7 @@ public class Parameters
 		innerAmb.Size = 100;
 		innerAmb.BaseL = 400;
 		innerAmb.BaseD = 80;
+		innerAmb.DesaPorFase = 12;
 		
 		Objects innerObj = new Objects ();
 		innerObj.Velocity = 4.0f;
