@@ -14,6 +14,8 @@ public class HandShadowController : MonoBehaviour
 	
 	public GameObject elementoGrafico;
 
+	public static bool mostrarSombras = true;
+
 	bool emJogo = false;
 	
 	// Use this for initialization
@@ -24,6 +26,8 @@ public class HandShadowController : MonoBehaviour
 
 		elementoGrafico = GameObject.Find("elementoGrafico");
 
+		SetShadows();
+
 	}
 
 	public void BuscaLaterais()
@@ -33,6 +37,17 @@ public class HandShadowController : MonoBehaviour
 		esq = GameObject.Find("ParedeEsquerda").GetComponent<Transform>();
 		dir = GameObject.Find("ParedeDireita").GetComponent<Transform>();
 		emJogo = true;
+	}
+
+
+	public void SetShadows()
+	{
+		if(sombraDir!= null)
+			sombraDir.SetActive(mostrarSombras);
+		if(sombraEsq!= null)
+			sombraEsq.SetActive(mostrarSombras);
+		if(sombraTeto!= null)
+			sombraTeto.SetActive(mostrarSombras);
 	}
 
     private void Update()

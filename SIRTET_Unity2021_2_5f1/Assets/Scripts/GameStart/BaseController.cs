@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine.SceneManagement;
+using System.Xml;
 
 public class BaseController : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class BaseController : MonoBehaviour
 //	Report report;
 //	game.soundBehavior game.sound;
 	public GameController game;
+	ChallengeController challengeController;
+	
 	AudioSource feedbackAudioSource;
 
 	// Variavel para identificar quanto o ambiente sera discreto
@@ -52,6 +55,8 @@ public class BaseController : MonoBehaviour
 	public float standardSize, standardObjSize, standardObjVelocity, standardChallengeInterval = 2;
 	public List<Desafio> challengeSequence;
 
+	HandShadowController[] HandShadowControllers;
+
 	public bool modoAleatorio = false;
 
 	
@@ -65,14 +70,18 @@ public class BaseController : MonoBehaviour
 		//game.file = GameObject.Find ("XML").GetComponent<XMLReader> ();
 		
 		gui = GameObject.Find ("Interface").GetComponent<Interface> ();
-		game = GameObject.Find ("Game Controller").GetComponent<GameController>();
+		game = GameObject.Find ("Game Controller").GetComponent<GameController>();		
+		challengeController = GameObject.Find ("Objetos").GetComponent<ChallengeController>();
+		
 
 		feedbackAudioSource = gameObject.AddComponent(typeof(AudioSource)) as AudioSource;
 	
 		datagrama = GameObject.Find("UDP").GetComponent<UDP>();	
 
 
-		foreach(HandShadowController hsc in GameObject.FindObjectsOfType<HandShadowController>())
+		HandShadowControllers = GameObject.FindObjectsOfType<HandShadowController>();
+
+		foreach(HandShadowController hsc in HandShadowControllers)
 		{
 			hsc.BuscaLaterais();
 		}
@@ -100,12 +109,6 @@ public class BaseController : MonoBehaviour
 		//Objeto
 		standardSize = (float)game.file.parameters.EnvironmentParameters.Size;
 		standardObjSize = standardSize + (standardSize * 0.5f);
-		
-		//Calcular percurso de objetos e variaveis relacionadas
-		challengeSequence = new List<Desafio> (game.file.circuito.Load().ListaDesafios);
-		foreach (Desafio challenge in challengeSequence) {
-			challenge.ListaObjeto.ForEach (obj => obj = escalonarPosicaoObj (obj));
-		}
 		
 		if (game.file.player == null || game.file.player.Name == null) { // Chuncho para quando nao carregar jogador
 			game.file.player = new Player {
@@ -137,11 +140,9 @@ public class BaseController : MonoBehaviour
 		}
 				
 		//Setando Variaveis dinamicas
-		
-		//Fases
-		challengeQuantity = 0;
-		challengeSequence.ForEach(d => challengeQuantity += d.Dificulty) ; //phaseCurrent.quantidadeAlvos + phaseCurrent.quantidadeObstaculos;
-		challengePercent = (game.file.parameters.ChallengeParameters.HitPercentage != 0) ? game.file.parameters.ChallengeParameters.HitPercentage : 50;
+
+		CarregaDesafios(ListaAO.nomeListaDesafios);
+
 		
 		//Setando tamanho do ambiente
 		
@@ -164,6 +165,23 @@ public class BaseController : MonoBehaviour
 		
 		//*/
 		/////////
+	}
+
+	public bool CarregaDesafios(string nomeLista)
+	{		
+		//Calcular percurso de objetos e variaveis relacionadas
+		ListaAO lista = game.file.circuito.Load(nomeLista);
+		challengeSequence = new List<Desafio> (lista.ListaDesafios);
+		foreach (Desafio challenge in challengeSequence) {
+			challenge.ListaObjeto.ForEach (obj => obj = escalonarPosicaoObj (obj));
+		}
+				
+		//Fases
+		challengeQuantity = 0;
+		challengeSequence.ForEach(d => challengeQuantity += d.Dificulty) ; //phaseCurrent.quantidadeAlvos + phaseCurrent.quantidadeObstaculos;
+		challengePercent = (game.file.parameters.ChallengeParameters.HitPercentage != 0) ? game.file.parameters.ChallengeParameters.HitPercentage : 50;
+
+		return lista.loaded;
 	}
 
 	void Update ()
@@ -206,6 +224,15 @@ public class BaseController : MonoBehaviour
 			AlterarBase(-1);
 		if(Input.GetKeyDown(KeyCode.RightArrow))
 			AlterarBase(1);
+
+
+		//Mostra/Tira elementos
+
+		if(Input.GetKeyDown(KeyCode.E))
+			AlterarProjecao();
+		if(Input.GetKeyDown(KeyCode.R))
+			AlterarSombraMao();
+			
 
 		
 		
@@ -396,7 +423,20 @@ public class BaseController : MonoBehaviour
 	}
 
 
+	public void AlterarProjecao()
+	{
+		challengeController.AlterarFantasma();
+	}
 
+	public void AlterarSombraMao()
+	{
+		HandShadowController.mostrarSombras = !HandShadowController.mostrarSombras;
+
+		foreach(HandShadowController hsc in HandShadowControllers)
+		{
+			hsc.SetShadows();
+		}
+	}
 
 	#endregion
 	
@@ -447,6 +487,9 @@ public class BaseController : MonoBehaviour
 		updatePos.x = (int)(l * obj.Position.x);
 		updatePos.y = (int)(a * obj.Position.y);
 		obj.Position = updatePos;
+		
+		obj.Position = updatePos*0.95f;
+		//analisar se os limites ficaram melhor e ajustar se necessário
 		
 		return obj;
 	}

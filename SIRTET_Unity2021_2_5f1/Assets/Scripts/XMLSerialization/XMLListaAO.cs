@@ -52,6 +52,11 @@ public class ListaAO
 	[XmlArray("Desafios")]
 	private static List<Desafio> _listaDesafios;
 	public List<Desafio> ListaDesafios;
+
+	public bool loaded = false;
+
+	
+	public static string nomeListaDesafios = "ListaAO";
 	
 	public ListaAO()
 	{
@@ -112,13 +117,27 @@ public class ListaAO
 		}
 	}
 
-	public ListaAO Load()
+	public ListaAO Load(string nomeLista)
 	{
+		
 		ListaAO listaAO = new ListaAO ();
 		XmlSerializer serializer = new XmlSerializer(listaAO.GetType());
-		StreamReader reader = new StreamReader("XML/ListaAO.xml");
-		listaAO = (ListaAO)serializer.Deserialize(reader);
-		reader.Close();
+		
+		
+		try
+        {
+            StreamReader reader = new StreamReader("XML/"+ nomeLista+".xml");
+			listaAO = (ListaAO)serializer.Deserialize(reader);
+			reader.Close();
+			listaAO.loaded = false;
+        }
+        catch (FileNotFoundException)
+		{
+			Debug.Log("Erro ao carregar a lista de desafios");
+		}
+
+		listaAO.loaded = true;
+
 
 
 		/*

@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class ObjectBehavior : MonoBehaviour {
 	
@@ -8,6 +9,8 @@ public class ObjectBehavior : MonoBehaviour {
 	
 	public static bool tipoElementoVisual = true;
 	
+	public static bool mostrarSombras = true;
+
 	// Chache classes e metodos
 	BaseController controladora;
 	Interface gui;
@@ -63,15 +66,18 @@ public class ObjectBehavior : MonoBehaviour {
 			InvokeRepeating("RandomizaPosicao", 0, 1.5f);
 		}
 
-		if(tipoElementoVisual==false)
+		if(!tipoElementoVisual)
 			SetElement();
+
+		if(!mostrarSombras)
+			SetShadows();
 
 	}
 
 	void RandomizaPosicao()
 	{
-		float x = Random.Range(xLimit.x, xLimit.y);
-		float y = Random.Range(yLimit.x, yLimit.y);
+		float x = UnityEngine.Random.Range(xLimit.x, xLimit.y);
+		float y = UnityEngine.Random.Range(yLimit.x, yLimit.y);
 		posRand = new Vector3(x,y,this.transform.position.z);
 	}
 
@@ -319,8 +325,12 @@ public class ObjectBehavior : MonoBehaviour {
 
 		if(Input.GetKeyDown(KeyCode.T))
 		{
-			tipoElementoVisual = !tipoElementoVisual;
 			SetElement();
+		}
+
+		if(Input.GetKeyDown(KeyCode.W))
+		{
+			SetShadows();
 		}
 	}
 
@@ -347,6 +357,31 @@ public class ObjectBehavior : MonoBehaviour {
 			cor.a = aOriginal;
 			this.GetComponent<Renderer>().material.color = cor;
 		}
+
+		tipoElementoVisual = elementoGrafico.activeSelf;
+	}
+
+
+	void SetShadows()
+	{
+		if(sombraChao == null || sombraDir == null || sombraEsq == null || sombraTeto == null)
+			return;
+
+		if(sombraChao.activeSelf)
+		{
+			sombraChao.SetActive(false);
+			sombraDir.SetActive(false);
+			sombraEsq.SetActive(false);
+			sombraTeto.SetActive(false);
+		}else
+		{
+			sombraChao.SetActive(true);
+			sombraDir.SetActive(true);
+			sombraEsq.SetActive(true);
+			sombraTeto.SetActive(true);
+		}	
+		
+		mostrarSombras = sombraChao.activeSelf;
 	}
 	
 	

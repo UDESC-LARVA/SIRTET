@@ -3,15 +3,15 @@
   <Lista_Niveis>
     <Nivel Indice="1"> 
       <Velocidade>MIN</Velocidade>
-      <Tempo_Intervalo>MIN</Tempo_Intervalo>
+      <Tempo_Intervalo>MAX</Tempo_Intervalo>
     </Nivel>
     <Nivel Indice="2"> 
       <Velocidade>MED</Velocidade>
-      <Tempo_Intervalo>MIN</Tempo_Intervalo>
+      <Tempo_Intervalo>MAX</Tempo_Intervalo>
     </Nivel>
     <Nivel Indice="3"> 
       <Velocidade>MAX</Velocidade>
-      <Tempo_Intervalo>MIN</Tempo_Intervalo>
+      <Tempo_Intervalo>MAX</Tempo_Intervalo>
     </Nivel>
     <Nivel Indice="4"> 
       <Velocidade>MIN</Velocidade>
@@ -27,15 +27,15 @@
     </Nivel>
     <Nivel Indice="7"> 
       <Velocidade>MIN</Velocidade>
-      <Tempo_Intervalo>MAX</Tempo_Intervalo>
+      <Tempo_Intervalo>MIN</Tempo_Intervalo>
     </Nivel>
     <Nivel Indice="8"> 
       <Velocidade>MED</Velocidade>
-      <Tempo_Intervalo>MAX</Tempo_Intervalo>
+      <Tempo_Intervalo>MIN</Tempo_Intervalo>
     </Nivel>
     <Nivel Indice="9"> 
       <Velocidade>MAX</Velocidade>
-      <Tempo_Intervalo>MAX</Tempo_Intervalo>
+      <Tempo_Intervalo>MIN</Tempo_Intervalo>
     </Nivel>
   </Lista_Niveis>
 </Arquivo_de_Niveis>

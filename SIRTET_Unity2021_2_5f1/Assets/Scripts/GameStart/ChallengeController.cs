@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class ChallengeController : MonoBehaviour
 {
@@ -16,20 +17,21 @@ public class ChallengeController : MonoBehaviour
 	GameObject obstaculoPrefab;
 	GameObject surpresaPrefab;
 	GameObject ghostPrefab;
+	GameObject currGhostPrefab;
 
-	
+	public bool mostrarFantasma = true;	
 	bool criaSecreto = false;
 	public int desaAtual;
 	public int desaIni, desaFin;
 	int DesaPorFase;
 
 
+
+
 	
 	// Use this for initialization
 	void Start ()
 	{
-
-
 		controladora = GameObject.Find("Ambiente").GetComponent<BaseController>();
 		gui = GameObject.Find("Interface").GetComponent<Interface>();
 		tracer = gameObject.GetComponent<ChallengeTracer>();
@@ -48,6 +50,18 @@ public class ChallengeController : MonoBehaviour
 		StartCoroutine (CreateChallenge());
 
 		CheckFase();
+	}
+
+	public void AlterarFantasma()
+	{
+		mostrarFantasma = !mostrarFantasma;
+		SetFantasma();
+	}
+
+	void SetFantasma()
+	{
+		if(currGhostPrefab != null)
+			currGhostPrefab.SetActive(mostrarFantasma);
 	}
 
 
@@ -78,11 +92,11 @@ public class ChallengeController : MonoBehaviour
 				foreach (Objeto obj in nextChallenge.ListaObjeto) {
 					StartCoroutine (CreateObject (nextChallenge, obj, 0.15f));
 				}
-				desaAtual = desaAtual > desaFin ? desaIni : desaAtual+1;
+				desaAtual = desaAtual+1 == desaFin ? desaIni : desaAtual+1;
 
 				if(controladora.modoAleatorio)
 				{
-					desaAtual = Random.Range(desaIni,desaFin);
+					desaAtual = UnityEngine.Random.Range(desaIni,desaFin);
 				}
 
 			}
@@ -94,7 +108,7 @@ public class ChallengeController : MonoBehaviour
 		int cont = 0;
 		while (cont < 3) 
 		{	
-			int rand = Random.Range(90,120);
+			int rand = UnityEngine.Random.Range(90,120);
 			yield return new WaitForSeconds(rand);
 			criaSecreto = true;	
 			cont++;		
@@ -144,6 +158,9 @@ public class ChallengeController : MonoBehaviour
 			
 			GameObject fantasma = Instantiate (ghostPrefab, pos, Quaternion.identity, newObject.transform) as GameObject;
 			fantasma.transform.name = "fantasma";
+
+			currGhostPrefab = fantasma;
+			SetFantasma();
 			
 			
 			
@@ -192,8 +209,8 @@ public class ChallengeController : MonoBehaviour
 		
 		// Randomizar uma posicao que fique na area dinamica
 		float x, y;
-		x = Random.Range (-((controladora.width * 5) - controladora.standardObjSize / 2), ((controladora.width) * 5) - controladora.standardObjSize / 2); // ajustando distancia do centro do objeto
-		y = Random.Range (controladora.standardObjSize / 2, ((controladora.height) * 5) * 2 - controladora.standardObjSize / 2); // ajustando distancia do centro do objeto
+		x = UnityEngine.Random.Range (-((controladora.width * 5) - controladora.standardObjSize / 2), ((controladora.width) * 5) - controladora.standardObjSize / 2); // ajustando distancia do centro do objeto
+		y = UnityEngine.Random.Range (controladora.standardObjSize / 2, ((controladora.height) * 5) * 2 - controladora.standardObjSize / 2); // ajustando distancia do centro do objeto
 		int aux;
 		
 		// qubrando o valor float para pegar apenas inteiro

@@ -387,6 +387,7 @@
 "Assets/Scripts/Rastreio/ChangeColor.cs"
 "Assets/Scripts/Rastreio/ChangeOutlineColor.cs"
 "Assets/Scripts/Rastreio/UDP.cs"
+"Assets/Scripts/ScriptableObjs/CharacterModel.cs"
 "Assets/Scripts/XMLSerialization/XMLFases.cs"
 "Assets/Scripts/XMLSerialization/XMLListaAO.cs"
 "Assets/Scripts/XMLSerialization/XMLNiveis.cs"

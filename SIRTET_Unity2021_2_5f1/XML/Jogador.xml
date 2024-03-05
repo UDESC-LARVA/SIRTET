@@ -4,7 +4,7 @@
     <Jogador Nome="DEFAULT" Envergadura="0" Altura="0">
       <Fase_Atual>A</Fase_Atual>
       <Nivel_Atual>7</Nivel_Atual>
-      <Sessao>3</Sessao>
+      <Sessao>15</Sessao>
     </Jogador>
     <Jogador Nome="NOME DO JOGADOR" Envergadura="0" Altura="0">
       <Fase_Atual>A</Fase_Atual>
@@ -32,9 +32,9 @@
       <Sessao>1</Sessao>
     </Jogador>
     <Jogador Nome="MODOALEATORIO" Envergadura="0" Altura="0">
-      <Fase_Atual>A</Fase_Atual>
-      <Nivel_Atual>7</Nivel_Atual>
-      <Sessao>1</Sessao>
+      <Fase_Atual>D</Fase_Atual>
+      <Nivel_Atual>8</Nivel_Atual>
+      <Sessao>4</Sessao>
     </Jogador>
   </Lista_Jogadores>
 </Arquivo_de_Jogadores>

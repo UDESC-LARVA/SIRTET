@@ -20,8 +20,7 @@ public class Phase
 
 public class XMLReader : MonoBehaviour {
 	
-	public Player player = new Player();
-	
+	public Player player = new Player();	
 	public PlayerList playerList = new PlayerList();
 	PhaseList filePhases = new PhaseList();
 	ListaNiveis fileLevels = new ListaNiveis();
@@ -53,13 +52,18 @@ public class XMLReader : MonoBehaviour {
 
 	public void LoadAllFiles ()
 	{
-		circuito = circuito.Load();
+		circuito = circuito.Load(ListaAO.nomeListaDesafios);
 		parameters = parameters.Load();
 		filePhases = filePhases.Load();
 		gamePhases = new List<Phase>(TraduzirFases(filePhases.phaseList));
 		fileLevels = fileLevels.Load();
 		gameLevels = new List<Level>(TraduzirNiveis(fileLevels.listaNiveis));
 		playerList = playerList.Load();
+	}
+
+	public ListaAO LoadCircuito(string nome)
+	{
+		return circuito.Load(ListaAO.nomeListaDesafios);
 	}
 	
 	#region Tradu��o Fases

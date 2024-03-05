@@ -105,7 +105,7 @@ public class Interface : MonoBehaviour
 		
 		performance = controller.challengeSequence.Count / controller.levelQuantity;		
 
-		Debug.Log("A performance é delimitada pelo numero de desafios (72) dividido pelo numero de níveis (9) = 8");
+		Debug.Log("A performance é delimitada pelo numero de desafios ("+ controller.challengeSequence.Count +") dividido pelo numero de níveis ("+controller.levelQuantity+") = "+performance);
 		
 		CreateScore();
 		
@@ -161,7 +161,7 @@ public class Interface : MonoBehaviour
 		
 		if(controller.isHelp)
 		{
-			float distancia = 0.14f;
+			float distancia = 0.12f;
 			float x,y,w,h;
 
 			x = Screen.width * 0.28f;
@@ -170,7 +170,7 @@ public class Interface : MonoBehaviour
 			w = Screen.width * 0.5f;
 			h = Screen.height * 0.5f;
 			
-			GUI.Box(new Rect(Screen.width * 0.25f, 0, w/1.5f, h*(distancia*15)), " ", box);	
+			GUI.Box(new Rect(Screen.width * 0.25f, 0, w/1.5f, h*(distancia*25)), " ", box);	
 			GUI.Label(new Rect(x,y*(distancia*1 ),w,h), "F1 \t - Ajuda", styleAjuda);
 
 			GUI.Label(new Rect(x,y*(distancia*3 ),w,h), "↑  \t - Aumentar Fase", styleAjuda);
@@ -192,6 +192,9 @@ public class Interface : MonoBehaviour
 			GUI.Label(new Rect(x,y*(distancia*19),w,h), "T  \t - Tipo de Objeto", styleAjuda);			
 			GUI.Label(new Rect(x,y*(distancia*20),w,h), "S  \t - Sexo do Personagem", styleAjuda);			
 			GUI.Label(new Rect(x,y*(distancia*21),w,h), "H  \t - Humanoide", styleAjuda);
+			GUI.Label(new Rect(x,y*(distancia*22),w,h), "Q  \t - Sombra da Mão", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*23),w,h), "W  \t - Projeção do Objeto", styleAjuda);			
+			GUI.Label(new Rect(x,y*(distancia*24),w,h), "R  \t - Sombra do Desafio", styleAjuda);
 		}		
 
 		GUI.BeginGroup(new Rect(Screen.width - 250, 1, 150, 150));

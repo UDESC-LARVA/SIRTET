@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using System.Linq;
+using UnityEngine.TextCore.Text;
 
 public class PlayerCharacterController : MonoBehaviour
 {
@@ -26,6 +27,9 @@ public class PlayerCharacterController : MonoBehaviour
     
     public UDP udp;
     // Start is called before the first frame update
+
+    public List<CharacterModel> modelos;
+    int modeloAtual;
 
 
     bool human = false;
@@ -52,6 +56,9 @@ public class PlayerCharacterController : MonoBehaviour
         Invoke("InitiateParts", 1);
         //InitiateParts();
         GetCharacterParts();
+
+        modeloAtual = 0;
+        ChageCharacterModel(modelos[modeloAtual]);
         
     }
 
@@ -66,6 +73,29 @@ public class PlayerCharacterController : MonoBehaviour
 		pernaEsq =  filhos.Find(p => p.transform.name.Equals("CoxaEsq"));
         pernaDir =  filhos.Find(p => p.transform.name.Equals("CoxaDir"));
         cabeca =  filhos.Find(p => p.transform.name.Equals("Cabeca"));
+    }
+
+    void ChageCharacterModel(CharacterModel model)
+    {
+        anteBracoEsq.GetChild(0).GetComponent<MeshFilter>().mesh = model.antebracoEsq;
+        anteBracoDir.GetChild(0).GetComponent<MeshFilter>().mesh = model.antebracoDir;
+		bracoEsq.GetChild(0).GetComponent<MeshFilter>().mesh = model.bracoEsq;
+        bracoDir.GetChild(0).GetComponent<MeshFilter>().mesh = model.bracoDir;
+		canelaEsq.GetChild(0).GetComponent<MeshFilter>().mesh = model.pernaEsq;
+        canelaDir.GetChild(0).GetComponent<MeshFilter>().mesh = model.pernaDir;
+		pernaEsq.GetChild(0).GetComponent<MeshFilter>().mesh = model.coxaEsq;
+        pernaDir.GetChild(0).GetComponent<MeshFilter>().mesh = model.coxaDir;
+        cabeca.GetChild(0).GetComponent<MeshFilter>().mesh = model.cabeca;
+
+        anteBracoEsq.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
+        anteBracoDir.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
+		bracoEsq.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
+        bracoDir.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
+		canelaEsq.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
+        canelaDir.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
+		pernaEsq.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
+        pernaDir.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
+        cabeca.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
     }
 
     
@@ -136,7 +166,8 @@ public class PlayerCharacterController : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.S))
         {
-			SetSex();
+            modeloAtual = modeloAtual+1 == modelos.Count ? 0 : modeloAtual+1;
+			ChageCharacterModel(modelos[modeloAtual]);
         }
 		
 	}
@@ -185,7 +216,7 @@ public class PlayerCharacterController : MonoBehaviour
 	
     void UptadeSegments ()
 	{   
-        float scaleUp = 1.6f;
+        float scaleUp = 1f;
         cabeca.transform.position = bs.cabeca.transform.position;
         cabeca.transform.rotation = bs.cabeca.transform.rotation;    
         cabeca.transform.localScale = new Vector3(80,80,80);
@@ -225,6 +256,6 @@ public class PlayerCharacterController : MonoBehaviour
 
     Vector3 GetFinalScale(Vector3 sca, float up)
     {
-        return new Vector3(sca.z * up, sca.y, sca.z * up);        
+        return new Vector3(sca.z * up, sca.y/2, sca.z * up);        
     }
 }

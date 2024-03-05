@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class MenuInterface : MonoBehaviour {
 	
@@ -9,9 +10,12 @@ public class MenuInterface : MonoBehaviour {
 	XMLReader file;
 	SoundBehavior sound;
 	GameController game;
+	public BaseController baseCont;
+	
+		
 	
 	GUIStyle styleText = new GUIStyle ();
-	GUIStyle button, smallbutton, opt ,others, small;
+	GUIStyle button, smallbutton, opt ,others, small, skinColor;
 	
 	string stringToEdit = "Nome do Jogador";
 
@@ -27,6 +31,9 @@ public class MenuInterface : MonoBehaviour {
 
 	public bool modoAleatorio = false;
 	
+	string listaDeDesafios = "ListaAO";
+
+	Material skinColorMat;
 	
 	// Use this for initialization
 	void Start ()
@@ -34,9 +41,12 @@ public class MenuInterface : MonoBehaviour {
 		file = GameObject.Find ("XML").GetComponent<XMLReader>();
 		sound = GameObject.Find ("Audio").GetComponent<SoundBehavior>();
 		game = GameObject.Find ("Game Controller").GetComponent<GameController>();
-
+		baseCont = FindObjectOfType<BaseController>();
+		
 		logoUdesc = Resources.Load<Texture2D>("Imagens/LogoUdesc");
 		logoLarva = Resources.Load<Texture2D>("Imagens/LogoLarva");
+		
+		skinColorMat = Resources.Load<Material>("Objs/Characters/CharactersMaterial/CharacterSkin");
 		
 		styleText.fontSize = 50;
 		styleText.alignment = TextAnchor.UpperCenter;
@@ -55,7 +65,7 @@ public class MenuInterface : MonoBehaviour {
 	
 	void OnGUI()
 	{		
-		width = Screen.width * 0.5f;
+		width = Screen.width * 0.45f;
 		height = Screen.height * 0.1f;
 		
 		
@@ -92,7 +102,10 @@ public class MenuInterface : MonoBehaviour {
 		// Carregar nova interface para mostrar segundo menu e outros dados, como subiu/desceu nivel/fase		
 		
 		if(GUI.Button(new Rect(0, 0, width, height), "Iniciar", button))
+		{
+			ListaAO.nomeListaDesafios = listaDeDesafios;
 			SceneManager.LoadScene("Game_Start");
+		}
 		if(GUI.Button(new Rect(0, height, width, height), "Opções", button))
 			showOpt = !showOpt;
 		if(GUI.Button(new Rect(0, height * 2, width, height), "Encerrar", button))
@@ -140,15 +153,14 @@ public class MenuInterface : MonoBehaviour {
         
 		
 		// Carregar Jogador
-
         GUI.BeginGroup(new Rect(Screen.width*0.25f, Screen.height*0.65f, Screen.width*.5f, height*2));
 		others = new GUIStyle(GUI.skin.textField);
 		others.fontSize = button.fontSize/3;
 		others.alignment = TextAnchor.MiddleCenter;
-		stringToEdit = GUI.TextField(new Rect(0,0,Screen.width*.25f,height*.4f), stringToEdit , 25, others);
+		stringToEdit = GUI.TextField(new Rect(0,0,Screen.width*.22f,height*.4f), stringToEdit , 25, others);
 		others = button;
 		others.fontSize = others.fontSize/2;
-		if (GUI.Button(new Rect(0,height*.4f,Screen.width*.25f,height*.85f), "Carregar Jogador", others))
+		if (GUI.Button(new Rect(0,height*.4f,Screen.width*.22f,height*.85f), "Carregar Jogador", others))
 		{	
 			player = new Player();
 			stringToEdit = stringToEdit.ToUpper();
@@ -169,15 +181,14 @@ public class MenuInterface : MonoBehaviour {
 			showStats = true;
 		}
 
-
-
+		
 
 
 		if(showStats)
 			GUI.Box(
-				new Rect(Screen.width*.25f,0,Screen.width*.25f,height*1.25f),
+				new Rect(Screen.width*.23f,0,Screen.width*.22f,height*1.25f),
 				"Jogador: " + player.Name + "\n" +
-				"Fase: " +    player.CurrentPhase + "\n" +
+				"Fase: " +    player.CurrentPhase + "\t" +
 				"Nivel: " +   player.CurrentLevel + "\n" +
 				"Sessao: " +  player.Session, small);
 		GUI.EndGroup();
@@ -195,28 +206,76 @@ public class MenuInterface : MonoBehaviour {
 		others.fontSize = (int)height/3;
 		others.alignment = TextAnchor.UpperCenter;
 		others.normal.textColor = Color.white;
-		
+
+		skinColor = new GUIStyle(GUIStyle.none);
+
 		if(showOpt)
 		{
 			GUI.BeginGroup(new Rect(Screen.width*0.75f, 0, Screen.width*.25f, Screen.height));
-			GUI.Box(new Rect(0, 0, Screen.width*.25f, Screen.height), "Opcoes:", others);
+			GUI.Box(new Rect(0, 0, Screen.width*.25f, Screen.height), "Opcões:", others);
 			
 			// Musica
-			float w = Screen.width*.20f, h = height;
-			GUI.BeginGroup(new Rect(0, height, w, h));
-			GUI.Label(new Rect(0, 0, width, h/2), "Volume Musica:   " + (sound.GetComponent<AudioSource>().volume * 10).ToString("0.0"), opt); 
+			float w = Screen.width*.22f, h = height;
+			GUI.BeginGroup(new Rect(10, height, w, h));
+			GUI.Label(new Rect(10, 0, width, h/2), "Volume Musica:   " + (sound.GetComponent<AudioSource>().volume * 10).ToString("0.0"), opt); 
 			sound.GetComponent<AudioSource>().volume = GUI.HorizontalSlider(new Rect (0, h/2, w, h/2), sound.GetComponent<AudioSource>().volume, 0f, 1f);
 			GUI.EndGroup();
 			
 			// Sons
-			GUI.BeginGroup(new Rect(0, height*2f, w, h));
-			GUI.Label(new Rect(0,0, width, height/2), "Sons:   " + (game.feedbackVolume * 10).ToString("0.0"), opt); 
+			GUI.BeginGroup(new Rect(10, height*2f, w, h));
+			GUI.Label(new Rect(10, 0, width, height/2), "Sons:   " + (game.feedbackVolume * 10).ToString("0.0"), opt); 
 			game.feedbackVolume = GUI.HorizontalSlider(new Rect (0, h/2, w, h/2), game.feedbackVolume, 0, 1);
 			GUI.EndGroup();
 			
 			//Numero Musica
-			GUI.BeginGroup(new Rect(0, height*3f, w, h));
-			GUI.Label(new Rect(0,0, width, height/2), "Musica:   " + sound.musicIndex, opt); 
+			GUI.BeginGroup(new Rect(10, height*3f, w, h));
+			GUI.Label(new Rect(10,0, width, height/2), "Musica:   " + sound.musicIndex, opt); 
+			GUI.EndGroup();
+
+			//Cor da pele
+			
+			
+			GUI.BeginGroup(new Rect(10, height*4f, w, h));
+			GUI.Label(new Rect(10, 0, (w/2)-10, height/2.0f), "Cor da pele:   ", opt); 
+
+			skinColor.normal.background = MakeTex(skinColorMat.color);
+			GUI.Box(new Rect(w/2, 0, (w/2)-10, height/2.2f)," ",skinColor);
+			
+			skinColor.normal.background = MakeTex(new Color32(27, 25, 24, 255));
+			if(GUI.Button(new Rect(5*0+(w/8)*0, h/2, w/8, h/2), " ", skinColor))
+				skinColorMat.color = skinColor.normal.background.GetPixel(1,1);
+
+			skinColor.normal.background = MakeTex(new Color32(46, 40, 42, 255));
+			if(GUI.Button(new Rect(5*1+(w/8)*1, h/2, w/8, h/2), " ", skinColor))
+				skinColorMat.color = skinColor.normal.background.GetPixel(1,1);
+
+			skinColor.normal.background = MakeTex(new Color32(117, 91, 75, 255));
+			if(GUI.Button(new Rect(5*2+(w/8)*2, h/2, w/8, h/2), " ", skinColor))
+				skinColorMat.color = skinColor.normal.background.GetPixel(1,1);
+
+			skinColor.normal.background = MakeTex(new Color32(183, 139, 97, 255));
+			if(GUI.Button(new Rect(5*3+(w/8)*3, h/2, w/8, h/2), " ", skinColor))
+				skinColorMat.color = skinColor.normal.background.GetPixel(1,1);
+
+			skinColor.normal.background = MakeTex(new Color32(225, 196, 163, 255));
+			if(GUI.Button(new Rect(5*4+(w/8)*4, h/2, w/8, h/2), " ", skinColor))
+				skinColorMat.color = skinColor.normal.background.GetPixel(1,1);
+
+			skinColor.normal.background = MakeTex(new Color32(255, 224, 192, 255));
+			if(GUI.Button(new Rect(5*5+(w/8)*5, h/2, w/8, h/2), " ", skinColor))
+				skinColorMat.color = skinColor.normal.background.GetPixel(1,1);
+
+			skinColor.normal.background = MakeTex(new Color32(255, 239, 213, 255));
+			if(GUI.Button(new Rect(5*6+(w/8)*6, h/2, w/8, h/2), " ", skinColor))
+				skinColorMat.color = skinColor.normal.background.GetPixel(1,1);
+
+
+			GUI.EndGroup();
+
+			//Lista de desafios
+			GUI.BeginGroup(new Rect(10, height*5f, w, h));
+			GUI.Label(new Rect(10,0, w, height/2), "Lista de Desafios:", opt); 			
+			listaDeDesafios = GUI.TextField(new Rect(0, h/2, w, h/2), listaDeDesafios , 25, others);
 			GUI.EndGroup();
 						
 			
@@ -263,4 +322,15 @@ public class MenuInterface : MonoBehaviour {
 			showStats = true;
 		}
 	}
+	
+	private Texture2D MakeTex(Color col )
+	{
+		Texture2D result = new Texture2D(1, 1, TextureFormat.RGBAFloat, false); 
+    	result.SetPixel(0, 0, col);
+    	result.Apply(); // not sure if this is necessary
+		return result;
+	}
+
+
+	
 }

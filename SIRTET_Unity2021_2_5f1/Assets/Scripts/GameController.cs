@@ -32,7 +32,6 @@ public class GameController : MonoBehaviour {
 		file = GameObject.Find ("XML").GetComponent<XMLReader> ();
 		kinect = GameObject.Find ("UDP").GetComponent<UDP> ();
 		sound = GameObject.Find ("Audio").GetComponent<SoundBehavior> ();
-		
 	}
 	
 }
