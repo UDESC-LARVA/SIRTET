@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arquivo_de_Niveis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Lista_Niveis>
+    <Nivel Indice="1"> 
+      <Velocidade>MIN</Velocidade>
+      <Tempo_Intervalo>MAX</Tempo_Intervalo>
+    </Nivel>
+    <Nivel Indice="2"> 
+      <Velocidade>MED</Velocidade>
+      <Tempo_Intervalo>MAX</Tempo_Intervalo>
+    </Nivel>
+    <Nivel Indice="3"> 
+      <Velocidade>MAX</Velocidade>
+      <Tempo_Intervalo>MAX</Tempo_Intervalo>
+    </Nivel>
+    <Nivel Indice="4"> 
+      <Velocidade>MIN</Velocidade>
+      <Tempo_Intervalo>MED</Tempo_Intervalo>
+    </Nivel>
+    <Nivel Indice="5"> 
+      <Velocidade>MED</Velocidade>
+      <Tempo_Intervalo>MED</Tempo_Intervalo>
+    </Nivel>
+    <Nivel Indice="6"> 
+      <Velocidade>MAX</Velocidade>
+      <Tempo_Intervalo>MED</Tempo_Intervalo>
+    </Nivel>
+    <Nivel Indice="7"> 
+      <Velocidade>MIN</Velocidade>
+      <Tempo_Intervalo>MIN</Tempo_Intervalo>
+    </Nivel>
+    <Nivel Indice="8"> 
+      <Velocidade>MED</Velocidade>
+      <Tempo_Intervalo>MIN</Tempo_Intervalo>
+    </Nivel>
+    <Nivel Indice="9"> 
+      <Velocidade>MAX</Velocidade>
+      <Tempo_Intervalo>MIN</Tempo_Intervalo>
+    </Nivel>
+  </Lista_Niveis>
+</Arquivo_de_Niveis>
