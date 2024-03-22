@@ -61,7 +61,7 @@ public class ObjectBehavior : MonoBehaviour {
 		{
 			//limites conforme a base sem a leitura de corpo, verificar o limite variado com a leitura e os dados do controlador
 			xLimit = new Vector2(-900,900);
-			yLimit = new Vector2(400,1600);
+			yLimit = new Vector2(800,1600);
 			posRand = new Vector3(0, 1000, this.transform.position.z);
 			InvokeRepeating("RandomizaPosicao", 0, 1.5f);
 		}

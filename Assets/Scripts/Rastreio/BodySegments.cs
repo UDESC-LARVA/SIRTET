@@ -7,15 +7,15 @@ public class BodySegments : MonoBehaviour {
 		cylinder,
 		anteBracoEsq, anteBracoDir,
 		bracoEsq, bracoDir,
-		canelaEsq, canelaDir,
-		pernaEsq, pernaDir, cabeca;
+		/*canelaEsq, canelaDir,
+		pernaEsq, pernaDir,*/ cabeca;
 	UDP datagrama;
 	
 	string 
 		left_arm = "Left_Arm", 
 		right_arm = "Right_Arm",
-		left_foot = "Left_Foot",
-		right_foot = "Right_Foot",
+		//left_foot = "Left_Foot",
+		//right_foot = "Right_Foot",
 		head = "Head";
 	
 	void Awake()
@@ -44,13 +44,13 @@ public class BodySegments : MonoBehaviour {
 		anteBracoDir.tag = right_arm;
 		bracoDir.tag = right_arm;
 		
-		canelaDir = CreateSegmentBodyPart(datagrama.peDir, datagrama.joelhoDir, "canelaDir");
-		pernaDir = CreateSegmentBodyPart(datagrama.joelhoDir, datagrama.cinturaDir, "pernaDir");
-		canelaDir.tag = pernaDir.tag = right_foot;
+		//canelaDir = CreateSegmentBodyPart(datagrama.peDir, datagrama.joelhoDir, "canelaDir");
+		//pernaDir = CreateSegmentBodyPart(datagrama.joelhoDir, datagrama.cinturaDir, "pernaDir");
+		//canelaDir.tag = pernaDir.tag = right_foot;
 		
-		canelaEsq = CreateSegmentBodyPart(datagrama.peEsq, datagrama.joelhoEsq, "canelaEsq");
-		pernaEsq = CreateSegmentBodyPart(datagrama.joelhoEsq, datagrama.cinturaEsq, "pernaEsq");
-		canelaEsq.tag = pernaEsq.tag = left_foot;
+		//canelaEsq = CreateSegmentBodyPart(datagrama.peEsq, datagrama.joelhoEsq, "canelaEsq");
+		//pernaEsq = CreateSegmentBodyPart(datagrama.joelhoEsq, datagrama.cinturaEsq, "pernaEsq");
+		//canelaEsq.tag = pernaEsq.tag = left_foot;
 
 
 		cabeca.transform.eulerAngles = new Vector3(0,0,0);
@@ -85,10 +85,10 @@ public class BodySegments : MonoBehaviour {
 		UptadeSegment(anteBracoDir, datagrama.maoDir, datagrama.cotoveloDir);
 		UptadeSegment(bracoEsq, datagrama.cotoveloEsq, datagrama.ombroEsq);
 		UptadeSegment(bracoDir, datagrama.cotoveloDir, datagrama.ombroDir);
-		UptadeSegment(canelaEsq, datagrama.peEsq, datagrama.joelhoEsq);
-		UptadeSegment(canelaDir, datagrama.peDir, datagrama.joelhoDir);
-		UptadeSegment(pernaEsq, datagrama.joelhoEsq, datagrama.cinturaEsq);
-		UptadeSegment(pernaDir, datagrama.joelhoDir, datagrama.cinturaDir);		
+		//UptadeSegment(canelaEsq, datagrama.peEsq, datagrama.joelhoEsq);
+		//UptadeSegment(canelaDir, datagrama.peDir, datagrama.joelhoDir);
+		//UptadeSegment(pernaEsq, datagrama.joelhoEsq, datagrama.cinturaEsq);
+		//UptadeSegment(pernaDir, datagrama.joelhoDir, datagrama.cinturaDir);		
 	}
 
 	void UptadeSegment (GameObject segmentPart, Vector3 origem, Vector3 destino)

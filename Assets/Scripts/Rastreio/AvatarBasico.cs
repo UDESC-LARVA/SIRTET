@@ -6,7 +6,7 @@ public class AvatarBasico : MonoBehaviour {
 	UDP datagrama;
 	BaseController padrao;
 
-	GameObject cabeca, maoDir, maoEsq, cotoveloEsq, cotoveloDir, joelhoDir, joelhoEsq, peDir, peEsq;
+	GameObject cabeca, maoDir, maoEsq, cotoveloEsq, cotoveloDir/*, joelhoDir, joelhoEsq, peDir, peEsq*/;
 	Vector3 position;
 	
 	GameObject sphere;
@@ -30,8 +30,8 @@ public class AvatarBasico : MonoBehaviour {
 		cabeca = CreateBodyPart();
 		maoDir = CreateBodyPart();
 		maoEsq = CreateBodyPart();
-		peDir = CreateBodyPart();
-		peEsq = CreateBodyPart();
+		//peDir = CreateBodyPart();
+		//peEsq = CreateBodyPart();
 		
 	}
 
@@ -53,8 +53,8 @@ public class AvatarBasico : MonoBehaviour {
 				
 		maoDir.transform.position = datagrama.maoDir;
 		maoEsq.transform.position = datagrama.maoEsq;
-		peDir.transform.position = datagrama.peDir;
-		peEsq.transform.position = datagrama.peEsq;
+		//peDir.transform.position = datagrama.peDir;
+		//peEsq.transform.position = datagrama.peEsq;
 		
 	}
 

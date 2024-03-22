@@ -27,14 +27,14 @@ public class ChangeOutlineColor : MonoBehaviour
                     bodyPartsToChange[0] = pcc.anteBracoDir.transform;                    
                     bodyPartsToChange[1] = pcc.bracoDir.transform;
                 break;
-                case "Left_Foot":
-                    bodyPartsToChange[0] = pcc.canelaEsq.transform;                    
-                    bodyPartsToChange[1] = pcc.pernaEsq.transform;
-                break;
-                case "Right_Foot":
-                    bodyPartsToChange[0] = pcc.canelaDir.transform;                    
-                    bodyPartsToChange[1] = pcc.pernaDir.transform;
-                break;
+                //case "Left_Foot":
+                //    bodyPartsToChange[0] = pcc.canelaEsq.transform;                    
+                //    bodyPartsToChange[1] = pcc.pernaEsq.transform;
+                //break;
+                //case "Right_Foot":
+                //    bodyPartsToChange[0] = pcc.canelaDir.transform;                    
+                //    bodyPartsToChange[1] = pcc.pernaDir.transform;
+                //break;
                 case "Head":
                     bodyPartsToChange[0] = pcc.cabeca.transform;                    
                     bodyPartsToChange[1] = pcc.cabeca.transform;

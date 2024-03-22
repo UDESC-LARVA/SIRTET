@@ -9,10 +9,10 @@ public class BodyComplete : MonoBehaviour {
 	public GameObject 
 		cabeca, maoDir, maoEsq, 
 		cotoveloEsq, cotoveloDir,
-		ombroEsq, ombroDir,
+		ombroEsq, ombroDir/*,
 		cinturaEsq, cinturaDir,
 		joelhoDir, joelhoEsq, 
-		peDir, peEsq;
+		peDir, peEsq*/;
 	Vector3 position;
 	
 	GameObject sphere;
@@ -20,8 +20,8 @@ public class BodyComplete : MonoBehaviour {
 	string 
 		left_arm = "Left_Arm", 
 		right_arm = "Right_Arm",
-		left_foot = "Left_Foot",
-		right_foot = "Right_Foot",
+		//left_foot = "Left_Foot",
+		//right_foot = "Right_Foot",
 		
 		head = "Head";
 	
@@ -73,22 +73,22 @@ public class BodyComplete : MonoBehaviour {
 		
 		
 		// Left foot
-		cinturaEsq = CreateBodyPart("cinturaEsq");
-		joelhoEsq = CreateBodyPart("joelhoEsq");
-		peEsq = CreateBodyPart("peEsq");
+		//cinturaEsq = CreateBodyPart("cinturaEsq");
+		//joelhoEsq = CreateBodyPart("joelhoEsq");
+		//peEsq = CreateBodyPart("peEsq");
 		//Join all the parts to form one
-		cinturaEsq.tag = left_foot;
-		joelhoEsq.tag = left_foot;
-		peEsq.tag = left_foot;
+		//cinturaEsq.tag = left_foot;
+		//joelhoEsq.tag = left_foot;
+		//peEsq.tag = left_foot;
 		
 		// Right foot
-		cinturaDir = CreateBodyPart("cinturaDir");
-		joelhoDir = CreateBodyPart("joelhoDir");
-		peDir = CreateBodyPart("peDir");
+		//cinturaDir = CreateBodyPart("cinturaDir");
+		//joelhoDir = CreateBodyPart("joelhoDir");
+		//peDir = CreateBodyPart("peDir");
 		//Join all the parts to form one
-		cinturaDir.tag = right_foot;
-		joelhoDir.tag = right_foot;
-		peDir.tag = right_foot;
+		//cinturaDir.tag = right_foot;
+		//joelhoDir.tag = right_foot;
+		//peDir.tag = right_foot;
 		
 		
 		cabeca = CreateBodyPart("cabeca");
@@ -130,14 +130,14 @@ public class BodyComplete : MonoBehaviour {
 		ombroEsq.transform.position = datagrama.ombroEsq;
 		ombroDir.transform.position = datagrama.ombroDir;
 
-		cinturaEsq.transform.position = datagrama.cinturaEsq;
-		cinturaDir.transform.position = datagrama.cinturaDir;
+		//cinturaEsq.transform.position = datagrama.cinturaEsq;
+		//cinturaDir.transform.position = datagrama.cinturaDir;
 		
-		joelhoDir.transform.position = datagrama.joelhoDir;
-		joelhoEsq.transform.position = datagrama.joelhoEsq;
+		//joelhoDir.transform.position = datagrama.joelhoDir;
+		//joelhoEsq.transform.position = datagrama.joelhoEsq;
 		
-		peDir.transform.position = datagrama.peDir;
-		peEsq.transform.position = datagrama.peEsq;
+		//peDir.transform.position = datagrama.peDir;
+		//peEsq.transform.position = datagrama.peEsq;
 		
 	}
 	

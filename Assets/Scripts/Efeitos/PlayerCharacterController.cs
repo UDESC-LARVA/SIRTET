@@ -14,8 +14,9 @@ public class PlayerCharacterController : MonoBehaviour
     public Transform 
 		anteBracoEsq, anteBracoDir,
 		bracoEsq, bracoDir,
-		canelaEsq, canelaDir,
-		pernaEsq, pernaDir, cabeca;
+		//canelaEsq, canelaDir,
+		//pernaEsq, pernaDir, 
+        cabeca;
     
     List<MeshRenderer> partRend = new List<MeshRenderer>();
     List<Transform> partTransf = new List<Transform>();
@@ -68,10 +69,10 @@ public class PlayerCharacterController : MonoBehaviour
         anteBracoDir =  filhos.Find(p => p.transform.name.Equals("AntebracoDir"));
 		bracoEsq =  filhos.Find(p => p.transform.name.Equals("BracoEsq"));
         bracoDir =  filhos.Find(p => p.transform.name.Equals("BracoDir"));
-		canelaEsq =  filhos.Find(p => p.transform.name.Equals("PernaEsq"));
-        canelaDir =  filhos.Find(p => p.transform.name.Equals("PernaDir"));
-		pernaEsq =  filhos.Find(p => p.transform.name.Equals("CoxaEsq"));
-        pernaDir =  filhos.Find(p => p.transform.name.Equals("CoxaDir"));
+		//canelaEsq =  filhos.Find(p => p.transform.name.Equals("PernaEsq"));
+        //canelaDir =  filhos.Find(p => p.transform.name.Equals("PernaDir"));
+		//pernaEsq =  filhos.Find(p => p.transform.name.Equals("CoxaEsq"));
+        //pernaDir =  filhos.Find(p => p.transform.name.Equals("CoxaDir"));
         cabeca =  filhos.Find(p => p.transform.name.Equals("Cabeca"));
     }
 
@@ -81,20 +82,20 @@ public class PlayerCharacterController : MonoBehaviour
         anteBracoDir.GetChild(0).GetComponent<MeshFilter>().mesh = model.antebracoDir;
 		bracoEsq.GetChild(0).GetComponent<MeshFilter>().mesh = model.bracoEsq;
         bracoDir.GetChild(0).GetComponent<MeshFilter>().mesh = model.bracoDir;
-		canelaEsq.GetChild(0).GetComponent<MeshFilter>().mesh = model.pernaEsq;
-        canelaDir.GetChild(0).GetComponent<MeshFilter>().mesh = model.pernaDir;
-		pernaEsq.GetChild(0).GetComponent<MeshFilter>().mesh = model.coxaEsq;
-        pernaDir.GetChild(0).GetComponent<MeshFilter>().mesh = model.coxaDir;
+		//canelaEsq.GetChild(0).GetComponent<MeshFilter>().mesh = model.pernaEsq;
+        //canelaDir.GetChild(0).GetComponent<MeshFilter>().mesh = model.pernaDir;
+		//pernaEsq.GetChild(0).GetComponent<MeshFilter>().mesh = model.coxaEsq;
+        //pernaDir.GetChild(0).GetComponent<MeshFilter>().mesh = model.coxaDir;
         cabeca.GetChild(0).GetComponent<MeshFilter>().mesh = model.cabeca;
 
         anteBracoEsq.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
         anteBracoDir.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
 		bracoEsq.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
         bracoDir.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
-		canelaEsq.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
-        canelaDir.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
-		pernaEsq.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
-        pernaDir.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
+		//canelaEsq.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
+        //canelaDir.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
+		//pernaEsq.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
+        //pernaDir.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
         cabeca.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
     }
 
@@ -119,23 +120,23 @@ public class PlayerCharacterController : MonoBehaviour
         partRend.Add(bs.anteBracoDir.GetComponent<MeshRenderer>());
         partRend.Add(bs.bracoEsq.GetComponent<MeshRenderer>());
         partRend.Add(bs.bracoDir.GetComponent<MeshRenderer>());
-        partRend.Add(bs.canelaEsq.GetComponent<MeshRenderer>());
-        partRend.Add(bs.canelaDir.GetComponent<MeshRenderer>());
-        partRend.Add(bs.pernaEsq.GetComponent<MeshRenderer>());
-        partRend.Add(bs.pernaDir.GetComponent<MeshRenderer>());
+        //partRend.Add(bs.canelaEsq.GetComponent<MeshRenderer>());
+        //partRend.Add(bs.canelaDir.GetComponent<MeshRenderer>());
+        //partRend.Add(bs.pernaEsq.GetComponent<MeshRenderer>());
+        //partRend.Add(bs.pernaDir.GetComponent<MeshRenderer>());
         partRend.Add(bc.cabeca.GetComponent<MeshRenderer>());
-        partRend.Add(bc.cinturaDir.GetComponent<MeshRenderer>());
-        partRend.Add(bc.cinturaEsq.GetComponent<MeshRenderer>());
+        //partRend.Add(bc.cinturaDir.GetComponent<MeshRenderer>());
+        //partRend.Add(bc.cinturaEsq.GetComponent<MeshRenderer>());
         partRend.Add(bc.cotoveloDir.GetComponent<MeshRenderer>());
         partRend.Add(bc.cotoveloEsq.GetComponent<MeshRenderer>());
-        partRend.Add(bc.joelhoDir.GetComponent<MeshRenderer>());
-        partRend.Add(bc.joelhoEsq.GetComponent<MeshRenderer>());
+        //partRend.Add(bc.joelhoDir.GetComponent<MeshRenderer>());
+        //partRend.Add(bc.joelhoEsq.GetComponent<MeshRenderer>());
         partRend.Add(bc.maoDir.GetComponent<MeshRenderer>());
         partRend.Add(bc.maoEsq.GetComponent<MeshRenderer>());
         partRend.Add(bc.ombroDir.GetComponent<MeshRenderer>());
         partRend.Add(bc.ombroEsq.GetComponent<MeshRenderer>());
-        partRend.Add(bc.peDir.GetComponent<MeshRenderer>());
-        partRend.Add(bc.peEsq.GetComponent<MeshRenderer>());
+        //partRend.Add(bc.peDir.GetComponent<MeshRenderer>());
+        //partRend.Add(bc.peEsq.GetComponent<MeshRenderer>());
     }
 
     void GetPartTransf()
@@ -144,10 +145,10 @@ public class PlayerCharacterController : MonoBehaviour
         partTransf.Add(anteBracoDir);
         partTransf.Add(bracoEsq);
         partTransf.Add(bracoDir);
-        partTransf.Add(canelaEsq);
-        partTransf.Add(canelaDir);
-        partTransf.Add(pernaEsq);
-        partTransf.Add(pernaDir);
+        //partTransf.Add(canelaEsq);
+        //partTransf.Add(canelaDir);
+        //partTransf.Add(pernaEsq);
+        //partTransf.Add(pernaDir);
         partTransf.Add(cabeca);
     }
 
@@ -237,21 +238,21 @@ public class PlayerCharacterController : MonoBehaviour
         bracoDir.transform.rotation  = bs.bracoDir.transform.rotation;      
         bracoDir.transform.localScale  = GetFinalScale(bs.bracoDir.transform.localScale, scaleUp);   
 
-        canelaEsq.transform.position  = bs.canelaEsq.transform.position;
-        canelaEsq.transform.rotation  = bs.canelaEsq.transform.rotation;        
-        canelaEsq.transform.localScale  = GetFinalScale(bs.canelaEsq.transform.localScale, scaleUp);   
+        //canelaEsq.transform.position  = bs.canelaEsq.transform.position;
+        //canelaEsq.transform.rotation  = bs.canelaEsq.transform.rotation;        
+        //canelaEsq.transform.localScale  = GetFinalScale(bs.canelaEsq.transform.localScale, scaleUp);   
 
-        canelaDir.transform.position = bs.canelaDir.transform.position;
-        canelaDir.transform.rotation = bs.canelaDir.transform.rotation;     
-        canelaDir.transform.localScale = GetFinalScale(bs.canelaDir.transform.localScale, scaleUp);   
+        //canelaDir.transform.position = bs.canelaDir.transform.position;
+        //canelaDir.transform.rotation = bs.canelaDir.transform.rotation;     
+        //canelaDir.transform.localScale = GetFinalScale(bs.canelaDir.transform.localScale, scaleUp);   
 
-        pernaEsq.transform.position = bs.pernaEsq.transform.position;
-        pernaEsq.transform.rotation = bs.pernaEsq.transform.rotation;       
-        pernaEsq.transform.localScale = GetFinalScale(bs.pernaEsq.transform.localScale, scaleUp);   
+        //pernaEsq.transform.position = bs.pernaEsq.transform.position;
+        //pernaEsq.transform.rotation = bs.pernaEsq.transform.rotation;       
+        //pernaEsq.transform.localScale = GetFinalScale(bs.pernaEsq.transform.localScale, scaleUp);   
 
-        pernaDir.transform.position = bs.pernaDir.transform.position;
-        pernaDir.transform.rotation = bs.pernaDir.transform.rotation;       
-        pernaDir.transform.localScale = GetFinalScale(bs.pernaDir.transform.localScale, scaleUp);      
+        //pernaDir.transform.position = bs.pernaDir.transform.position;
+        //pernaDir.transform.rotation = bs.pernaDir.transform.rotation;       
+        //pernaDir.transform.localScale = GetFinalScale(bs.pernaDir.transform.localScale, scaleUp);      
 	}
 
     Vector3 GetFinalScale(Vector3 sca, float up)

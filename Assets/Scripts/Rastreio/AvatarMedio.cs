@@ -6,7 +6,7 @@ public class AvatarMedio : MonoBehaviour {
 	UDP datagrama;
 	BaseController padrao;
 
-	GameObject aux, cabeca, maoDir, maoEsq, cotoveloEsq, cotoveloDir, joelhoDir, joelhoEsq, peDir, peEsq;
+	GameObject aux, cabeca, maoDir, maoEsq, cotoveloEsq, cotoveloDir/*, joelhoDir, joelhoEsq, peDir, peEsq*/;
 	Vector3 position;
 	
 	GameObject sphere;
