@@ -2,3 +2,11 @@ Sessao; Data; Tipo do Objeto; Pontos; Membro
 2;9/27/2023 4:01:26 PM;Alvo;25;Right_Arm
 2;9/27/2023 4:01:36 PM;Alvo;1.333333;Right_Arm
 2;9/27/2023 4:01:50 PM;Alvo;1.333333;Right_Arm
+16;3/28/2024 5:53:33 PM;Obstaculo;2.777778;Left_Arm
+16;3/28/2024 5:53:33 PM;Obstaculo;-2.777778;Left_Foot
+16;3/28/2024 5:53:43 PM;Obstaculo;2.777778;Left_Arm
+16;3/28/2024 5:53:45 PM;Alvo;2.777778;Right_Arm
+16;3/28/2024 5:53:47 PM;Obstaculo;2.777778;Right_Foot
+16;3/28/2024 5:53:47 PM;Obstaculo;2.777778;Right_Arm
+16;3/28/2024 5:53:49 PM;Obstaculo;2.777778;Head
+16;3/28/2024 5:53:51 PM;Alvo;2.777778;Right_Arm

@@ -97,6 +97,7 @@ public class ChallengeTracer : MonoBehaviour {
 			
 			if(totalHits > challengeCurrent.ListaObjeto.Count * (controller.challengePercent*0.01f)) // acertou 50% dos objetos no desafio?
 			{	
+				//Debug.Log(challengeCurrent.Dificulty + " / " + gui.scoreWeight + " / " + scoreMod);
 				score = challengeCurrent.Dificulty * gui.scoreWeight * scoreMod;
 				gui.score(score);
 				print ("Challenge overcomed");

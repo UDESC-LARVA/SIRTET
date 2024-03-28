@@ -130,7 +130,9 @@ public class Interface : MonoBehaviour
 
 	void CreateScore ()
 	{
+		//Debug.Log(controller.challengeQuantity + " / " + scoreWeight);
 		scoreWeight = (float) 100/controller.challengeQuantity;
+
 	}
 	
 	void OnGUI ()
@@ -219,14 +221,16 @@ public class Interface : MonoBehaviour
 		GUI.Box(new Rect(0, 0, 400, 400), " ", box);
 		
 		int dist = 30;
-		GUI.Label (new Rect (1, dist * 0, 400, 100), "Nome: " + game.file.player.Name, styleAjuda);			
-		GUI.Label (new Rect (1, dist * 1, 350, 100), "Nível: " + game.file.player.CurrentLevel, styleAjuda);		
-		GUI.Label (new Rect (1, dist * 2, 350, 100), "Velocidade: " + controller.standardObjVelocity, styleAjuda);
-		GUI.Label (new Rect (1, dist * 3, 350, 100), "Intervalo: " + controller.standardChallengeInterval, styleAjuda);
-		GUI.Label (new Rect (1, dist * 4, 350, 100), "Fase: " + game.file.player.CurrentPhase, styleAjuda);
-		GUI.Label (new Rect (1, dist * 5, 350, 100), "Desafio Inicial: " + challengeController.desaIni, styleAjuda);		
-		GUI.Label (new Rect (1, dist * 6, 350, 100), "Desafio Atual: " + challengeController.desaAtual, styleAjuda);
-		GUI.Label (new Rect (1, dist * 7, 350, 100), "Desafio Final: " + challengeController.desaFin, styleAjuda);		
+		GUI.Label (new Rect (1, dist * 0, 400, 100), "Jogador: " + game.file.player.Name, styleAjuda);			
+		GUI.Label (new Rect (1, dist * 2, 350, 100), "Nível: " + game.file.player.CurrentLevel, styleAjuda);		
+		GUI.Label (new Rect (1, dist * 3, 350, 100), "Velocidade: " + controller.standardObjVelocity, styleAjuda);
+		GUI.Label (new Rect (1, dist * 4, 350, 100), "Intervalo: " + controller.standardChallengeInterval, styleAjuda);
+		GUI.Label (new Rect (1, dist * 5, 350, 100), "Fase: " + game.file.player.CurrentPhase, styleAjuda);		
+		GUI.Label (new Rect (1, dist * 7, 350, 100), "Lista Desafios: ", styleAjuda);
+		GUI.Label (new Rect (1, dist * 8, 350, 100), ListaAO.nomeListaDesafios, styleAjuda);
+		GUI.Label (new Rect (1, dist * 9, 350, 100), "Desafio Inicial: " + challengeController.desaIni, styleAjuda);		
+		GUI.Label (new Rect (1, dist * 10, 350, 100), "Desafio Atual: " + challengeController.desaAtual, styleAjuda);
+		GUI.Label (new Rect (1, dist * 11, 350, 100), "Desafio Final: " + challengeController.desaFin, styleAjuda);		
 		
 		GUI.EndGroup();	
 

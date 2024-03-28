@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
+using System.Collections.Generic;
 
 public class MenuInterface : MonoBehaviour {
 	
@@ -31,7 +32,7 @@ public class MenuInterface : MonoBehaviour {
 
 	public bool modoAleatorio = false;
 	
-	string listaDeDesafios = "ListaAO";
+	string listaDeDesafios = ListaAO.nomeListaDesafios;
 
 	Material skinColorMat;
 	
@@ -103,7 +104,6 @@ public class MenuInterface : MonoBehaviour {
 		
 		if(GUI.Button(new Rect(0, 0, width, height), "Iniciar", button))
 		{
-			ListaAO.nomeListaDesafios = listaDeDesafios;
 			SceneManager.LoadScene("Game_Start");
 		}
 		if(GUI.Button(new Rect(0, height, width, height), "Opções", button))
@@ -273,9 +273,21 @@ public class MenuInterface : MonoBehaviour {
 			GUI.EndGroup();
 
 			//Lista de desafios
-			GUI.BeginGroup(new Rect(10, height*5f, w, h));
-			GUI.Label(new Rect(10,0, w, height/2), "Lista de Desafios:", opt); 			
-			listaDeDesafios = GUI.TextField(new Rect(0, h/2, w, h/2), listaDeDesafios , 25, others);
+			GUI.BeginGroup(new Rect(10, height*5f, w, h*ListaAO.nomesListas.Count));
+			GUI.Label(new Rect(10,0, w, height/2), "Lista de Desafios:", opt); 					
+
+
+			for(int i=0; i<ListaAO.nomesListas.Count; i++)
+			{
+				string nome = ListaAO.nomesListas[i];
+				if(nome == ListaAO.nomeListaDesafios)
+					nome = ">>"+nome+"<<";
+				
+				if(GUI.Button(new Rect(10, h/2*(i+1), w, h/2), nome, button))
+					ListaAO.nomeListaDesafios = ListaAO.nomesListas[i];
+			}
+
+			//listaDeDesafios = GUI.TextField(new Rect(0, h/2, w, h/2), listaDeDesafios , 25, others);
 			GUI.EndGroup();
 						
 			

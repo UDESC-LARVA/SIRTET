@@ -172,8 +172,10 @@ public class BaseController : MonoBehaviour
 		//Calcular percurso de objetos e variaveis relacionadas
 		ListaAO lista = game.file.circuito.Load(nomeLista);
 		challengeSequence = new List<Desafio> (lista.ListaDesafios);
-		foreach (Desafio challenge in challengeSequence) {
+		foreach (Desafio challenge in challengeSequence) 
+		{
 			challenge.ListaObjeto.ForEach (obj => obj = escalonarPosicaoObj (obj));
+			//Debug.Log(challenge.Dificulty);
 		}
 				
 		//Fases

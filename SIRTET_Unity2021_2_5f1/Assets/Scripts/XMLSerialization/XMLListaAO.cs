@@ -52,19 +52,35 @@ public class ListaAO
 	[XmlArray("Desafios")]
 	private static List<Desafio> _listaDesafios;
 	public List<Desafio> ListaDesafios;
+	public static List<string> nomesListas;
+	List<string> ret = new List<string>();
 
 	public bool loaded = false;
 
 	
-	public static string nomeListaDesafios = "ListaAO";
+	public static string nomeListaDesafios = "Original";
 	
 	public ListaAO()
 	{
 		ListaDesafios = new List<Desafio>();
 	}
+
+	public List<string> GetListNames()
+	{
+		string[] fileArray = Directory.GetFiles("XML/Desafios/", "*.xml");
+		List<string> ret = new List<string>();
+		
+		foreach(string file in fileArray )
+		{
+			ret.Add(file[13..^4]);
+			//ret.Add(file.Substring(13 , file.Length-4 - 13));
+		}
+		return ret;
+	} 
 	
 	public void Create ()
 	{
+
 		ListaAO listaAO = new ListaAO ();
 		
 		// Auxiliares
@@ -119,24 +135,26 @@ public class ListaAO
 
 	public ListaAO Load(string nomeLista)
 	{
-		
+		nomesListas = GetListNames();
+
 		ListaAO listaAO = new ListaAO ();
 		XmlSerializer serializer = new XmlSerializer(listaAO.GetType());
 		
 		
 		try
         {
-            StreamReader reader = new StreamReader("XML/"+ nomeLista+".xml");
+            StreamReader reader = new StreamReader("XML/Desafios/"+ nomeLista+".xml");
 			listaAO = (ListaAO)serializer.Deserialize(reader);
 			reader.Close();
-			listaAO.loaded = false;
+			listaAO.loaded = true;
         }
         catch (FileNotFoundException)
 		{
 			Debug.Log("Erro ao carregar a lista de desafios");
+			listaAO.loaded = false;
 		}
 
-		listaAO.loaded = true;
+
 
 
 
@@ -145,7 +163,8 @@ public class ListaAO
 		for(int i = 0; i<listaAO.ListaDesafios.Count;i++)
 		{Debug.Log("I = " + i + "| Id =" + listaAO.ListaDesafios[i].SequenceNumber);}
 		Debug.Log(string.Join(", ", listaAO.ListaDesafios.Select(c => c.SequenceNumber).ToList()));
-		*/
+		//*/
+		
 
 		return listaAO;
 	}

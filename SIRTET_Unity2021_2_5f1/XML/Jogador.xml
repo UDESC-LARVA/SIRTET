@@ -2,9 +2,9 @@
 <Arquivo_de_Jogadores xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Lista_Jogadores>
     <Jogador Nome="DEFAULT" Envergadura="0" Altura="0">
-      <Fase_Atual>A</Fase_Atual>
-      <Nivel_Atual>7</Nivel_Atual>
-      <Sessao>2</Sessao>
+      <Fase_Atual>Q</Fase_Atual>
+      <Nivel_Atual>6</Nivel_Atual>
+      <Sessao>5</Sessao>
     </Jogador>
     <Jogador Nome="NOME DO JOGADOR" Envergadura="0" Altura="0">
       <Fase_Atual>A</Fase_Atual>
@@ -33,8 +33,8 @@
     </Jogador>
     <Jogador Nome="MODOALEATORIO" Envergadura="0" Altura="0">
       <Fase_Atual>D</Fase_Atual>
-      <Nivel_Atual>8</Nivel_Atual>
-      <Sessao>15</Sessao>
+      <Nivel_Atual>4</Nivel_Atual>
+      <Sessao>17</Sessao>
     </Jogador>
   </Lista_Jogadores>
 </Arquivo_de_Jogadores>

@@ -72,7 +72,6 @@ ScriptsOnlyBuild:
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.ShaderGraph.Editor.dll:
-    - UnityEditor.Graphing.GraphObject
     - UnityEditor.ShaderGraph.Drawing.MaterialGraphEditWindow
     - UnityEditor.ShaderGraph.ShaderGraphProjectSettings
     - UnityEditor.ShaderGraph.SubGraphAsset
@@ -317,7 +316,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13840}
     - Class: 114
-      Script: {instanceID: 34848}
+      Script: {instanceID: 35478}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -2363,4 +2362,4 @@ ScriptsOnlyBuild:
   - Assets/Cenas/Initialization.unity
   - Assets/Cenas/Menu_Total.unity
   - Assets/Cenas/Game_Start.unity
-  playerPath: E:/_Mestrado/FUNSG/SIRTET/Builds/Build 2.3 - 24-03-21/SIRTET.exe
+  playerPath: E:/_Mestrado/FUNSG/SIRTET/Builds/Build 2.3b - 24-03-28/SIRTET.exe
