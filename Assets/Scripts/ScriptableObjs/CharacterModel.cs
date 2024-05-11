@@ -11,7 +11,7 @@ public class CharacterModel : ScriptableObject
     public Mesh antebracoEsq;
     public Mesh bracoDir;
     public Mesh bracoEsq;
-    public Mesh cabeca;
+    //public Mesh cabeca;
     public Mesh coxaDir;
     public Mesh coxaEsq;
     public Mesh pernaDir;

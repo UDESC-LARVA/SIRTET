@@ -6,7 +6,7 @@ public class AvatarBasico : MonoBehaviour {
 	UDP datagrama;
 	BaseController padrao;
 
-	GameObject cabeca, maoDir, maoEsq, cotoveloEsq, cotoveloDir, joelhoDir, joelhoEsq, peDir, peEsq;
+	GameObject /*cabeca,*/ maoDir, maoEsq, cotoveloEsq, cotoveloDir, joelhoDir, joelhoEsq, peDir, peEsq;
 	Vector3 position;
 	
 	GameObject sphere;
@@ -27,7 +27,7 @@ public class AvatarBasico : MonoBehaviour {
 
 	void CreateBody()
 	{
-		cabeca = CreateBodyPart();
+		//cabeca = CreateBodyPart();
 		maoDir = CreateBodyPart();
 		maoEsq = CreateBodyPart();
 		peDir = CreateBodyPart();
@@ -49,7 +49,7 @@ public class AvatarBasico : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		cabeca.transform.position = datagrama.cabeca;
+		//cabeca.transform.position = datagrama.cabeca;
 				
 		maoDir.transform.position = datagrama.maoDir;
 		maoEsq.transform.position = datagrama.maoEsq;

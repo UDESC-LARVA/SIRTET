@@ -32,10 +32,10 @@ public class ChangeOutlineColor : MonoBehaviour
                 bodyPartsToChange[0] = pcc.canelaDir.GetChild(0).gameObject;                    
                 bodyPartsToChange[1] = pcc.pernaDir.GetChild(0).gameObject;
             break;
-            case "Head":
-                bodyPartsToChange[0] = pcc.cabeca.GetChild(0).gameObject;                    
-                bodyPartsToChange[1] = pcc.cabeca.GetChild(0).gameObject;
-            break;                           
+            //case "Head":
+                //bodyPartsToChange[0] = pcc.cabeca.GetChild(0).gameObject;                    
+                //bodyPartsToChange[1] = pcc.cabeca.GetChild(0).gameObject;
+            //break;                           
         }
 
         outlineMat = Resources.Load("Material/MatOutlineHit") as Material;

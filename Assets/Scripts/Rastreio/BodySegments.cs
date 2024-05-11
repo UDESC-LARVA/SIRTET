@@ -8,7 +8,7 @@ public class BodySegments : MonoBehaviour {
 		anteBracoEsq, anteBracoDir,
 		bracoEsq, bracoDir,
 		canelaEsq, canelaDir,
-		pernaEsq, pernaDir, cabeca;
+		pernaEsq, pernaDir/*, cabeca*/;
 	UDP datagrama;
 	
 	string 
@@ -31,8 +31,8 @@ public class BodySegments : MonoBehaviour {
 		Vector3 aux = new Vector3();
 		aux = datagrama.cabeca;
 		aux.y -= (float)0.1;
-		cabeca = CreateSegmentBodyPart(datagrama.cabeca,aux, "cabeca");
-		cabeca.tag = head;		
+		//cabeca = CreateSegmentBodyPart(datagrama.cabeca,aux, "cabeca");
+		//cabeca.tag = head;		
 				
 		anteBracoEsq = CreateSegmentBodyPart(datagrama.maoEsq, datagrama.cotoveloEsq, "anteBracoEsq");
 		bracoEsq = CreateSegmentBodyPart(datagrama.cotoveloEsq, datagrama.ombroEsq, "bracoEsq");
@@ -53,8 +53,8 @@ public class BodySegments : MonoBehaviour {
 		canelaEsq.tag = pernaEsq.tag = left_foot;
 
 
-		cabeca.transform.eulerAngles = new Vector3(0,0,0);
-		cabeca.transform.localScale = new Vector3(50,50,50);
+		//cabeca.transform.eulerAngles = new Vector3(0,0,0);
+		//cabeca.transform.localScale = new Vector3(50,50,50);
 		
 	}
 
@@ -78,8 +78,8 @@ public class BodySegments : MonoBehaviour {
 	
 	private void Update() 
 	{		
-		cabeca.transform.position = datagrama.cabeca;
-		cabeca.transform.eulerAngles = new Vector3(0,0,0);
+		//cabeca.transform.position = datagrama.cabeca;
+		//cabeca.transform.eulerAngles = new Vector3(0,0,0);
 		
 		UptadeSegment(anteBracoEsq, datagrama.maoEsq, datagrama.cotoveloEsq);
 		UptadeSegment(anteBracoDir, datagrama.maoDir, datagrama.cotoveloDir);

@@ -6,7 +6,7 @@ public class AvatarMedio : MonoBehaviour {
 	UDP datagrama;
 	BaseController padrao;
 
-	GameObject aux, cabeca, maoDir, maoEsq, cotoveloEsq, cotoveloDir, joelhoDir, joelhoEsq, peDir, peEsq;
+	GameObject aux, /*cabeca,*/ maoDir, maoEsq, cotoveloEsq, cotoveloDir, joelhoDir, joelhoEsq, peDir, peEsq;
 	Vector3 position;
 	
 	GameObject sphere;
@@ -31,7 +31,7 @@ public class AvatarMedio : MonoBehaviour {
 		
 		float metadePadrao = padrao.standardSize / 1.5f;
 		
-		cabeca = CreateBodyPart();
+		//cabeca = CreateBodyPart();
 		maoDir = CreateBodyPart();
 		maoEsq = CreateBodyPart();
 		
@@ -65,7 +65,7 @@ public class AvatarMedio : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		cabeca.transform.position = datagrama.cabeca;
+		//cabeca.transform.position = datagrama.cabeca;
 		maoDir.transform.position = datagrama.maoDir;
 		maoEsq.transform.position = datagrama.maoEsq;
 		cotoveloDir.transform.position = datagrama.cotoveloDir;

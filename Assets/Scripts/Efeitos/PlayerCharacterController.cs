@@ -15,7 +15,7 @@ public class PlayerCharacterController : MonoBehaviour
 		anteBracoEsq, anteBracoDir,
 		bracoEsq, bracoDir,
 		canelaEsq, canelaDir,
-		pernaEsq, pernaDir, cabeca;
+		pernaEsq, pernaDir/*, cabeca*/;
     
     List<MeshRenderer> partRend = new List<MeshRenderer>();
     List<Transform> partTransf = new List<Transform>();
@@ -72,7 +72,7 @@ public class PlayerCharacterController : MonoBehaviour
         canelaDir =  filhos.Find(p => p.transform.name.Equals("PernaDir"));
 		pernaEsq =  filhos.Find(p => p.transform.name.Equals("CoxaEsq"));
         pernaDir =  filhos.Find(p => p.transform.name.Equals("CoxaDir"));
-        cabeca =  filhos.Find(p => p.transform.name.Equals("Cabeca"));
+        //cabeca =  filhos.Find(p => p.transform.name.Equals("Cabeca"));
     }
 
     void ChageCharacterModel(CharacterModel model)
@@ -85,7 +85,7 @@ public class PlayerCharacterController : MonoBehaviour
         canelaDir.GetChild(0).GetComponent<MeshFilter>().mesh = model.pernaDir;
 		pernaEsq.GetChild(0).GetComponent<MeshFilter>().mesh = model.coxaEsq;
         pernaDir.GetChild(0).GetComponent<MeshFilter>().mesh = model.coxaDir;
-        cabeca.GetChild(0).GetComponent<MeshFilter>().mesh = model.cabeca;
+        //cabeca.GetChild(0).GetComponent<MeshFilter>().mesh = model.cabeca;
 
         anteBracoEsq.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
         anteBracoDir.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
@@ -95,7 +95,7 @@ public class PlayerCharacterController : MonoBehaviour
         canelaDir.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
 		pernaEsq.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
         pernaDir.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
-        cabeca.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
+        //cabeca.GetChild(0).GetComponent<MeshRenderer>().materials = model.materials;
     }
 
     
@@ -123,7 +123,7 @@ public class PlayerCharacterController : MonoBehaviour
         partRend.Add(bs.canelaDir.GetComponent<MeshRenderer>());
         partRend.Add(bs.pernaEsq.GetComponent<MeshRenderer>());
         partRend.Add(bs.pernaDir.GetComponent<MeshRenderer>());
-        partRend.Add(bc.cabeca.GetComponent<MeshRenderer>());
+        //partRend.Add(bc.cabeca.GetComponent<MeshRenderer>());
         partRend.Add(bc.cinturaDir.GetComponent<MeshRenderer>());
         partRend.Add(bc.cinturaEsq.GetComponent<MeshRenderer>());
         partRend.Add(bc.cotoveloDir.GetComponent<MeshRenderer>());
@@ -148,7 +148,7 @@ public class PlayerCharacterController : MonoBehaviour
         partTransf.Add(canelaDir);
         partTransf.Add(pernaEsq);
         partTransf.Add(pernaDir);
-        partTransf.Add(cabeca);
+        //partTransf.Add(cabeca);
     }
 
 
@@ -217,9 +217,9 @@ public class PlayerCharacterController : MonoBehaviour
     void UptadeSegments ()
 	{   
         float scaleUp = 1f;
-        cabeca.transform.position = bs.cabeca.transform.position;
-        cabeca.transform.rotation = bs.cabeca.transform.rotation;    
-        cabeca.transform.localScale = new Vector3(80,80,80);
+        //cabeca.transform.position = bs.cabeca.transform.position;
+        ///cabeca.transform.rotation = bs.cabeca.transform.rotation;    
+        //cabeca.transform.localScale = new Vector3(80,80,80);
         
         anteBracoEsq.transform.position  = bs.anteBracoEsq.transform.position;
         anteBracoEsq.transform.rotation  = bs.anteBracoEsq.transform.rotation;      

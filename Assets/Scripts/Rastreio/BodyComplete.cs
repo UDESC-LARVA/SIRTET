@@ -7,7 +7,7 @@ public class BodyComplete : MonoBehaviour {
 	GameController game;
 
 	public GameObject 
-		cabeca, maoDir, maoEsq, 
+		/*cabeca,*/ maoDir, maoEsq, 
 		cotoveloEsq, cotoveloDir,
 		ombroEsq, ombroDir,
 		cinturaEsq, cinturaDir,
@@ -91,9 +91,9 @@ public class BodyComplete : MonoBehaviour {
 		peDir.tag = right_foot;
 		
 		
-		cabeca = CreateBodyPart("cabeca");
-		cabeca.transform.localScale *= 2.5f;
-		cabeca.tag = head;
+		//cabeca = CreateBodyPart("cabeca");
+		//cabeca.transform.localScale *= 2.5f;
+		//cabeca.tag = head;
 				
 	}
 
@@ -119,7 +119,7 @@ public class BodyComplete : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{	
-		cabeca.transform.position = datagrama.cabeca;
+		//cabeca.transform.position = datagrama.cabeca;
 				
 		maoDir.transform.position = datagrama.maoDir;
 		maoEsq.transform.position = datagrama.maoEsq;
