@@ -36,6 +36,8 @@ public class UDP: MonoBehaviour
 		peEsq, peDir;
 	Thread receiveThread;
 	UdpClient client;
+
+	float scaledValue = 1.0f;
 	
 	public void Awake ()
 	{
@@ -456,6 +458,8 @@ public class UDP: MonoBehaviour
 		
 		y = (((y - min2) / (max2 - min2)) * (max1 - min1)) + min1;
 
+		y = y * scaledValue;
+
 		return y;
 	}
 	
@@ -473,6 +477,8 @@ public class UDP: MonoBehaviour
 		float z2 = z;
 
 		z = (((z - min2) / (max2 - min2)) * (max1 - min1)) + min1;
+		
+		z = z * scaledValue;
 
 		//Debug.Log("original: "+z2+"   |   Normalizado: " +z);
 		

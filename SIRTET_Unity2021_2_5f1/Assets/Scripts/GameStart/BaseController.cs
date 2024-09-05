@@ -59,6 +59,9 @@ public class BaseController : MonoBehaviour
 
 	public bool modoAleatorio = false;
 
+
+	float proporcaoAmbiente = 11;
+
 	
 	#endregion
 	
@@ -448,11 +451,11 @@ public class BaseController : MonoBehaviour
 		UDP membros = GameObject.Find ("UDP").GetComponent<UDP> ();
 		float total = 0f;
 		
-		total += Vector3.Distance (membros.maoDir, membros.cotoveloDir) / 10;
-		total += Vector3.Distance (membros.cotoveloDir, membros.ombroDir) / 10;
-		total += Vector3.Distance (membros.ombroDir, membros.ombroEsq) / 10;
-		total += Vector3.Distance (membros.ombroEsq, membros.cotoveloEsq) / 10;
-		total += Vector3.Distance (membros.cotoveloEsq, membros.maoEsq) / 10;
+		total += Vector3.Distance (membros.maoDir, membros.cotoveloDir) / proporcaoAmbiente;
+		total += Vector3.Distance (membros.cotoveloDir, membros.ombroDir) / proporcaoAmbiente;
+		total += Vector3.Distance (membros.ombroDir, membros.ombroEsq) / proporcaoAmbiente;
+		total += Vector3.Distance (membros.ombroEsq, membros.cotoveloEsq) / proporcaoAmbiente;
+		total += Vector3.Distance (membros.cotoveloEsq, membros.maoEsq) / proporcaoAmbiente;
 		
 		return total + total * 0.5f;
 	}
@@ -463,12 +466,12 @@ public class BaseController : MonoBehaviour
 		float total = 0f;
 		
 		//total += Vector3.Distance (membros.cabeca, membros.pescoso) / 10;
-		total += Vector3.Distance (membros.cotoveloEsq, membros.maoEsq) / 10;
-		total += Vector3.Distance (membros.ombroEsq, membros.cotoveloEsq) / 10;
+		total += Vector3.Distance (membros.cotoveloEsq, membros.maoEsq) / proporcaoAmbiente;
+		total += Vector3.Distance (membros.ombroEsq, membros.cotoveloEsq) / proporcaoAmbiente;
 		
-		total += Vector3.Distance (membros.ombroEsq, membros.cinturaEsq) / 10;
-		total += Vector3.Distance (membros.cinturaEsq, membros.joelhoEsq) / 10;
-		total += Vector3.Distance (membros.joelhoEsq, membros.peEsq) / 10;
+		total += Vector3.Distance (membros.ombroEsq, membros.cinturaEsq) / proporcaoAmbiente;
+		total += Vector3.Distance (membros.cinturaEsq, membros.joelhoEsq) / proporcaoAmbiente;
+		total += Vector3.Distance (membros.joelhoEsq, membros.peEsq) / proporcaoAmbiente;
 		
 //		total += Vector3.Distance(membros.cabeca, membros.peDir)/10;
 		
