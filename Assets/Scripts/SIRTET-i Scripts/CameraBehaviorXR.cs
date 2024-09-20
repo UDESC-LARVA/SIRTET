@@ -10,7 +10,7 @@ public class CameraBehaviorXR : MonoBehaviour {
 	public int menuScale = 30;
 	public int gameScale = 700;
 
-	public Transform target;
+	//public Transform target;
 	
 	void Awake()
 	{
@@ -80,6 +80,7 @@ public class CameraBehaviorXR : MonoBehaviour {
         }
     }
 
+	/*
 	public void Recenter()
 	{
 		
@@ -98,4 +99,5 @@ public class CameraBehaviorXR : MonoBehaviour {
         transform.eulerAngles = new Vector3(0, currentRotation.y, 0);
 
 	}
+	*/
 }
